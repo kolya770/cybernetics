@@ -1,0 +1,58 @@
+.navbar-cybernetics {
+  background-color:  rgba(0, 0, 0, 0.82);
+  height: 205px;
+  .nav-cyb-logo {
+    margin-top: 18px;
+  }
+  .nav-link-header {
+    font-family: $open-sans-reg;
+    color: $global-color-white;
+    font-size: 1.125em;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    &:hover {
+      color:  $global-color-blue;
+    }
+  }
+
+  .link-to-pages {
+    font-family: $open-sans-semi-bold;
+    font-size: 1.250em;
+    font-weight: 600;
+    text-align: left;
+    letter-spacing: normal;
+  }
+
+  .link-pages-block {
+    margin-top: 3rem;
+    @media #{$bootstrap-xl} {
+      .nav-item+.nav-item {
+        margin-left: 2.3rem;
+      }
+    }
+    @media (min-width: 1300px) {
+      .nav-item+.nav-item {
+        margin-left: 4rem;
+      }
+    }
+    @media (min-width: 1400px) {
+      .nav-item+.nav-item {
+        margin-left: 5rem;
+      }
+    }
+
+
+
+
+
+  }
+  .link-to-soc {
+    margin-top: 2rem;
+    .nav-item+.nav-item {
+      margin-left: 2rem;
+    }
+  }
+}

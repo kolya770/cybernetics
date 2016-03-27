@@ -1,3 +1,28 @@
-.red {
-  display: inline-block;
+@import "mixins";
+
+html,
+body {
+  height: 100%;
 }
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../fonts/OpenSans-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans-Semibold";
+  src: url("../fonts/OpenSans-Semibold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// global fonts
+$open-sans-semi-bold: "OpenSans-Semibold", "sans-serif";;
+$open-sans-reg: "OpenSans-Regular", "sans-serif";
+// global colors
+$global-color-blue:  #05dcb8;
+$global-color-white:  #ffffff;
+
+@import "partials/navbar";

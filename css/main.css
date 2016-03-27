@@ -1,1 +1,17 @@
-.red{display:inline-block}
+body,html{height:100%}
+@font-face{font-family:OpenSans-Regular;src:url(../fonts/OpenSans-Regular.ttf);font-weight:400;font-style:normal}
+@font-face{font-family:OpenSans-Semibold;src:url(../fonts/OpenSans-Semibold.ttf);font-weight:400;font-style:normal}
+.navbar-cybernetics{background-color:rgba(0,0,0,.82);height:205px}
+.navbar-cybernetics .nav-cyb-logo{margin-top:18px}
+.navbar-cybernetics .nav-link-header{font-family:OpenSans-Regular,sans-serif;color:#fff;font-size:1.125em;font-weight:400;line-height:24px;text-align:right;letter-spacing:1.5px;text-decoration:none}
+.navbar-cybernetics .nav-link-header:hover{color:#05dcb8}
+.navbar-cybernetics .link-to-pages{font-family:OpenSans-Semibold,sans-serif;font-size:1.25em;font-weight:600;text-align:left;letter-spacing:normal}
+.navbar-cybernetics .link-pages-block{margin-top:3rem}
+@media (min-width:1140px){.navbar-cybernetics .link-pages-block .nav-item+.nav-item{margin-left:2.3rem}
+}
+@media (min-width:1300px){.navbar-cybernetics .link-pages-block .nav-item+.nav-item{margin-left:4rem}
+}
+@media (min-width:1400px){.navbar-cybernetics .link-pages-block .nav-item+.nav-item{margin-left:5rem}
+}
+.navbar-cybernetics .link-to-soc{margin-top:2rem}
+.navbar-cybernetics .link-to-soc .nav-item+.nav-item{margin-left:2rem}
