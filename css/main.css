@@ -1,17 +1,45 @@
-body,html{height:100%}
+body,html{height:100%;font-size:16px}
+@font-face{font-family:FontAwesome;src:url(../fonts/fontawesome.woff)}
 @font-face{font-family:OpenSans-Regular;src:url(../fonts/OpenSans-Regular.ttf);font-weight:400;font-style:normal}
 @font-face{font-family:OpenSans-Semibold;src:url(../fonts/OpenSans-Semibold.ttf);font-weight:400;font-style:normal}
-.navbar-cybernetics{background-color:rgba(0,0,0,.82);height:205px}
-.navbar-cybernetics .nav-cyb-logo{margin-top:18px}
-.navbar-cybernetics .nav-link-header{font-family:OpenSans-Regular,sans-serif;color:#fff;font-size:1.125em;font-weight:400;line-height:24px;text-align:right;letter-spacing:1.5px;text-decoration:none}
-.navbar-cybernetics .nav-link-header:hover{color:#05dcb8}
-.navbar-cybernetics .link-to-pages{font-family:OpenSans-Semibold,sans-serif;font-size:1.25em;font-weight:600;text-align:left;letter-spacing:normal}
-.navbar-cybernetics .link-pages-block{margin-top:3rem}
-@media (min-width:1140px){.navbar-cybernetics .link-pages-block .nav-item+.nav-item{margin-left:2.3rem}
+@font-face{font-family:OpenSans-Bold;src:url(../fonts/OpenSans-Bold.ttf);font-weight:400;font-style:normal}
+.nav-cybernetics{background-color:rgba(0,0,0,.82);height:205px;border-radius:0;border:none}
+.nav-cybernetics .logo-block{height:205px;float:left;display:inline-block}
+.nav-cybernetics .logo-block .logo-img{margin-top:30px;width:93px;float:left}
+.nav-cybernetics .logo-block .logo-img .logo{width:93px;height:145px}
+.nav-cybernetics .logo-block .logo-header{float:left;width:376px;margin-left:10px;margin-top:72px}
+.nav-cybernetics .logo-block .logo-header .header-title{font-family:OpenSans-Bold,sans-serif;color:#05dcb9;font-size:1.875em;font-weight:700;text-align:left;margin-bottom:5px;margin-top:0}
+.nav-cybernetics .logo-block .logo-header .header-title-text{font-family:OpenSans-Regular,sans-serif;color:#05dcb9;font-size:.75em;font-weight:400;text-align:left;margin-top:0}
+.nav-cybernetics .right-nav-block{float:right;height:205px}
+.nav-cybernetics .right-nav-block .search-language-login{height:50px;margin-top:10px}
+.nav-cybernetics .right-nav-block .search-language-login .search-form{float:right;margin:0;border:0;padding:0}
+.nav-cybernetics .right-nav-block .search-language-login .search-form .input-search{display:none;height:44px;outline:0;background-color:transparent;border-radius:0;border-bottom:1px solid #fff;border-top:0;border-right:0;border-left:0;font-family:OpenSans-Regular,sans-serif;color:#fff;font-size:1.125em}
+@media (min-width:992px){.nav-cybernetics .right-nav-block .search-language-login .search-form .input-search{width:220px}
 }
-@media (min-width:1300px){.navbar-cybernetics .link-pages-block .nav-item+.nav-item{margin-left:4rem}
+@media (min-width:1200px){.nav-cybernetics .right-nav-block .search-language-login .search-form .input-search{width:400px}
 }
-@media (min-width:1400px){.navbar-cybernetics .link-pages-block .nav-item+.nav-item{margin-left:5rem}
+@media (min-width:1400px){.nav-cybernetics .right-nav-block .search-language-login .search-form .input-search{width:550px}
 }
-.navbar-cybernetics .link-to-soc{margin-top:2rem}
-.navbar-cybernetics .link-to-soc .nav-item+.nav-item{margin-left:2rem}
+.nav-cybernetics .right-nav-block .search-language-login .search-form .input-search:focus{box-shadow:none}
+.nav-cybernetics .right-nav-block .search-language-login .search-form .active-input{display:block}
+.nav-cybernetics .right-nav-block .search-language-login .search-form .btn-search{background-color:transparent;border:none;outline:0;color:#fff;border-radius:0;margin-left:10px;width:44px;height:44px;padding:0}
+.nav-cybernetics .right-nav-block .search-language-login .search-form .btn-search:hover{color:#05dcb9}
+.nav-cybernetics .right-nav-block .search-language-login .search-form .btn-search .icon-search{font-size:1.125em}
+.nav-cybernetics .right-nav-block .search-language-login .search-form .active-btn{background-color:#05dcb9}
+.nav-cybernetics .right-nav-block .search-language-login .search-form .active-btn:hover{color:#fff}
+.nav-cybernetics .right-nav-block .search-language-login .sll-text{float:right;margin-top:10px;font-family:OpenSans-Regular,sans-serif;color:#fff;font-size:1.125em;font-weight:400;margin-left:10px;letter-spacing:1px;outline:0;text-decoration:none}
+.nav-cybernetics .right-nav-block .search-language-login .sll-text:hover{color:#05dcb9}
+.nav-cybernetics .right-nav-block .link-to-other-page{height:50px}
+.nav-cybernetics .right-nav-block .link-to-other-page ul.dropdown li{position:relative}
+.nav-cybernetics .right-nav-block .link-to-other-page ul.dropdown,.nav-cybernetics .right-nav-block .link-to-other-page ul.dropdown-inside{list-style-type:none;padding:0}
+.nav-cybernetics .right-nav-block .link-to-other-page ul.dropdown-inside{position:absolute;left:-9999px;width:260px}
+.nav-cybernetics .right-nav-block .link-to-other-page ul.dropdown li.dropdown-top{display:inline;float:right;margin:0 1px 0 0}
+.nav-cybernetics .right-nav-block .link-to-other-page ul.dropdown li.dropdown-top a{display:block}
+.nav-cybernetics .right-nav-block .link-to-other-page ul.dropdown a.dropdown-top{background-color:transparent;text-decoration:none;font-family:OpenSans-Semibold,sans-serif;color:#fff;font-size:1.25em;font-weight:600;line-height:44px;text-align:center;min-width:150px;height:44px}
+.nav-cybernetics .right-nav-block .link-to-other-page ul.dropdown a.dropdown-top:hover{background-color:#05dcb9;color:#282828}
+.nav-cybernetics .right-nav-block .link-to-other-page ul.dropdown li.dropdown-top:hover{background-color:#05dcb9}
+.nav-cybernetics .right-nav-block .link-to-other-page ul.dropdown li.dropdown-top:hover a.dropdown-top{color:#282828}
+.nav-cybernetics .right-nav-block .link-to-other-page ul.dropdown li.dropdown-top:hover .dropdown-inside{display:block;left:0}
+.nav-cybernetics .right-nav-block .link-to-other-page ul.dropdown .dropdown-inside{background:url(../img/bg-image.png);background-size:cover}
+.nav-cybernetics .right-nav-block .link-to-other-page ul.dropdown .dropdown-inside a{font-family:OpenSans-Regular,sans-serif;color:#282828;font-size:1.125em;font-weight:400;line-height:40px;text-align:left;text-decoration:none;padding-left:30px}
+.nav-cybernetics .right-nav-block .link-to-other-page ul.dropdown .dropdown-inside a:hover{color:#000;text-decoration:underline}
