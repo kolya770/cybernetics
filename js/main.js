@@ -18,4 +18,25 @@ $(document).ready(function() {
         input_search.addClass('active-input');
     });
 
+    // Carousel main
+
+    $('#carousel').carousel({
+        interval: 3000,
+        pause: "false"
+    });
+
+    $('.stop-carousel').on('click', function() {
+        $('#carousel').carousel('pause');
+    });
+
+    // Carousel mini
+
+    $('.slider4').bxSlider({
+        slideWidth: 350,
+        minSlides: 2,
+        maxSlides: 3,
+        moveSlides: 1,
+        slideMargin: 10
+    });
+
 });

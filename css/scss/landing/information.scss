@@ -1,0 +1,86 @@
+.content {
+  background: url("../img/bg-image.png");
+  .main {
+    .information-block {
+      width: 80%;
+      .header-title {
+        font-family: $open-sans-semi-bold;
+        color: #282828;
+        font-size: 1.875em;
+        font-weight: 600;
+        text-align: left;
+        transform: scaleX(1.0016);
+        margin-bottom: 30px;
+      }
+      .header-text {
+        font-family: $open-sans-reg;
+        color:  #181818;
+        font-size: 1.375em;
+        font-weight: 400;
+        text-decoration: underline;
+        text-align: left;
+      }
+      .image-entrants {
+        background: url("../img/abiturient1.jpg") 50% 50% no-repeat;
+        background-size: cover;
+        height: 250px;
+        margin-bottom: 30px;
+      }
+      .image-schedule {
+        background: url("../img/abitur.jpg") 50% 50% no-repeat;
+        background-size: cover;
+        height: 250px;
+        margin-bottom: 30px;
+      }
+      .image-webcam {
+        background: url("../img/webka.png") 50% 50% no-repeat;
+        background-size: cover;
+        height: 250px;
+        margin-bottom: 30px;
+      }
+    }
+    .line {
+      border-top: 3px solid $global-color-blue;
+      margin-top: 50px;
+      width: 94%;
+    }
+  }
+  .news {
+    .header-news {
+      width: 80%;
+      .header-title {
+        font-family: $open-sans-semi-bold;
+        color: #282828;
+        font-size: 1.875em;
+        font-weight: 600;
+        text-align: left;
+        transform: scaleX(1.0016);
+        margin-bottom: 0;
+      }
+    }
+    .news-block {
+      width: 80%;
+      margin-top: 50px;
+      .header-title {
+        font-family: $open-sans-reg;
+        color:  #181818;
+        font-size: 1.375em;
+        font-weight: 400;
+        text-decoration: underline;
+        text-align: left;
+        margin-top: 30px;
+      }
+      .news-image {
+        width: 100%;
+      }
+      .date {
+        float: right;
+        font-family: $open-sans-light-italic;
+        color:  #727272;
+        font-size: 1.125em;
+        font-style: italic;
+        text-align: right;
+      }
+    }
+  }
+}

@@ -6,122 +6,337 @@
     <title>Cybernetics Faculty</title>
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/full-slider.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 
-<nav class="navbar navbar-default nav-cybernetics">
-    <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="logo-block">
-                        <div class="logo-img">
-                            <img src="img/logo.png" class="logo" alt="">
+    <nav class="navbar navbar-default navbar-fixed-top nav-cybernetics">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="row">
+                    <div class="col-sm-12 no-padding">
+                        <div class="logo-block">
+                            <div class="logo-img">
+                                <img src="img/logo.png" class="logo" alt="">
+                            </div>
+                            <div class="logo-header">
+                                <!--<h2 class="header-title">Faculty of Cybernetics</h2>-->
+                                <!--<h3 class="header-title-text">Taras Shevchenko National University of Kyiv</h3>-->
+                                <h2 class="header-title">Факультет кібернетики</h2>
+                                <h3 class="header-title-text">Київського національного університету імені Тараса Шевченка</h3>
+                            </div>
                         </div>
-                        <div class="logo-header">
-                            <h2 class="header-title">Faculty of Cybernetics</h2>
-                            <h3 class="header-title-text">Taras Shevchenko National University of Kyiv</h3>
-                        </div>
-                    </div>
-                    <div class="right-nav-block">
-                        <div class="search-language-login">
-                            <a href="#" class="sll-text">Login</a>
-                            <a href="#" class="sll-text">En</a>
-                            <a href="#" class="sll-text">Ukr</a>
-                            <form class="navbar-form search-form" role="search">
-                                <div class="input-group">
-                                    <input type="text" class="form-control input-search" placeholder="Search for...">
-                                    <span class="input-group-btn">
-                                        <button id="search" class="btn btn-default btn-search" type="button"><i class="fa fa-search icon-search"></i></button>
-                                    </span>
+                        <div class="right-nav-block">
+                            <div class="search-language-login">
+                                <a href="#" class="sll-text">Login</a>
+                                <a href="#" class="sll-text">En</a>
+                                <a href="#" class="sll-text">Ukr</a>
+                                <form class="navbar-form search-form" role="search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control input-search" placeholder="Search for...">
+                                        <span class="input-group-btn">
+                                            <button id="search" class="btn btn-default btn-search" type="button"><i class="fa fa-search icon-search"></i></button>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="link-to-other-page">
+                                <ul class="dropdown">
+                                    <li class="dropdown-top">
+                                        <!--<a class="dropdown-top" href="/">Contacts</a>-->
+                                        <a class="dropdown-top" href="/">Контакти</a>
+                                        <ul class="dropdown-inside">
+                                            <li><a href="#">Deans Welcome</a></li>
+                                            <li><a href="#">History</a></li>
+                                            <li><a href="#">Administrative Staff</a></li>
+                                            <li><a href="#">Departments</a></li>
+                                            <li><a href="#">Student Organizations</a></li>
+                                            <li><a href="#">Cooperation</a></li>
+                                            <li><a href="#">Employment</a></li>
+                                            <li><a href="#">Hostel</a></li>
+                                            <li><a href="#">Photo Gallery</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-top">
+                                        <a class="dropdown-top" href="/">Наука</a>
+                                        <!--<a class="dropdown-top" href="/">Research</a>-->
+                                        <ul class="dropdown-inside">
+                                            <li><a href="#">Deans Welcome</a></li>
+                                            <li><a href="#">History</a></li>
+                                            <li><a href="#">Administrative Staff</a></li>
+                                            <li><a href="#">Departments</a></li>
+                                            <li><a href="#">Student Organizations</a></li>
+                                            <li><a href="#">Cooperation</a></li>
+                                            <li><a href="#">Employment</a></li>
+                                            <li><a href="#">Hostel</a></li>
+                                            <li><a href="#">Photo Gallery</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-top">
+                                        <a class="dropdown-top" href="/">Навчання</a>
+                                        <!--<a class="dropdown-top" href="/">Study</a>-->
+                                        <ul class="dropdown-inside">
+                                            <li><a href="#">Deans Welcome</a></li>
+                                            <li><a href="#">History</a></li>
+                                            <li><a href="#">Administrative Staff</a></li>
+                                            <li><a href="#">Departments</a></li>
+                                            <li><a href="#">Student Organizations</a></li>
+                                            <li><a href="#">Cooperation</a></li>
+                                            <li><a href="#">Employment</a></li>
+                                            <li><a href="#">Hostel</a></li>
+                                            <li><a href="#">Photo Gallery</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-top">
+                                        <a class="dropdown-top" href="/">Абітуріенту</a>
+                                        <!--<a class="dropdown-top" href="/">Entrants</a>-->
+                                        <ul class="dropdown-inside">
+                                            <li><a href="#">Deans Welcome</a></li>
+                                            <li><a href="#">History</a></li>
+                                            <li><a href="#">Administrative Staff</a></li>
+                                            <li><a href="#">Departments</a></li>
+                                            <li><a href="#">Student Organizations</a></li>
+                                            <li><a href="#">Cooperation</a></li>
+                                            <li><a href="#">Employment</a></li>
+                                            <li><a href="#">Hostel</a></li>
+                                            <li><a href="#">Photo Gallery</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-top">
+                                        <a class="dropdown-top" href="/">Про факультет</a>
+                                        <!--<a class="dropdown-top" href="/">About</a>-->
+                                        <ul class="dropdown-inside">
+                                            <li><a href="#">Deans Welcome</a></li>
+                                            <li><a href="#">History</a></li>
+                                            <li><a href="#">Administrative Staff</a></li>
+                                            <li><a href="#">Departments</a></li>
+                                            <li><a href="#">Student Organizations</a></li>
+                                            <li><a href="#">Cooperation</a></li>
+                                            <li><a href="#">Employment</a></li>
+                                            <li><a href="#">Hostel</a></li>
+                                            <li><a href="#">Photo Gallery</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="social-link">
+                                <div class="link">
+                                    <a href="#"><img src="img/vk.png" alt=""></a>
                                 </div>
-                            </form>
-                        </div>
-                        <div class="link-to-other-page">
-                            <ul class="dropdown">
-                                <li class="dropdown-top">
-                                    <a class="dropdown-top" href="/">About</a>
-                                    <ul class="dropdown-inside">
-                                        <li><a href="#">Deans Welcome</a></li>
-                                        <li><a href="#">History</a></li>
-                                        <li><a href="#">Administrative Staff</a></li>
-                                        <li><a href="#">Departments</a></li>
-                                        <li><a href="#">Student Organizations</a></li>
-                                        <li><a href="#">Cooperation</a></li>
-                                        <li><a href="#">Employment</a></li>
-                                        <li><a href="#">Hostel</a></li>
-                                        <li><a href="#">Photo Gallery</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-top">
-                                    <a class="dropdown-top" href="/">About</a>
-                                    <ul class="dropdown-inside">
-                                        <li><a href="#">Deans Welcome</a></li>
-                                        <li><a href="#">History</a></li>
-                                        <li><a href="#">Administrative Staff</a></li>
-                                        <li><a href="#">Departments</a></li>
-                                        <li><a href="#">Student Organizations</a></li>
-                                        <li><a href="#">Cooperation</a></li>
-                                        <li><a href="#">Employment</a></li>
-                                        <li><a href="#">Hostel</a></li>
-                                        <li><a href="#">Photo Gallery</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-top">
-                                    <a class="dropdown-top" href="/">About</a>
-                                    <ul class="dropdown-inside">
-                                        <li><a href="#">Deans Welcome</a></li>
-                                        <li><a href="#">History</a></li>
-                                        <li><a href="#">Administrative Staff</a></li>
-                                        <li><a href="#">Departments</a></li>
-                                        <li><a href="#">Student Organizations</a></li>
-                                        <li><a href="#">Cooperation</a></li>
-                                        <li><a href="#">Employment</a></li>
-                                        <li><a href="#">Hostel</a></li>
-                                        <li><a href="#">Photo Gallery</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-top">
-                                    <a class="dropdown-top" href="/">About</a>
-                                    <ul class="dropdown-inside">
-                                        <li><a href="#">Deans Welcome</a></li>
-                                        <li><a href="#">History</a></li>
-                                        <li><a href="#">Administrative Staff</a></li>
-                                        <li><a href="#">Departments</a></li>
-                                        <li><a href="#">Student Organizations</a></li>
-                                        <li><a href="#">Cooperation</a></li>
-                                        <li><a href="#">Employment</a></li>
-                                        <li><a href="#">Hostel</a></li>
-                                        <li><a href="#">Photo Gallery</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-top">
-                                    <a class="dropdown-top" href="/">About</a>
-                                    <ul class="dropdown-inside">
-                                        <li><a href="#">Deans Welcome</a></li>
-                                        <li><a href="#">History</a></li>
-                                        <li><a href="#">Administrative Staff</a></li>
-                                        <li><a href="#">Departments</a></li>
-                                        <li><a href="#">Student Organizations</a></li>
-                                        <li><a href="#">Cooperation</a></li>
-                                        <li><a href="#">Employment</a></li>
-                                        <li><a href="#">Hostel</a></li>
-                                        <li><a href="#">Photo Gallery</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+                                <div class="link">
+                                    <a href="#"><img src="img/f.png" alt=""></a>
+                                </div>
+                                <div class="link">
+                                    <a href="#"><img src="img/tw.png" alt=""></a>
+                                </div>
+                                <div class="link">
+                                    <a href="#"><img src="img/video.png" alt=""></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<script src="js/jquery-2.0.0.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
+
+    <header id="carousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1" class=""></li>
+            <li data-target="#carousel" data-slide-to="2" class=""></li>
+            <li data-target="#carousel" data-slide-to="3" class=""></li>
+            <li data-target="#carousel" data-slide-to="4" class=""></li>
+            <li data-target="#carousel" data-slide-to="5" class=""></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item next left">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/abiturient.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2 class="slider-header-1">Для абітурієнтів</h2>
+                    <h3 class="slider-header-2">Багато корисної інформації для вас.</h3>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/facultet.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2 class="slider-header-1">Про факультет</h2>
+                    <h3 class="slider-header-2">Історія.Адміністрація.Студентське життя.</h3>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/cafedru.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2 class="slider-header-1">Кафедри</h2>
+                    <h3 class="slider-header-2">9 кафедр - 132 викладача (49 професорів, 60 доцентів, 23 асистенти).</h3>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/chitalkd.png');"></div>
+                <div class="carousel-caption">
+                    <h2 class="slider-header-1">Читалка</h2>
+                    <h3 class="slider-header-2">Тепло.Тихо.Wi-Fi.</h3>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/bookshelf.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2 class="slider-header-1">Електронна бібліотека</h2>
+                    <h3 class="slider-header-2">Підручники, монографії, методички.</h3>
+                </div>
+            </div>
+            <div class="item active left">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/conference.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2 class="slider-header-1">Наукові конференції</h2>
+                    <h3 class="slider-header-2">Зручно.Цікаво.Корисно.</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control stop-carousel" href="#carousel" data-slide="prev">
+            <img class="icon-prev icon-left" src="img/Shape-left.png" alt="">
+        </a>
+        <a class="right carousel-control stop-carousel" href="#carousel" data-slide="next">
+            <img class="icon-prev icon-right" src="img/Shape-right.png" alt="">
+        </a>
+
+    </header>
+
+    <div class="content">
+
+        <div class="main">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="information-block center-block">
+                                    <h2 class="header-title">Вступ</h2>
+                                    <div class="image-entrants"></div>
+                                    <a href="" class="header-text">Інформація для абітурієнта</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="information-block center-block">
+                                    <h2 class="header-title">Розклад</h2>
+                                    <div class="image-schedule"></div>
+                                    <a href="" class="header-text">Переглянути</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="information-block center-block">
+                                    <h2 class="header-title">Веб-камера</h2>
+                                    <div class="image-webcam"></div>
+                                    <a href="" class="header-text">Онлайн трансляція</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="line">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="news">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="header-news center-block">
+                            <h2 class="header-title">Новини</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="news-block center-block">
+                            <img src="img/news.png" class="news-image" alt="">
+                            <h3 class="header-title">Талановиті студенти-кібернетики отримали сертифікати компанії IBM</h3>
+                            <span class="date">додано 20.02.2016</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="news-block center-block">
+                            <img src="img/news.png" class="news-image" alt="">
+                            <h3 class="header-title">Талановиті студенти-кібернетики отримали сертифікати компанії IBM</h3>
+                            <span class="date">додано 20.02.2016</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="news-block center-block">
+                            <img src="img/news.png" class="news-image" alt="">
+                            <h3 class="header-title">Талановиті студенти-кібернетики отримали сертифікати компанії IBM</h3>
+                            <span class="date">додано 20.02.2016</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="news-block center-block">
+                            <img src="img/news.png" class="news-image" alt="">
+                            <h3 class="header-title">Талановиті студенти-кібернетики отримали сертифікати компанії IBM</h3>
+                            <span class="date">додано 20.02.2016</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="news-block center-block">
+                            <img src="img/news.png" class="news-image" alt="">
+                            <h3 class="header-title">Талановиті студенти-кібернетики отримали сертифікати компанії IBM</h3>
+                            <span class="date">додано 20.02.2016</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="news-block center-block">
+                            <img src="img/news.png" class="news-image" alt="">
+                            <h3 class="header-title">Талановиті студенти-кібернетики отримали сертифікати компанії IBM</h3>
+                            <span class="date">додано 20.02.2016</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mini-carousel">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="slider4">
+                            <div class="slide">
+                                <h2>Online програма перевірки практичних знань</h2>
+                                <img src="img/index.png" alt="">
+
+                            </div>
+                            <div class="slide">
+                                <img src="img/logoukr.png" alt="">
+                                <h2>Online програма перевірки практичних знань</h2>
+                            </div>
+                            <div class="slide"><img src="http://placehold.it/300x150&text=FooBar3"></div>
+                            <div class="slide"><img src="http://placehold.it/300x150&text=FooBar4"></div>
+                            <div class="slide"><img src="http://placehold.it/300x150&text=FooBar5"></div>
+                            <div class="slide"><img src="http://placehold.it/300x150&text=FooBar6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/jquery-2.0.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>

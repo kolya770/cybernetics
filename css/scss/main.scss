@@ -5,7 +5,14 @@ body {
   height: 100%;
   font-size: 16px;
 }
-
+@font-face {
+  font-family: "glyphicons-halflings-regular";
+  src: url("../fonts/glyphicons-halflings-regular.woff2");
+}
+@font-face {
+  font-family: "glyphicons-halflings-regular";
+  src: url("../fonts/glyphicons-halflings-regular.woff");
+}
 @font-face {
   font-family: "FontAwesome";
   src: url("../fonts/fontawesome.woff");
@@ -28,9 +35,23 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "OpenSans-LightItalic";
+  src: url("../fonts/OpenSans-LightItalic.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("../fonts/OpenSans-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 
 
 // global fonts
+$open-sans-light: "OpenSans-Light", "sans-serif";
+$open-sans-light-italic: "OpenSans-LightItalic", "sans-serif";
 $open-sans-bold: "OpenSans-Bold", "sans-serif";
 $open-sans-semi-bold: "OpenSans-Semibold", "sans-serif";
 $open-sans-reg: "OpenSans-Regular", "sans-serif";
@@ -39,3 +60,5 @@ $global-color-blue:  #05dcb9;
 $global-color-white:  #ffffff;
 
 @import "partials/navbar";
+@import "landing/carusel";
+@import "landing/information";
