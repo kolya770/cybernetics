@@ -1,3 +1,5 @@
+@charset "UTF-8";
+.slick-loading .slick-slide,.slick-loading .slick-track{visibility:hidden}
 body,html{height:100%;font-size:16px}
 @font-face{font-family:glyphicons-halflings-regular;src:url(../fonts/glyphicons-halflings-regular.woff2)}
 @font-face{font-family:glyphicons-halflings-regular;src:url(../fonts/glyphicons-halflings-regular.woff)}
@@ -65,14 +67,16 @@ body,html{height:100%;font-size:16px}
 .nav-cybernetics .right-nav-block .link-to-other-page ul.dropdown .dropdown-inside a:hover{color:#000;text-decoration:underline}
 .nav-cybernetics .right-nav-block .social-link{margin-top:20px;float:right}
 .nav-cybernetics .right-nav-block .social-link .link{display:inline-block;margin-left:30px}
+.slick-list,.slick-slider,.slick-track{position:relative;display:block}
 .carousel .carousel-indicators{width:auto;margin-left:0;margin-right:50px;right:0;left:auto}
 .carousel .carousel-indicators li{border-radius:0;border:3px solid #05dcb9;width:38px;height:38px;margin:0}
 .carousel .carousel-indicators .active{border:3px solid #05dcb9;background-color:#05dcb9}
 .carousel .carousel-caption{left:0;right:0;bottom:50%;background-color:rgba(0,0,0,.6);height:206px;margin-bottom:-103px;padding:0}
 .carousel .carousel-caption .slider-header-1{font-family:OpenSans-Semibold,sans-serif;color:#05dcb8;font-size:4.5em;font-weight:600}
 .carousel .carousel-caption .slider-header-2{font-family:OpenSans-Regular,sans-serif;color:#05dcb8;font-size:2.25em;font-weight:400}
-.carousel .icon-left,.carousel .icon-right{width:35px;height:66px;margin-top:-33px}
-.bx-wrapper h2{max-width:100%;display:inline-block;margin-bottom:0;font-family:OpenSans-Light,sans-serif;color:#282828;font-size:1em;font-weight:300;text-align:left}
+.carousel .icon-left{width:35px;height:66px;margin-top:-33px;left:20%}
+.carousel .icon-right{width:35px;height:66px;margin-top:-33px;left:70%}
+.slider-mini{width:90%;margin-top:50px;margin-bottom:50px}
 .content{background:url(../img/bg-image.png)}
 .content .main .information-block{width:80%}
 .content .main .information-block .header-title{font-family:OpenSans-Semibold,sans-serif;color:#282828;font-size:1.875em;font-weight:600;text-align:left;transform:scaleX(1.0016);margin-bottom:30px}
@@ -87,3 +91,43 @@ body,html{height:100%;font-size:16px}
 .content .news .news-block .header-title{font-family:OpenSans-Regular,sans-serif;color:#181818;font-size:1.375em;font-weight:400;text-decoration:underline;text-align:left;margin-top:30px}
 .content .news .news-block .news-image{width:100%}
 .content .news .news-block .date{float:right;font-family:OpenSans-LightItalic,sans-serif;color:#727272;font-size:1.125em;font-style:italic;text-align:right}
+.slick-dots li button:before,.slick-next:before,.slick-prev:before{font-family:slick;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.slick-slider{box-sizing:border-box;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent}
+.slick-list{overflow:hidden;margin:0;padding:0}
+.slick-list:focus{outline:0}
+.slick-list.dragging{cursor:pointer;cursor:hand}
+.slick-slider .slick-list,.slick-slider .slick-track{-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+.slick-track{left:0;top:0}
+.slick-track:after,.slick-track:before{content:"";display:table}
+.slick-track:after{clear:both}
+.slick-slide{float:left;height:100%;min-height:1px;display:none}
+[dir=rtl] .slick-slide{float:right}
+.slick-slide img{display:block}
+.slick-slide.slick-loading img{display:none}
+.slick-slide.dragging img{pointer-events:none}
+.slick-initialized .slick-slide{display:block}
+.slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent}
+.slick-arrow.slick-hidden{display:none}
+.slick-dots,.slick-next,.slick-prev{position:absolute;display:block;padding:0}
+.slick-loading .slick-list{background:url(../img/ajax-loader.gif) center center no-repeat #fff}
+@font-face{font-family:slick;src:url(../fonts/slick.eot);src:url(../fonts/slick.eot?#iefix) format("embedded-opentype"),url(../fonts/slick.woff) format("woff"),url(../fonts/slick.ttf) format("truetype"),url(../fonts/slick.svg#slick) format("svg");font-weight:400;font-style:normal}
+.slick-next,.slick-prev{height:20px;width:20px;line-height:0;font-size:0;cursor:pointer;background:0 0;color:transparent;top:50%;-webkit-transform:translate(0,-50%);-ms-transform:translate(0,-50%);transform:translate(0,-50%);border:none;outline:0}
+.slick-next:focus,.slick-next:hover,.slick-prev:focus,.slick-prev:hover{outline:0;background:0 0;color:transparent}
+.slick-next:focus:before,.slick-next:hover:before,.slick-prev:focus:before,.slick-prev:hover:before{opacity:1}
+.slick-next.slick-disabled:before,.slick-prev.slick-disabled:before{opacity:.25}
+.slick-next:before,.slick-prev:before{font-size:20px;line-height:1;color:#fff;opacity:.75}
+.slick-prev{left:-25px}
+[dir=rtl] .slick-prev{left:auto;right:-25px}
+.slick-prev:before{content:"←"}
+.slick-next:before,[dir=rtl] .slick-prev:before{content:"→"}
+.slick-next{right:-25px}
+[dir=rtl] .slick-next{left:-25px;right:auto}
+[dir=rtl] .slick-next:before{content:"←"}
+.slick-dotted.slick-slider{margin-bottom:30px}
+.slick-dots{bottom:-25px;list-style:none;text-align:center;margin:0;width:100%}
+.slick-dots li{position:relative;display:inline-block;height:20px;width:20px;margin:0 5px;padding:0;cursor:pointer}
+.slick-dots li button{border:0;background:0 0;display:block;height:20px;width:20px;outline:0;line-height:0;font-size:0;color:transparent;padding:5px;cursor:pointer}
+.slick-dots li button:focus,.slick-dots li button:hover{outline:0}
+.slick-dots li button:focus:before,.slick-dots li button:hover:before{opacity:1}
+.slick-dots li button:before{position:absolute;top:0;left:0;content:"•";width:20px;height:20px;font-size:6px;line-height:20px;text-align:center;color:#000;opacity:.25}
+.slick-dots li.slick-active button:before{color:#000;opacity:.75}

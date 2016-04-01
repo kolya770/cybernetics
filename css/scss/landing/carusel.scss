@@ -42,21 +42,18 @@
     width: 35px;
     height: 66px;
     margin-top: -33px;
+    left: 20%;
   }
   .icon-right {
     width: 35px;
     height: 66px;
     margin-top: -33px;
+    left: 70%;
   }
 }
 
-.bx-wrapper h2 {
-  max-width: 100%;
-  display: inline-block;
-  margin-bottom: 0;
-  font-family: $open-sans-light;
-  color:  #282828;
-  font-size: 1em;
-  font-weight: 300;
-  text-align: left;
+.slider-mini {
+  width: 90%;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
