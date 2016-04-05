@@ -1,0 +1,35 @@
+.footer {
+  background-color:  rgba(0, 0, 0, 0.82);
+  height: 359px;
+  .btn-footer {
+    width: 200px;
+    margin-top: 50px;
+  }
+  .address-block {
+    width: 400px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .phone-block {
+    text-align: center;
+    width: 300px;
+    margin-top: 50px;
+  }
+  .footer-link-text {
+    font-family: $open-sans-reg;
+    color:  #ffffff;
+    font-size: 1.25em;
+    font-weight: 400;
+    text-align: center;
+    border-bottom: 1px solid #ffffff;
+    outline: none;
+    text-decoration: none;
+  }
+  .footer-text {
+    font-family: $open-sans-reg;
+    color:  #ffffff;
+    font-size: 1.25em;
+    font-weight: 400;
+    text-align: center;
+  }
+}

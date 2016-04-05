@@ -34,18 +34,23 @@ $(document).ready(function() {
         dots: false,
         infinite: true,
         speed: 300,
-        prevArrow:"<img class='a-left control-c prev slick-prev' src='img/Shape-left.png'>",
-        nextArrow:"<img class='a-right control-c next slick-next' src='img/Shape-right.png'>",
+        prevArrow:"<img class='a-left control-c prev slick-prev shape-left' src='img/Shape-left.png'>",
+        nextArrow:"<img class='a-right control-c next slick-next shape-right' src='img/Shape-right.png'>",
         slidesToShow: 3,
         slidesToScroll: 1,
         responsive: [
             {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
+                    slidesToShow: 2,
+                    slidesToScroll: 1
                 }
             },
             {
@@ -62,9 +67,7 @@ $(document).ready(function() {
                     slidesToScroll: 1
                 }
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
+
         ]
     });
 

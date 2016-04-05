@@ -1,6 +1,6 @@
 .nav-cybernetics {
   background-color:  rgba(0, 0, 0, 0.82);
-  height: 205px;
+  height: 185px;
   border-radius: 0;
   border: none;
   margin-bottom: 0;
@@ -12,11 +12,11 @@
     }
   }
   .logo-block {
-    height: 205px;
+    height: 185px;
     float: left;
     display: inline-block;
     .logo-img {
-      margin-top: 30px;
+      margin-top: 20px;
       width: 93px;
       float: left;
       .logo {
@@ -28,19 +28,19 @@
       float: left;
       max-width: 376px;
       margin-left: 10px;
-      margin-top: 72px;
       .header-title {
         font-family: $open-sans-bold;
         color:  $global-color-blue;
         font-weight: 700;
         text-align: left;
         margin-bottom: 5px;
-        margin-top: 0;
         @media #{$bootstrap-md} {
-          font-size: 1.675em;
+          font-size: 1.6em;
+          margin-top: 57px;
         }
         @media #{$bootstrap-lg} {
           font-size: 1.875em;
+          margin-top: 62px;
         }
       }
       .header-title-text {
@@ -61,15 +61,10 @@
   }
   .right-nav-block {
     float: right;
-    height: 205px;
+    height: 185px;
     .search-language-login {
       margin-top: 10px;
-      @media #{$bootstrap-md} {
-        height: 47px;
-      }
-      @media #{$bootstrap-lg} {
-        height: 50px;
-      }
+      height: 45px;
       .search-form {
         float: right;
         margin: 0;
@@ -146,8 +141,7 @@
       }
     }
     .link-to-other-page {
-      height: 50px;
-      margin-top: 20px;
+      height: 45px;
       ul.dropdown li {
         position: relative;
       }
@@ -185,7 +179,7 @@
           font-size: 1.250em;
         }
         @media #{$bootstrap-xl} {
-          padding: 0 35px;
+          padding: 0 32px;
         }
         &:hover {
           background-color: $global-color-blue;
