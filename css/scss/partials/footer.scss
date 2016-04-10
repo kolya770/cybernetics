@@ -1,29 +1,22 @@
 .footer {
-  background-color:  rgba(0, 0, 0, 0.82);
-  height: 359px;
-  .btn-footer {
-    width: 200px;
-    margin-top: 50px;
-  }
-  .address-block {
-    width: 400px;
-    text-align: center;
-    margin-top: 50px;
-  }
-  .phone-block {
-    text-align: center;
-    width: 300px;
-    margin-top: 50px;
+  min-height: 200px;
+  .main-footer-block {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color:  rgb(46,46,46);
   }
   .footer-link-text {
     font-family: $open-sans-reg;
     color:  #ffffff;
     font-size: 1.25em;
     font-weight: 400;
-    text-align: center;
-    border-bottom: 1px solid #ffffff;
+    text-align: left;
     outline: none;
     text-decoration: none;
+    display: block;
+    &:hover {
+      color: $global-color-blue;
+    }
   }
   .footer-text {
     font-family: $open-sans-reg;
@@ -31,5 +24,69 @@
     font-size: 1.25em;
     font-weight: 400;
     text-align: center;
+  }
+  .no-link {
+    text-align: center;
+    display: inline-block;
+    border-bottom: 1px solid white;
+    &:hover {
+      color: #ffffff;
+    }
+  }
+  .footer-no-link-center {
+    display: block;
+    text-align: center;
+  }
+  .footer-text-block {
+    height: 50px;
+    .image-block {
+      float: left;
+      width: 50px;
+      margin-right: 30px;
+      margin-left: 30px;
+      height: 50px;
+      display: inline-block;
+    }
+    .link-block {
+      float: left;
+      width: 50%;
+      display: inline-block;
+    }
+    .no-image {
+      width: 80%;
+    }
+    .footer-icon {
+      height: 40px;
+      margin-left: 10px;
+    }
+    .mail {
+      margin-left: 0;
+      height: 30px;
+    }
+    .link-hr {
+      margin-top: 0;
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  .copyright-block {
+    min-height: 67px;
+    background-color:  #d9dbdb;
+    .copyright-container {
+      .copyright {
+        font-family: $open-sans-reg;
+        color: #010000;
+        font-size: 1.313em;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 20px;
+      }
+      .copyright-hr {
+        width: 80%;
+        border-top: 3px solid #272828;
+        margin-top: 0;
+      }
+    }
   }
 }

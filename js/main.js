@@ -71,4 +71,54 @@ $(document).ready(function() {
         ]
     });
 
+    //Hover footer link
+    $('#link-block-1').hover(
+        function() {
+            $('#link-1').animate({width: "-=100%"},1200)
+                        .css("border-color", "#05dcb9");
+        },
+
+        function() {
+            $('#link-1').animate({width: "-=-100%"},1200)
+                        .css("border-color", "white");
+        }
+    );
+
+    $('#link-block-2').hover(
+        function() {
+            $('#link-2').animate({width: "-=100%"},1200)
+                        .css("border-color", "#05dcb9");
+        },
+
+        function() {
+            $('#link-2').animate({width: "-=-100%"},1200)
+                        .css("border-color", "white");
+        }
+    );
+
+    $('#link-block-3').hover(
+        function() {
+            $('#link-3').animate({width: "-=100%"},1200)
+                        .css("border-color", "#05dcb9");
+        },
+
+        function() {
+            $('#link-3').animate({width: "-=-100%"},1200)
+                        .css("border-color", "white");
+        }
+    );
+
+    $('#link-block-4').hover(
+        function() {
+            $('#link-4').animate({width: "-=100%"},1200)
+                        .css("border-color", "#05dcb9");
+        },
+
+        function() {
+            $('#link-4').animate({width: "-=-100%"},1200)
+                        .css("border-color", "white");
+        }
+    );
+
+
 });
