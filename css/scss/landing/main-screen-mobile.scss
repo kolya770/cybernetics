@@ -1,0 +1,34 @@
+.mobile-first-screen {
+  height: 100vh;
+  background: url("../img/m-first-p.jpg") center center no-repeat;
+  background-size: cover;
+  .mobile-logo {
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    .m-image-logo {
+      width: 40px;
+    }
+  }
+  .header-logo-text {
+    margin-top: 35vh;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0,0,0,.6);
+    .header-title {
+      font-family: $open-sans-bold;
+      color:  $global-color-blue;
+      font-weight: 700;
+      text-align: center;
+      font-size: 1.4em;
+    }
+    .header-title-text {
+      font-family: $open-sans-reg;
+      color: $global-color-blue;
+      font-size: 0.95em;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+}

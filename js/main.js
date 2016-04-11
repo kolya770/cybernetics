@@ -18,18 +18,7 @@ $(document).ready(function() {
         input_search.addClass('active-input');
     });
 
-    // Carousel main
-
-    $('#carousel').carousel({
-        interval: 3000,
-        pause: "false"
-    });
-
-    $('.stop-carousel').on('click', function() {
-        $('#carousel').carousel('pause');
-    });
-
-    // Carousel mini
+    //Slider-mini
     $('.slider-mini').slick({
         dots: false,
         infinite: true,

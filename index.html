@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-default navbar-fixed-top nav-cybernetics">
+    <nav class="navbar navbar-default navbar-fixed-top nav-cybernetics hidden-sm hidden-xs">
         <div class="container-fluid">
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <div class="row">
@@ -143,7 +143,7 @@
     </nav>
 
 
-    <header id="carousel" class="carousel slide">
+    <header id="carousel" class="carousel slide hidden-xs">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -214,6 +214,16 @@
             <img class="icon-prev icon-right" src="img/Shape-right.png" alt="">
         </a>
 
+    </header>
+
+    <header class="mobile-first-screen visible-xs">
+        <div class="mobile-logo">
+            <img src="img/logo.png" class="m-image-logo" alt="">
+        </div>
+        <div class="header-logo-text">
+            <h2 class="header-title">Факультет кібернетики</h2>
+            <h3 class="header-title-text">Київського національного університету імені Тараса Шевченка</h3>
+        </div>
     </header>
 
     <div class="main">
@@ -355,10 +365,10 @@
         <div class="main-footer-block">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-3">
+                    <div class="col-sm-4 col-md-3">
                         <div class="btn-footer center-block">
                             <div class="footer-text-block">
-                                <div class="image-block">
+                                <div class="image-block hidden-xs">
                                     <img src="img/map.png" class="footer-icon" alt="">
                                 </div>
                                 <div id="link-block-1" class="link-block">
@@ -367,7 +377,7 @@
                                 </div>
                             </div>
                             <div class="footer-text-block">
-                                <div class="image-block">
+                                <div class="image-block hidden-xs">
                                     <img src="img/mail.png" class="footer-icon mail" alt="">
                                 </div>
                                 <div id="link-block-2" class="link-block">
@@ -393,7 +403,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-3 col-md-4">
                         <div class="address-block center-block">
                             <div class="footer-no-link-center">
                                 <p class="footer-link-text no-link">Адреса</p>
@@ -434,6 +444,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/mobile-detect.min.js"></script>
     <script src="js/jquery.fadethis.js"></script>
+    <script src="js/slider-desktop.js"></script>
     <script src="js/Fade.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/main.js"></script>

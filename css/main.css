@@ -75,10 +75,10 @@ body,html{height:100%;font-size:16px;background-color:#adaeaf}
 .slider-mini{width:90%;margin-top:50px;margin-bottom:50px}
 .slider-mini .slick-slide{height:80px}
 .slider-mini .carousel-image{display:inline-block;float:left;margin-left:2px;height:80px;margin-right:20px}
-.slider-mini .carousel-text{font-family:OpenSans-Light,sans-serif;color:#282828;font-weight:300;text-align:left;display:inline-block;float:left;margin-bottom:0}
 @media (min-width:992px){.slider-mini .carousel-image{margin-left:50px}
 .slider-mini .carousel-text{width:57%;margin-top:8px;font-size:1.3em}
 }
+.slider-mini .carousel-text{font-family:OpenSans-Light,sans-serif;color:#282828;font-weight:300;text-align:left;display:inline-block;float:left;margin-bottom:0}
 @media (min-width:1200px){.slider-mini .carousel-image{margin-left:2px}
 .slider-mini .carousel-text{width:60%;margin-top:8px;font-size:1.3em}
 }
@@ -156,23 +156,40 @@ body,html{height:100%;font-size:16px;background-color:#adaeaf}
 .slick-dots li button:focus,.slick-dots li button:hover{outline:0}
 .slick-dots li button:focus:before,.slick-dots li button:hover:before{opacity:1}
 .slick-dots li button:before{position:absolute;top:0;left:0;content:"•";width:20px;height:20px;font-size:6px;line-height:20px;text-align:center;color:#000;opacity:.25}
-.footer .footer-link-text,.footer .footer-text{font-size:1.25em;font-family:OpenSans-Regular,sans-serif;font-weight:400}
+.footer .copyright-block .copyright-container .copyright,.footer .footer-link-text,.footer .footer-text{font-family:OpenSans-Regular,sans-serif;font-weight:400}
 .slick-dots li.slick-active button:before{color:#000;opacity:.75}
 .footer{min-height:200px}
 .footer .main-footer-block{padding-top:40px;padding-bottom:20px;background-color:#2e2e2e}
 .footer .footer-link-text{color:#fff;text-align:left;outline:0;text-decoration:none;display:block}
+@media (min-width:768px){.footer .footer-link-text{font-size:1.1em}
+.footer .footer-text-block .image-block{margin-right:15px;margin-left:10px}
+}
+@media (min-width:1200px){.footer .footer-link-text{font-size:1.25em}
+}
 .footer .footer-link-text:hover{color:#05dcb9}
 .footer .footer-text{color:#fff;text-align:center}
 .footer .no-link{text-align:center;display:inline-block;border-bottom:1px solid #fff}
 .footer .no-link:hover{color:#fff}
 .footer .footer-no-link-center{display:block;text-align:center}
 .footer .footer-text-block{height:50px}
-.footer .footer-text-block .image-block{float:left;width:50px;margin-right:30px;margin-left:30px;height:50px;display:inline-block}
+.footer .footer-text-block .image-block{float:left;width:50px;height:50px;display:inline-block}
+@media (min-width:992px){.footer .footer-text{font-size:1.1em}
+.footer .footer-text-block .image-block{margin-right:15px;margin-left:20px}
+}
+@media (min-width:1200px){.footer .footer-text{font-size:1.25em}
+.footer .footer-text-block .image-block{margin-right:30px;margin-left:30px}
+}
 .footer .footer-text-block .link-block{float:left;width:50%;display:inline-block}
 .footer .footer-text-block .no-image{width:80%}
 .footer .footer-text-block .footer-icon{height:40px;margin-left:10px}
 .footer .footer-text-block .mail{margin-left:0;height:30px}
 .footer .footer-text-block .link-hr{margin-top:0;width:100%;margin-left:0}
 .footer .copyright-block{min-height:67px;background-color:#d9dbdb}
-.footer .copyright-block .copyright-container .copyright{font-family:OpenSans-Regular,sans-serif;color:#010000;font-size:1.313em;font-weight:400;text-align:center;margin-bottom:0;margin-top:20px}
+.footer .copyright-block .copyright-container .copyright{color:#010000;font-size:1.313em;text-align:center;margin-bottom:0;margin-top:20px}
 .footer .copyright-block .copyright-container .copyright-hr{width:80%;border-top:3px solid #272828;margin-top:0}
+.mobile-first-screen{height:100vh;background:url(../img/m-first-p.jpg) center center no-repeat;background-size:cover}
+.mobile-first-screen .mobile-logo{display:inline-block;position:absolute;left:20px;top:20px}
+.mobile-first-screen .mobile-logo .m-image-logo{width:40px}
+.mobile-first-screen .header-logo-text{margin-top:35vh;position:absolute;width:100%;background-color:rgba(0,0,0,.6)}
+.mobile-first-screen .header-logo-text .header-title{font-family:OpenSans-Bold,sans-serif;color:#05dcb9;font-weight:700;text-align:center;font-size:1.4em}
+.mobile-first-screen .header-logo-text .header-title-text{font-family:OpenSans-Regular,sans-serif;color:#05dcb9;font-size:.95em;font-weight:400;text-align:center}
