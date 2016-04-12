@@ -32,7 +32,7 @@
       transition: 1s;
     }
     .header-text:hover:after {
-      width: 0%;
+      width: 0;
     }
     .image-entrants {
       background: url("../img/vstyp.jpg") 50% 50% no-repeat;
@@ -40,7 +40,7 @@
       height: 250px;
       margin-bottom: 30px;
       border: 5px solid $global-color-white;
-      box-shadow: 0 0px 10px #353434;
+      box-shadow: 0 0 10px #353434;
     }
     .image-schedule {
       background: url("../img/abitur.jpg") 50% 50% no-repeat;
@@ -48,7 +48,7 @@
       height: 250px;
       margin-bottom: 30px;
       border: 5px solid $global-color-white;
-      box-shadow: 0 0px 10px #353434;
+      box-shadow: 0 0 10px #353434;
     }
     .image-webcam {
       background: url("../img/webka.png") 50% 50% no-repeat;
@@ -56,7 +56,7 @@
       height: 250px;
       margin-bottom: 30px;
       border: 5px solid $global-color-white;
-      box-shadow: 0 0px 10px #353434;
+      box-shadow: 0 0 10px #353434;
     }
   }
 }
@@ -95,7 +95,7 @@
         margin-top: 30px;
       }
       .image-block {
-        box-shadow: 0 0px 10px #000000;
+        box-shadow: 0 0 10px #000000;
         border: 5px solid #adaeaf;
         .news-image {
           width: 100%;
