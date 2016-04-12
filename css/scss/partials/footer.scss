@@ -4,16 +4,19 @@
     padding-top: 40px;
     padding-bottom: 20px;
     background-color:  rgb(46,46,46);
+    @media #{$bootstrap-xs} {
+      padding-top: 20px;
+    }
   }
   .footer-link-text {
     font-family: $open-sans-reg;
     color:  #ffffff;
-    //font-size: 1.25em;
     font-weight: 400;
     text-align: left;
     outline: none;
     text-decoration: none;
     display: block;
+    position: relative;
     @media #{$bootstrap-sm} {
       font-size: 1.1em;
     }
@@ -24,6 +27,7 @@
       color: $global-color-blue;
     }
   }
+
   .footer-text {
     font-family: $open-sans-reg;
     color:  #ffffff;
@@ -50,6 +54,10 @@
   }
   .footer-text-block {
     height: 50px;
+    @media #{$bootstrap-xs} {
+      height: 35px;
+      margin-left: 8px;
+    }
     .image-block {
       float: left;
       width: 50px;
@@ -72,9 +80,15 @@
       float: left;
       width: 50%;
       display: inline-block;
+      @media #{$bootstrap-xs} {
+        width: 110px;
+      }
     }
     .no-image {
       width: 80%;
+      @media #{$bootstrap-xs} {
+        width: 110px;
+      }
     }
     .footer-icon {
       height: 40px;
@@ -84,16 +98,19 @@
       margin-left: 0;
       height: 30px;
     }
-    .link-hr {
-      margin-top: 0;
-      width: 100%;
-      margin-left: 0;
-    }
   }
   .copyright-block {
     min-height: 67px;
-    background-color:  #d9dbdb;
+    background-color:  #adaeaf;
     .copyright-container {
+      text-align: center;
+      margin-bottom: 20px;
+      .cp-icon {
+        margin-right: 30px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
       .copyright {
         font-family: $open-sans-reg;
         color: #010000;
@@ -102,12 +119,47 @@
         text-align: center;
         margin-bottom: 0;
         margin-top: 20px;
+        @media #{$bootstrap-xs} {
+          font-size: 1em;
+        }
       }
       .copyright-hr {
         width: 80%;
         border-top: 3px solid #272828;
         margin-top: 0;
+        @media #{$bootstrap-xs} {
+          width: 100%;
+        }
       }
+    }
+  }
+  @media #{$bootstrap-xs} {
+    .animate-hr:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      border-bottom: 1px solid white;
+    }
+    .address-block {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  @media #{$bootstrap-sm} {
+    .animate-hr:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      border-bottom: 1px solid white;
+      transition: 1s;
+    }
+    .animate-hr:hover:after {
+      width: 0%;
+      border-color: $global-color-blue;
     }
   }
 }
