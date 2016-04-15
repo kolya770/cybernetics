@@ -17,16 +17,4 @@ $(document).ready(function() {
 
     }
 
-    if ( md.tablet() ) {
-
-        $('#carousel').carousel({
-            interval: 3000,
-            pause: "false"
-        });
-
-        $('.stop-carousel').on('click', function() {
-            $('#carousel').carousel('pause');
-        });
-    }
-
 });

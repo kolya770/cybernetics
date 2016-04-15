@@ -10,4 +10,11 @@ $(document).ready(function() {
 
     }
 
+    if ( md.tablet() ) {
+
+        $('.fade-bottom').fadeThis({
+            speed: 1000
+        });
+    }
+
 });
