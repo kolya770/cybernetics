@@ -235,10 +235,11 @@ body,html{height:100%;font-size:16px;background-color:#adaeaf}
 #container{background:0 0;padding:20px;z-index:1;position:absolute;right:0}
 .menu-block{background-color:#485252;margin-left:20px;margin-right:20px;padding-top:10px;padding-bottom:20px}
 .menu-block .btn-menu-mobile{background-color:#272828;box-shadow:1px 3px 5px 0 rgba(0,0,0,.35);border-radius:0;outline:0;border:none;width:100%;margin-top:10px}
-.menu-btn{border-radius:5px;border:2px solid #fff;background-color:rgba(60,170,210,0);box-shadow:1px 3px 1px 0 rgba(0,0,0,.2);width:38px;height:40px;padding:1px 6px 0;cursor:pointer;outline:0}
+.menu-btn{border-radius:0;border:2px solid #fff;background-color:rgba(60,170,210,0);box-shadow:1px 3px 1px 0 rgba(0,0,0,.2);width:40px;height:40px;padding:1px 7px 0;cursor:pointer;outline:0}
 .menu-btn .menu-text{font-size:.6em;margin-top:-2px;margin-left:-3px;display:block;text-transform:uppercase}
 .close-block{height:70px}
-.close-block .close-btn{margin-top:20px;margin-right:20px;float:right}
+.close-block .close-btn{margin-right:20px;float:right;border:none;padding:0;width:30px;height:30px;margin-top:25px}
+.close-block .close-btn img{width:30px;height:30px}
 .menu-btn:hover{background:0 0;color:#fff}
 .pushy{position:fixed;width:250px;height:100%;top:0;right:0;z-index:9999;background:#202020;font-size:.9em;font-weight:700;-webkit-box-shadow:inset -10px 0 6px -9px rgba(0,0,0,.7);-moz-box-shadow:inset -10px 0 6px -9px rgba(0,0,0,.7);box-shadow:inset -10px 0 6px -9px rgba(0,0,0,.7);overflow:auto;-webkit-overflow-scrolling:touch}
 .pushy a{display:block;padding:0 20px;text-decoration:none;text-align:right}

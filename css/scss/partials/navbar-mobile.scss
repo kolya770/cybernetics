@@ -22,13 +22,13 @@
   }
 }
 .menu-btn {
-  border-radius: 5px;
+  border-radius: 0;
   border: 2px solid #ffffff;
   background-color: rgba(60, 170, 210, 0);
   box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.2);
-  width: 38px;
+  width: 40px;
   height: 40px;
-  padding: 1px 6px 0 6px;
+  padding: 1px 7px 0 7px;
   cursor: pointer;
   color: #ffffff;
   outline: none;
@@ -46,6 +46,15 @@
     margin-top: 20px;
     margin-right: 20px;
     float: right;
+    border: none;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    margin-top: 25px;
+    img {
+      width: 30px;
+      height: 30px;
+    }
   }
 }
 
