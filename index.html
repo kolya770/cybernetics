@@ -10,6 +10,35 @@
 </head>
 <body>
 
+<div class="modal fade loginModal" id="loginModal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-button" data-dismiss="modal"><img src="img/close-modal.png" alt=""></button>
+            </div>
+            <div class="modal-body">
+                <div class="block-input">
+                    <label for="login-name" class="log-in">Логін:</label>
+                    <input id="login-name" type="text" class="login">
+                </div>
+                <div class="block-input">
+                    <label for="password">Пароль:</label>
+                    <input id="password" type="text" class="password">
+                </div>
+                <p class="error-message">Введен не верный логин или пароль</p>
+            </div>
+            <div class="modal-footer">
+                <button id="login" class="btn btn-enter">Увійти</button>
+
+                <div class="check-btn">
+                    <input id="box2" type="checkbox" class="with-font" />
+                    <label for="box2" class="check-text">Запам’ятати мене</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <nav class="navbar navbar-default navbar-fixed-top nav-cybernetics hidden-sm hidden-xs">
     <div class="container-fluid">
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -28,7 +57,7 @@
                     </div>
                     <div class="right-nav-block">
                         <div class="search-language-login">
-                            <a href="#" class="sll-text">Login</a>
+                            <a href="#" class="sll-text" data-toggle="modal" data-target="#loginModal">Login</a>
                             <a href="#" class="sll-text">En</a>
                             <a href="#" class="sll-text">Ukr</a>
                             <form class="navbar-form search-form" role="search">
@@ -127,6 +156,18 @@
 <nav class="pushy pushy-left visible-xs-block visible-sm-block">
     <div class="close-block">
         <button class="menu-btn close-btn"><img src="img/close-btn.png" alt=""></button>
+        <a href="#" class="sll-text-mobile">En</a>
+        <a href="#" class="sll-text-mobile">Ukr</a>
+    </div>
+    <div class="search-block">
+        <form class="navbar-form search-form" role="search">
+            <div class="input-group">
+                <input type="text" class="form-control input-search" placeholder="Search for...">
+                <span class="input-group-btn">
+                    <button id="search-mobile" class="btn btn-default btn-search btn-src-mobile" type="button"><i class="fa fa-search icon-search"></i></button>
+                </span>
+            </div>
+        </form>
     </div>
     <div class="menu-block">
         <a href=""><button class="btn btn-menu-mobile">Про факультет</button></a>
@@ -144,8 +185,7 @@
         <span class="menu-text">menu</span></div>
 </div>
 
-
-<header id="carousel" class="carousel slide hidden-xs hidden-sm">
+<header id="carousel" class="carousel slide hidden-xs">
     <!-- Indicators -->
     <ol class="carousel-indicators">
         <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -218,7 +258,7 @@
 
 </header>
 
-<header class="mobile-first-screen visible-xs visible-sm">
+<header class="mobile-first-screen visible-xs">
     <div class="header-logo-text">
         <img src="img/logo.png" class="m-image-logo" alt="">
         <h2 class="header-title">Факультет кібернетики</h2>
@@ -284,7 +324,7 @@
                         <div class="image-block">
                             <img src="img/news.png" class="news-image" alt="">
                         </div>
-                        <h3 class="header-title">Талановиті студенти-кібернетики отримали сертифікати компанії IBM</h3>
+                        <h3 class="header-title">Талановиті студенти-кібернетики отримали сертифікати компанії IBM asdjkljkldas asd ad asd asd asd</h3>
                         <p class="date">додано 20.02.2016</p>
                     </div>
                 </div>
@@ -464,8 +504,7 @@
 <script src="js/mobile-detect.min.js"></script>
 <script src="js/jquery.fadethis.js"></script>
 <script src="js/pushy.min.js"></script>
-<script src="js/slider-desktop.js"></script>
-<script src="js/Fade.js"></script>
+<script src="js/jq-desktop-tablet.js"></script>
 <script src="js/slick.js"></script>
 <script src="js/main.js"></script>
 

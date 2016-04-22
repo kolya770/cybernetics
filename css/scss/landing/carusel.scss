@@ -45,20 +45,57 @@
     right: 0;
     bottom: 50%;
     background-color:  rgba(0, 0, 0, 0.6);
-    height: 206px;
-    margin-bottom: -103px;
     padding: 0;
+    @media #{$bootstrap-sm} {
+      height: 130px;
+      margin-bottom: -65px;
+    }
+    @media #{$bootstrap-md} {
+      height: 150px;
+      margin-bottom: -75px;
+    }
+    @media #{$bootstrap-lg} {
+      height: 170px;
+      margin-bottom: -85px;
+    }
+    @media #{$bootstrap-xl} {
+      height: 206px;
+      margin-bottom: -103px;
+    }
     .slider-header-1 {
       font-family: $open-sans-semi-bold;
       color:  #05dcb8;
-      font-size: 4.500em;
       font-weight: 600;
+      @media #{$bootstrap-sm} {
+        font-size: 3em
+      }
+      @media #{$bootstrap-md} {
+        font-size: 3.5em
+      }
+      @media #{$bootstrap-lg} {
+        font-size: 4em;
+      }
+      @media #{$bootstrap-xl} {
+        font-size: 4.500em;
+      }
     }
     .slider-header-2 {
       font-family: $open-sans-reg;
       color:  #05dcb8;
       font-size: 2.250em;
       font-weight: 400;
+      @media #{$bootstrap-sm} {
+        font-size: 1.2em;
+      }
+      @media #{$bootstrap-md} {
+        font-size: 1.6em;
+      }
+      @media #{$bootstrap-lg} {
+        font-size: 1.9em;
+      }
+      @media #{$bootstrap-xl} {
+        font-size: 2.250em;
+      }
     }
   }
   .icon-left {

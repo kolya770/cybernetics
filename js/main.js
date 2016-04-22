@@ -18,6 +18,25 @@ $(document).ready(function() {
         input_search.addClass('active-input');
     });
 
+    //Search mobile btn
+
+    $('#search-mobile').on('click', function() {
+
+        var btn_search = $('.btn-search');
+        var input_search = $('.input-search');
+
+        if ( btn_search.hasClass('active-btn') &&  input_search.hasClass('active-input') ) {
+
+            btn_search.removeClass('active-btn');
+            input_search.removeClass('active-input');
+
+            return true;
+        }
+
+        btn_search.addClass('active-btn');
+        input_search.addClass('active-input');
+    });
+
     //Slider-mini
     $('.slider-mini').slick({
         dots: false,
@@ -54,4 +73,25 @@ $(document).ready(function() {
         ]
     });
 
+    //Fix popup
+    var modal = $('.modal');
+
+    modal.on('show.bs.modal', function () {
+        if ($(document).height() > $(window).height()) {
+            // no-scroll
+            $('body').addClass("modal-open-noscroll");
+        }
+        else {
+            $('body').removeClass("modal-open-noscroll");
+        }
+    });
+
+    modal.on('hide.bs.modal', function () {
+        $('body').removeClass("modal-open-noscroll");
+    });
+
+    //Error modal authorize
+    $('#login').on('click', function(){
+        $('.error-message').fadeIn('slow');
+    });
 });
