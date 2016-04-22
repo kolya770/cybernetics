@@ -70,6 +70,15 @@ $open-sans-reg: "OpenSans-Regular", "sans-serif";
 $global-color-blue:  #05dcb9;
 $global-color-white:  #ffffff;
 
+//fix popup
+body.modal-open-noscroll {
+  margin-right: 0!important;
+  overflow: hidden;
+}
+.modal-open-noscroll .navbar-fixed-top, .modal-open .navbar-fixed-bottom {
+  margin-right: 0!important;
+}
+
 @import "partials/navbar";
 @import "landing/carusel";
 @import "landing/information";
@@ -78,3 +87,5 @@ $global-color-white:  #ffffff;
 @import "partials/footer";
 @import "landing/main-screen-mobile";
 @import "partials/navbar-mobile";
+@import "landing/popup";
+@import "partials/new";

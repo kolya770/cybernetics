@@ -1,9 +1,9 @@
 #container {
   background: transparent;
   padding: 20px;
-  z-index: 1;
   position: absolute;
   right: 0;
+  z-index: 99999;
 }
 .menu-block {
   background-color:  #485252;
@@ -13,12 +13,15 @@
   padding-bottom: 20px;
   .btn-menu-mobile {
     background-color: #272828;
-    box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 1px 3px 5px 0 rgba(0, 0, 0, 0.35);
     border-radius: 0;
     outline: none;
     border: none;
     width: 100%;
     margin-top: 10px;
+    font-family: $open-sans-bold;
+    font-size: 1em;
+    font-weight: 700;
   }
 }
 .menu-btn {
@@ -34,8 +37,8 @@
   outline: none;
   .menu-text {
     font-size: .6em;
-    margin-top: -2px;
-    margin-left: -3px;
+    margin-top: -1px;
+    margin-left: -3.3px;
     display: block;
     text-transform: uppercase;
   }
@@ -43,7 +46,6 @@
 .close-block {
   height: 70px;
   .close-btn {
-    margin-top: 20px;
     margin-right: 20px;
     float: right;
     border: none;
@@ -54,6 +56,33 @@
     img {
       width: 30px;
       height: 30px;
+    }
+  }
+  .sll-text-mobile {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 0;
+    float: right;
+    margin-right: 20px;
+
+  }
+}
+
+.search-block {
+
+  margin-bottom: 10px;
+  .btn-src-mobile {
+    float: right;
+  }
+  .search-form {
+    box-shadow: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    float: none;
+    @media #{$bootstrap-sm} {
+      .input-group-btn {
+        width: 1%;
+      }
     }
   }
 }
@@ -177,3 +206,4 @@
     font-size: 1.0em;
   }
 }
+
