@@ -4,6 +4,10 @@
   border-radius: 0;
   border: none;
   margin-bottom: 0;
+  transition: 0.5s;
+  opacity: 0;
+  width: 100%;
+  position: fixed;
 
   @media #{$bootstrap-lg} {
     .no-padding {
@@ -21,7 +25,8 @@
       float: left;
       .logo {
         width: 93px;
-        height: 145px;
+        transition: 0.5s;
+        //height: 145px;
       }
     }
     .logo-header {
@@ -34,6 +39,7 @@
         font-weight: 700;
         text-align: left;
         margin-bottom: 5px;
+        transition: 0.5s;
         @media #{$bootstrap-md} {
           font-size: 1.6em;
           margin-top: 57px;
@@ -44,6 +50,7 @@
         }
       }
       .header-title-text {
+        transition: 0.5s;
         font-family: $open-sans-reg;
         color:  $global-color-blue;
         font-size:  0.750em;
@@ -315,5 +322,44 @@
   text-decoration: none;
   &:hover {
     color: $global-color-blue;
+  }
+}
+
+.headhesive {
+  position: fixed;
+  opacity: 1;
+  transition: 0.5s;
+  z-index: 1500;
+  width: 100%;
+}
+
+.headhesive--stick {
+  height: 70px;
+  transition: 0.5s;
+  .search-language-login {
+    display: none;
+  }
+  .social-link {
+    display: none;
+  }
+
+  .right-nav-block {
+    height: 50px;
+  }
+  .logo-block {
+    height: 50px;
+    .logo-img {
+      width: 30px;
+      margin-top: 10px;
+      .logo {
+        width: 30px;
+      }
+    }
+    .logo-header {
+      .header-title {
+        margin-top: 15px;
+        font-size: 1em;
+      }
+    }
   }
 }

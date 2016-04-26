@@ -1,8 +1,14 @@
 $(document).ready(function() {
 
+    //Navbar animation
+    var options = {
+        offset: 200
+    };
+
+    new Headhesive('.nav-cybernetics', options);
+
     // Search button
     $('#search').on('click', function() {
-
         var btn_search = $('.btn-search');
         var input_search = $('.input-search');
 
@@ -94,4 +100,5 @@ $(document).ready(function() {
     $('#login').on('click', function(){
         $('.error-message').fadeIn('slow');
     });
+
 });

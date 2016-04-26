@@ -9,12 +9,12 @@ body,html{height:100%;font-size:16px;background-color:#adaeaf}
 @font-face{font-family:OpenSans-LightItalic;src:url(../fonts/OpenSans-LightItalic.eot);src:url(../fonts/OpenSans-LightItalic.eot#iefix) format("embedded-opentype"),url(../fonts/OpenSans-LightItalic.woff) format("woff"),url(../fonts/OpenSans-LightItalic.ttf) format("truetype"),url(../fonts/OpenSans-LightItalic.svg#OpenSans-LightItalic) format("svg");font-weight:400;font-style:normal}
 @font-face{font-family:OpenSans-Light;src:url(../fonts/OpenSans-Light.eot);src:url(../fonts/OpenSans-Light.eot#iefix) format("embedded-opentype"),url(../fonts/OpenSans-Light.woff) format("woff"),url(../fonts/OpenSans-Light.ttf) format("truetype"),url(../fonts/OpenSans-Light.svg#OpenSans-Light) format("svg");font-weight:400;font-style:normal}
 body.modal-open-noscroll{overflow:hidden}
-.nav-cybernetics{background-color:rgba(0,0,0,.82);height:185px;border-radius:0;border:none;margin-bottom:0}
+.nav-cybernetics{background-color:rgba(0,0,0,.82);height:185px;border-radius:0;border:none;margin-bottom:0;transition:.5s;opacity:0;width:100%;position:fixed}
 .nav-cybernetics .logo-block{height:185px;float:left;display:inline-block}
 .nav-cybernetics .logo-block .logo-img{margin-top:20px;width:93px;float:left}
-.nav-cybernetics .logo-block .logo-img .logo{width:93px;height:145px}
+.nav-cybernetics .logo-block .logo-img .logo{width:93px;transition:.5s}
 .nav-cybernetics .logo-block .logo-header{float:left;max-width:376px;margin-left:10px}
-.nav-cybernetics .logo-block .logo-header .header-title{font-family:OpenSans-Bold,sans-serif;color:#05dcb9;font-weight:700;text-align:left;margin-bottom:5px}
+.nav-cybernetics .logo-block .logo-header .header-title{font-family:OpenSans-Bold,sans-serif;color:#05dcb9;font-weight:700;text-align:left;margin-bottom:5px;transition:.5s}
 @media (min-width:992px){.nav-cybernetics .logo-block .logo-header .header-title{font-size:1.6em;margin-top:57px}
 .nav-cybernetics .logo-block .logo-header .header-title-text{max-width:255px}
 }
@@ -22,7 +22,7 @@ body.modal-open-noscroll{overflow:hidden}
 .nav-cybernetics .logo-block .logo-header .header-title{font-size:1.875em;margin-top:62px}
 .nav-cybernetics .logo-block .logo-header .header-title-text{max-width:376px}
 }
-.nav-cybernetics .logo-block .logo-header .header-title-text{font-family:OpenSans-Regular,sans-serif;color:#05dcb9;font-size:.75em;font-weight:400;text-align:left;margin-top:0}
+.nav-cybernetics .logo-block .logo-header .header-title-text{transition:.5s;font-family:OpenSans-Regular,sans-serif;color:#05dcb9;font-size:.75em;font-weight:400;text-align:left;margin-top:0}
 .nav-cybernetics .right-nav-block{float:right;height:185px}
 .nav-cybernetics .right-nav-block .search-language-login{margin-top:10px;height:45px}
 .nav-cybernetics .right-nav-block .search-language-login .search-form{float:right;margin:0;padding:0;border:none}
@@ -73,7 +73,6 @@ body.modal-open-noscroll{overflow:hidden}
 .search-form .input-search{display:none;border-radius:0;border-bottom:1px solid #fff;border-top:0;border-right:0;border-left:0;font-family:OpenSans-Regular,sans-serif;font-size:1.125em}
 .search-form .active-input{display:block}
 .search-form .btn-search{border:none;border-radius:0;margin-left:10px;width:44px;padding:0}
-.active,.carousel,.carousel-inner,.fill,.item{height:100%}
 .search-form .btn-search:hover{color:#05dcb9}
 .search-form .active-btn:hover,.sll-text{color:#fff}
 .search-form .btn-search:focus:active{background-color:#05dcb9;color:#fff;outline:0}
@@ -81,6 +80,14 @@ body.modal-open-noscroll{overflow:hidden}
 .search-form .active-btn{background-color:#05dcb9;outline:0}
 .sll-text{float:right;margin-top:10px;font-size:1.125em;margin-left:10px;letter-spacing:1px;outline:0;text-decoration:none}
 .sll-text:hover{color:#05dcb9}
+.headhesive{position:fixed;opacity:1;transition:.5s;z-index:1500;width:100%}
+.headhesive--stick{height:70px;transition:.5s}
+.headhesive--stick .search-language-login,.headhesive--stick .social-link{display:none}
+.headhesive--stick .logo-block,.headhesive--stick .right-nav-block{height:50px}
+.active,.carousel,.carousel-inner,.fill,.item{height:100%}
+.headhesive--stick .logo-block .logo-img{width:30px;margin-top:10px}
+.headhesive--stick .logo-block .logo-img .logo{width:30px}
+.headhesive--stick .logo-block .logo-header .header-title{margin-top:15px;font-size:1em}
 .fill{width:100%;background-position:center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;-o-background-size:cover}
 .carousel .stop-carousel{z-index:11}
 .carousel .carousel-indicators{width:auto;margin-left:0;margin-right:50px;right:0;left:auto}
