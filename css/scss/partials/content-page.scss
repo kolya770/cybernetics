@@ -1,0 +1,148 @@
+
+  .information {
+    margin: 0 80px;
+    .header-text {
+      font-family: $open-sans-reg;
+      color:  rgba(0, 0, 0, 0.82);
+      font-weight: 400;
+      text-align: center;
+      border-bottom: 2px solid black;
+      max-width: 600px;
+      margin-bottom: 40px;
+      margin-top: 15px;
+      @media #{$bootstrap-xs} {
+        font-size: 1.5em;
+      }
+      @media #{$bootstrap-sm} {
+        font-size: 2.3em;
+      }
+      @media #{$bootstrap-md} {
+        font-size: 3em;
+        line-height: 75px;
+      }
+    }
+    .text-with-information {
+      font-family: $open-sans-reg;
+      color:  rgba(0, 0, 0, 0.82);
+      font-size: 1em;
+      font-weight: 400;
+      text-align: left;
+      transform: scaleX(1.0317);
+      margin-bottom: 0;
+    }
+    .image-information {
+      border: 6px solid $global-color-white;
+      box-shadow: 0 0 10px #353434;
+      float: left;
+      margin-right: 30px;
+    }
+  }
+
+.main-content-block {
+  margin-top: 50px;
+  width: calc( 100% - 300px);
+  display: inline-block;
+  float: left;
+  position: absolute;
+}
+
+.size-left-line {
+  width: 300px;
+}
+.bot-lane {
+  width: 100%;
+  height: 30px;
+  background-color: $global-color-grey;
+  float: left;
+}
+
+.dop-menu-block {
+  background-color: $global-color-grey;
+  width: 270px;
+  margin: 15px 0;
+  float: left;
+  position: relative;
+  top: 0;
+  &:after {
+    display: block;
+    content: "";
+    width: 15px;
+    height: 100%;
+    background: $global-color-grey;
+    position: absolute;
+    left: 285px;
+    top: 0;
+  }
+}
+.line-grey {
+  width: 300px;
+  height: 50px;
+  float: left;
+  background-color: $global-color-grey;
+  .btn-side-bar {
+    border-radius: 0;
+    padding: 0 10px 0 0;
+    outline: none;
+    border: 2px solid $global-color-white;
+    background: transparent;
+    font-family: $open-sans-reg;
+    font-size: 1em;
+    line-height: 34px;
+    height: 35px;
+    float: right;
+    margin-top: 7.5px;
+    margin-right: 16px;
+    .caret-my {
+      font-size: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 6px;
+    }
+  }
+}
+
+.dop-block {
+  width: 300px;
+  left: 0;
+  float: left;
+  display: inline-block;
+  position: relative;
+  .open-btn-block {
+    display: none;
+    width: 50px;
+    height: 50px;
+    .open-block {
+      position: absolute;
+      border-radius: 0;
+      padding: 0 15px 0 0;
+      outline: none;
+      border: 2px solid $global-color-white;
+      background: transparent;
+      font-size: 1em;
+      line-height: 34px;
+      height: 35px;
+      float: right;
+      margin-top: 7.5px;
+      margin-left: 15px;
+      .caret-my {
+        font-size: 20px;
+        margin-top: 6px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+.content-page {
+  height: 100%;
+}
+.wrap {
+  .no-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .other-page {
+    height: 215px;
+  }
+}
+

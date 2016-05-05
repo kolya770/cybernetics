@@ -101,4 +101,59 @@ $(document).ready(function() {
         $('.error-message').fadeIn('slow');
     });
 
+    //Accordion
+    var accordionsMenu = $('.cd-accordion-menu');
+
+    if( accordionsMenu.length > 0 ) {
+
+        accordionsMenu.each(function(){
+            var accordion = $(this);
+            //detect change in the input[type="checkbox"] value
+            accordion.on('change', 'input[type="checkbox"]', function(){
+                var checkbox = $(this);
+                console.log(checkbox.prop('checked'));
+                ( checkbox.prop('checked') ) ? checkbox.siblings('ul').attr('style', 'display:none;').slideDown(300) : checkbox.siblings('ul').attr('style', 'display:block;').slideUp(300);
+            });
+        });
+    }
+
+    //Animated slide bar left
+
+    var take_width = $('.main-content-block').width();
+    var left_block = $('.dop-block');
+
+    $('#close-left-navbar').on('click', function() {
+
+        $('.open-btn-block').fadeIn(2000);
+        
+        left_block.animate({
+            left: "-=+285px"
+        }, 1200);
+
+        $('.main-content-block').animate({
+            "margin-left": "-=+285px",
+            width: take_width + 285
+        }, 3000);
+
+    });
+
+    $('#open-left-navbar').on('click', function() {
+
+        left_block.animate({
+            left: "-=-285px"
+        }, 1200);
+
+        $('.main-content-block').animate({
+            "margin-left": "-=-285px",
+            width: take_width
+        }, 3000);
+
+        $('.open-btn-block').fadeOut(2000);
+    })
+});
+
+$(window).load(function() {
+    //Width content block
+    var height = $('.information').height();
+    $('.dop-menu-block').css('min-height', height);
 });
