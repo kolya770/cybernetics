@@ -6,38 +6,11 @@
     <title>Cybernetics Faculty</title>
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
 </head>
-<body class="landing">
-
-<div class="modal fade loginModal" id="loginModal" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close close-button" data-dismiss="modal"><img src="img/close-modal.png" alt=""></button>
-            </div>
-            <div class="modal-body">
-                <div class="block-input">
-                    <label for="login-name" class="log-in">Логін:</label>
-                    <input id="login-name" type="text" class="login">
-                </div>
-                <div class="block-input">
-                    <label for="password">Пароль:</label>
-                    <input id="password" type="text" class="password">
-                </div>
-                <p class="error-message">Введен не верный логин или пароль</p>
-            </div>
-            <div class="modal-footer">
-                <button id="login" class="btn btn-enter">Увійти</button>
-
-                <div class="check-btn">
-                    <input id="box2" type="checkbox" class="with-font" />
-                    <label for="box2" class="check-text">Запам’ятати мене</label>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<body class="information-link">
 
 <nav class="navbar navbar-default  nav-cybernetics hidden-sm hidden-xs">
     <div class="container-fluid">
@@ -185,75 +158,97 @@
         <span class="menu-text">menu</span></div>
 </div>
 
-<div class="new">
-    <div class="top-block-grey"></div>
-    <div class="left-block-grey"></div>
-    <div class="right-block-grey"></div>
-    <div class="new-block">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="active-new center-block fade-bottom">
-                        <h2 class="header-text slide-bottom" data-plugin-options='{"reverse":false}'>Талановиті студенти-кібернетики отримали сертифікати компанії IBM</h2>
-                        <p class="date slide-bottom" data-plugin-options='{"reverse":false}'>додано 20.02.2016</p>
-                        <div class="image-block">
-                            <img src="img/news.png" class="news-image" alt="">
+<div class="wrap">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 no-padding">
+                <div class="top-block-grey other-page"></div>
+                    <div class="dop-block">
+                        <div class="line-grey">
+                            <button id="close-left-navbar" class="btn btn-side-bar">
+                                <i class="fa fa-caret-square-o-left caret-my" aria-hidden="true"></i>
+                                ЗАКРИТИ МЕНЮ
+                            </button>
                         </div>
-                        <div class="new-text-block">
-                            <p class="text-new">Популярність цих змагань, які визначають престиж країни у галузі
-                                інформаційних технологій, дуже велика. Наприклад, у 2002/2003 навчальному році тільки у
-                                регіональних олімпіадах першості світу взяли участь 3850 команд з 1329 університетів з
-                                68 країн світу, а загальна кількість учасників першості світу, враховуючи команд-учасників
-                                національних першостей, приблизно оцінювалась у 24 – 25 тисяч. Але вже у 2008 році у
-                                відборах до чемпіонату світу стартувало 6700 команд із 1821 університету з 83 країн
-                                світу. Європейські країни розпочали участь у цих змаганнях з 1991 року, а східно -
-                                європейські з 1995 р. З тих пір американським командам рідко щастило стати чемпіоном
-                                світу. Зате частіше за інших перемогу святкували команди зі східної Європи: 1998 –
+                        <div class="open-btn-block">
+                            <button id="open-left-navbar" class="btn btn-side-bar open-block">
+                                <i class="fa fa-caret-square-o-right caret-my" aria-hidden="true"></i>
+                                ВІДКРИТИ МЕНЮ
+                            </button>
+                        </div>
+                        <div class="dop-menu-block">
+                            <ul class="cd-accordion-menu animated">
+
+                                <li><a href="#0">Привітання Декана</a></li>
+
+
+                                <li class="has-children">
+                                        <input type="checkbox" name ="group-2" id="group-2">
+                                        <label for="group-2"><a href="" class="no-style">Iсторія факультету</a></label>
+
+                                    <ul>
+                                        <li><a href="#0">Факти і цифри</a></li>
+                                        <li><a href="#0">Особистості</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-children">
+                                    <input type="checkbox" name ="group-3" id="group-3">
+                                    <label for="group-3"><a href="" class="no-style">Кафедри</a></label>
+
+                                    <ul>
+                                        <li><a href="#0">Кафедра Обчислювальної математики</a></li>
+                                        <li><a href="#0">Кафедра Моделювання складних систем</a></li>
+                                        <li><a href="#0">Кафедра Дослідження операцій</a></li>
+                                        <li><a href="#0">Кафедра Системного аналізу та теорії прийняття рішень</a></li>
+                                        <li><a href="#0">Кафедра Прикладної статистики</a></li>
+                                        <li><a href="#0">Кафедра Математичної інформатики</a></li>
+                                        <li><a href="#0">Кафедра Теоретичної кібернетики</a></li>
+                                        <li><a href="#0">Кафедра Теорії та технології програмування</a></li>
+                                        <li><a href="#0">Кафедра Інформаційних систем</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-children">
+                                    <input type="checkbox" name ="group-4" id="group-4">
+                                    <label for="group-4"><a href="" class="no-style">Студентські організації</a></label>
+
+                                    <ul>
+                                        <li><a href="#0">Студентський парламент</a></li>
+                                        <li><a href="#0">Наукове товариство</a></li>
+                                        <li><a href="#0">Профбюро студентів</a></li>
+                                        <li><a href="#0">Студентська рада</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#0">Адміністрація</a></li>
+
+                                <li><a href="#0">Співробітництво</a></li>
+
+                                <li><a href="#0">Працевлаштування</a></li>
+
+                                <li><a href="#0">Гуртожиток</a></li>
+                            </ul>
+                        </div>
+                        <div class="line-grey"></div>
+                    </div>
+                    <div class="main-content-block">
+                        <div class="information">
+                            <h2 class="header-text center-block">Привітання декана</h2>
+                            <p class="text-with-information">
+                                <img src="img/dean.jpg" class="image-information">
+                                Ласкаво просимо вас на веб-сайт факультету кібернетики Київського національного університету імені Тараса Шевченка.
+                                Кібернетика сформувалась як наука фізико-математичного профілю наприкінці 60-х років під могутнім впливом ЕОМ та їх застосувань. Науковий базис кібернетики склали теорія цифрових автоматiв, основи програмування, теорiя штучного інтелекту, теорія проектування ЕОМ, комп’ютерні технологiї для рiзноманiтних iнформацiйних процесiв. Це забезпечило становлення нової науки, яка отримала назву “Computer Science”, (комп’ютерна наука) у США та “інформатика” у Європі. Термін “інформатика” стосується науки про отримання, передачу, збереження й опрацювання iнформацiї.
+                                Стрімкий розвиток обчислювальної техніки в Україні, досягнення вчених-кібернетиків, зростаючі потреби у застосуванні ЕОМ для розв‘язування широкого кола різних проблем промисловості, науки, оборони країни призвели до створення у Києві розвиненої комп’ютерної інфраструктури. Успішне функціонування цієї структури не могло бути забезпеченим без належної системи підготовки фахівців даної галузі. Київська школа кібернетики на цьому шляху стала базовою у справі створення та підготовки нових високоосвічених кадрів для підприємств і науково-дослідних інститутів країни з подальшим їх використанням у розв'язанні глобальних задач комп’ютеризації суспільства.
+                                Саме такі передумови зумовили відкриття у травні 1969 року в Київському університеті факультету кібернетики, який об’єднав вже існуючі кафедри відповідного профілю механіко-математичного, економічного та філологічного факультетів. Ініціаторами створення факультету кібернетики був академік В.М. Глушков та професор І.І. Ляшко, який став першим його деканом, а згодом був обраний академіком НАН України.
+                                Сьогодні факультет кібернетики є одним з найбільших факультетів Київського національно університету імені Тараса Шевченка і являється центром підготовки фахівців за освітньо-кваліфікаційними рівнями "бакалавра" та "магістра".
+                                Декан факультету кібернетики
+                                член-кореспондент НАН України
+                                Анісімов А.В.
                             </p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="news news-other">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="header-news center-block fade-bottom">
-                        <h2 class="header-title slide-bottom" data-plugin-options='{"reverse":false}'>Інші новини</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="news-block center-block">
-                        <div class="image-block">
-                            <img src="img/news.png" class="news-image" alt="">
-                        </div>
-                        <h3 class="header-title">Талановиті студенти-кібернетики отримали сертифікати компанії IBM</h3>
-                        <p class="date">додано 20.02.2016</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="news-block center-block">
-                        <div class="image-block">
-                            <img src="img/news.png" class="news-image" alt="">
-                        </div>
-                        <h3 class="header-title">Талановиті студенти-кібернетики отримали сертифікати компанії IBM</h3>
-                        <p class="date">додано 20.02.2016</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="news-block center-block">
-                        <div class="image-block">
-                            <img src="img/news.png" class="news-image" alt="">
-                        </div>
-                        <h3 class="header-title">Талановиті студенти-кібернетики отримали сертифікати компанії IBM</h3>
-                        <p class="date">додано 20.02.2016</p>
-                    </div>
-                </div>
+                <div class="bot-lane"></div>
             </div>
         </div>
     </div>
@@ -270,7 +265,7 @@
                                 <img src="img/map.png" class="footer-icon" alt="">
                             </div>
                             <div class="link-block">
-                                <a href="#" class="footer-link-text animate-hr">Карта сайта</a>
+                                <a href="#" class="footer-link-text animate-hr">Карта сайту</a>
                             </div>
                         </div>
                         <div class="footer-text-block">

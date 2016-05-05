@@ -4,6 +4,12 @@ html,
 body {
   height: 100%;
   font-size: 16px;
+}
+.landing {
+  background-color: #adaeaf;
+}
+.information-link {
+  background: url("../img/bg-image.png") ;
   background-color: #adaeaf;
 }
 
@@ -64,11 +70,12 @@ $open-sans-light: "OpenSans-Light", "sans-serif";
 $open-sans-light-italic: "OpenSans-LightItalic", "sans-serif";
 $open-sans-bold: "OpenSans-Bold", "sans-serif";
 $open-sans-semi-bold: "OpenSans-Semibold", "sans-serif";
-$open-sans-reg: "OpenSans-Regular", "sans-serif";
+$open-sans-reg: "OpenSans-Regular";
 
 // global colors
 $global-color-blue:  #05dcb9;
 $global-color-white:  #ffffff;
+$global-color-grey: #adaeaf;
 
 //fix popup
 body.modal-open-noscroll {
@@ -89,3 +96,5 @@ body.modal-open-noscroll {
 @import "partials/navbar-mobile";
 @import "landing/popup";
 @import "partials/new";
+@import "partials/content-page";
+@import "partials/side-nav";
