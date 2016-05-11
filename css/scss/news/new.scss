@@ -1,10 +1,10 @@
 .top-block-grey {
   background-color: #adaeaf;
   @media #{$bootstrap-xs} {
-    height: 50px;
+    height: 100px;
   }
   @media #{$bootstrap-sm} {
-    height: 50px;
+    height: 100px;
   }
   @media #{$bootstrap-md} {
     height: 235px;
@@ -20,8 +20,6 @@
     width: 20%;
   }
 }
-
-
 
 .new {
   @media #{$bootstrap-xs} {
@@ -47,12 +45,12 @@
     }
   }
   .new-block {
-        background: url("../img/bg-image.png");
+    background: url("../img/bg-image.png");
     .active-new {
       text-align: center;
-      width: 80%;
+      width: 70%;
       @media #{$bootstrap-xs} {
-        width: 90%;
+        width: 80%;
       }
       .date {
         font-family: $open-sans-light-italic;
@@ -61,11 +59,11 @@
         font-style: italic;
       }
       .header-text {
-        font-family: $open-sans-reg;
-        color:  rgba(0, 0, 0, 0.82);
+        font-family: $header-font;
+        color: rgba(0, 0, 0, 0.82);
         font-weight: 400;
         text-align: center;
-        margin-top: 50px;
+        margin-top: 70px;
         border-bottom: 2px solid black;
         @media #{$bootstrap-xs} {
           font-size: 1.5em;
@@ -79,7 +77,7 @@
       }
       .image-block {
         text-align: center;
-        margin-top: 50px;
+        margin-top: 60px;
         .news-image {
           box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.35);
           @media #{$bootstrap-xs} {
@@ -96,16 +94,20 @@
         }
       }
       .new-text-block {
-        margin-top: 50px;
-        margin-bottom: 50px;
-        font-family: $open-sans-reg;
-        color:  rgba(0, 0, 0, 0.82);
-        font-size: 1.563em;
-        font-weight: 400;
-        text-align: left;
-        @media #{$bootstrap-xs} {
-          font-size: 1em;
+        .text-new {
+          margin-top: 60px;
+          margin-bottom: 70px;
+          font-family: $text-font-2;
+          color: rgba(0, 0, 0, 0.82);
+          font-size: 1.563em;
+          font-weight: 100;
+          font-style: italic;
+          text-align: left;
+          @media #{$bootstrap-xs} {
+            font-size: 1em;
+          }
         }
+
       }
     }
   }
@@ -115,7 +117,7 @@
     .header-news {
       width: 80%;
       .header-title {
-        font-family: $open-sans-semi-bold;
+        font-family: $header-font;
         color: #282828;
         font-size: 1.875em;
         font-weight: 600;
@@ -130,8 +132,8 @@
       margin-top: 25px;
       margin-bottom: 25px;
       .header-title {
-        font-family: $open-sans-reg;
-        color:  #181818;
+        font-family: $text-font-2;
+        color: #181818;
         font-size: 1.375em;
         font-weight: 400;
         text-decoration: underline;
@@ -147,7 +149,7 @@
       }
       .date {
         font-family: $open-sans-light-italic;
-        color:  #727272;
+        color: #727272;
         font-size: 1.125em;
         font-style: italic;
         text-align: right;

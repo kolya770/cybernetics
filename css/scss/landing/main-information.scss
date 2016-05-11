@@ -1,0 +1,198 @@
+.main {
+  background: #adaeaf;
+
+  .information-block {
+    width: 75%;
+    margin-bottom: 80px;
+    margin-top: 80px;
+    @media #{$bootstrap-xs} {
+      margin-top: 15px;
+      margin-bottom: 50px;
+    }
+    .header-title {
+      font-family: $header-font;
+      color: #282828;
+      font-size: 2.3em;
+      font-style: normal;
+      font-weight: 900;
+      text-align: left;
+      transform: scaleX(1.0016);
+      margin-bottom: 30px;
+      @media #{$bootstrap-xs} {
+        margin-top: 50px;
+      }
+      @media #{$bootstrap-sm} {
+        font-size: 1.8em;
+      }
+    }
+    .header-text {
+      font-family: $text-font;
+      color: #181818;
+      font-size: 1.375em;
+      font-weight: 400;
+      text-align: left;
+      line-height: 30px;
+      text-decoration: none;
+      position: relative;
+    }
+    .header-text:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      border-bottom: 2px solid #181818;
+      transition: 1s;
+    }
+    .header-text:hover:after {
+      width: 0;
+    }
+
+    .image-entrants {
+      background: url("../img/vstyp.jpg") 50% 50% no-repeat;
+      background-size: cover;
+      margin-bottom: 30px;
+      border: 5px solid $global-color-white;
+      box-shadow: 0 0 10px #353434;
+      transition: all 0.3s ease;
+      @media #{$bootstrap-xs} {
+        height: 200px;
+        margin-bottom: 15px;
+      }
+      @media #{$bootstrap-sm} {
+        height: 180px;
+      }
+      @media #{$bootstrap-md} {
+        height: 220px;
+      }
+      @media #{$bootstrap-lg} {
+        height: 250px;
+      }
+      @media #{$bootstrap-xl} {
+        height: 300px;
+      }
+      @media #{$bootstrap-xxl} {
+        height: 350px;
+      }
+    }
+
+    .image-schedule {
+      background: url("../img/abitur.jpg") 50% 50% no-repeat;
+      background-size: cover;
+      margin-bottom: 30px;
+      border: 5px solid $global-color-white;
+      box-shadow: 0 0 10px #353434;
+      transition: all 0.3s ease;
+      @media #{$bootstrap-xs} {
+        height: 200px;
+        margin-bottom: 15px;
+      }
+      @media #{$bootstrap-sm} {
+        height: 180px;
+      }
+      @media #{$bootstrap-md} {
+        height: 220px;
+      }
+      @media #{$bootstrap-lg} {
+        height: 250px;
+      }
+      @media #{$bootstrap-xl} {
+        height: 300px;
+      }
+      @media #{$bootstrap-xxl} {
+        height: 350px;
+      }
+    }
+    .image-webcam {
+      background: url("../img/webka.png") 50% 50% no-repeat;
+      background-size: cover;
+      margin-bottom: 30px;
+      border: 5px solid $global-color-white;
+      box-shadow: 0 0 10px #353434;
+      transition: all 0.3s ease;
+      @media #{$bootstrap-xs} {
+        height: 200px;
+        margin-bottom: 15px;
+      }
+      @media #{$bootstrap-sm} {
+        height: 180px;
+      }
+      @media #{$bootstrap-md} {
+        height: 220px;
+      }
+      @media #{$bootstrap-lg} {
+        height: 250px;
+      }
+      @media #{$bootstrap-xl} {
+        height: 300px;
+      }
+      @media #{$bootstrap-xxl} {
+        height: 350px;
+      }
+    }
+  }
+}
+
+.content {
+  background: url("../img/bg-image.png");
+  .news {
+    .header-news {
+      width: 75%;
+      margin-top: 70px;
+      margin-bottom: 30px;
+      .header-title {
+        font-family: $header-font;
+        color: #282828;
+        font-size: 2.3em;
+        font-style: normal;
+        font-weight: 900;
+        text-align: left;
+        transform: scaleX(1.0016);
+        margin-top: 0;
+        @media #{$bootstrap-sm} {
+          font-size: 1.8em;
+        }
+      }
+    }
+    .news-block {
+      width: 75%;
+      margin-bottom: 70px;
+      .header-title {
+        font-family: $text-font-2;
+        color: #181818;
+        font-size: 1.375em;
+        font-weight: 400;
+        text-decoration: underline;
+        text-align: left;
+        margin-top: 30px;
+        @media #{$bootstrap-xs} {
+          font-size: 1.2em;
+        }
+        @media #{$bootstrap-sm} {
+          font-size: 0.9em;
+        }
+        @media #{$bootstrap-md} {
+          font-size: 1.1em;
+        }
+
+        @media (min-width: 300px) and (max-width: 460px) {
+          font-size: 1em;
+        }
+      }
+      .image-block {
+        box-shadow: 2px 4px 5px 0 rgba(0, 0, 0, 0.35);
+        border: 5px solid #adaeaf;
+        .news-image {
+          width: 100%;
+        }
+      }
+      .date {
+        font-family: $open-sans-light-italic;
+        color: #727272;
+        font-size: 1.125em;
+        font-style: italic;
+        text-align: right;
+      }
+    }
+  }
+}

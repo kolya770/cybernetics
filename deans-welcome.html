@@ -6,11 +6,42 @@
     <title>Cybernetics Faculty</title>
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/reset.css">
+    <link href='https://fonts.googleapis.com/css?family=Exo+2:400&subset=latin,cyrillic' rel='stylesheet'
+          type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <script src="js/settings/modernizr.js"></script>
 </head>
 <body class="information-link">
+
+<div class="modal fade loginModal" id="loginModal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-button" data-dismiss="modal"><img src="img/close-modal.png"
+                                                                                           alt=""></button>
+            </div>
+            <div class="modal-body">
+                <div class="block-input">
+                    <label for="login-name" class="log-in">Логін:</label>
+                    <input id="login-name" type="text" class="login">
+                </div>
+                <div class="block-input">
+                    <label for="password">Пароль:</label>
+                    <input id="password" type="text" class="password">
+                </div>
+                <p class="error-message">Введен не верный логин или пароль</p>
+            </div>
+            <div class="modal-footer">
+                <button id="login" class="btn btn-enter">Увійти</button>
+
+                <div class="check-btn">
+                    <input id="box2" type="checkbox" class="with-font"/>
+                    <label for="box2" class="check-text">Запам’ятати мене</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <nav class="navbar navbar-default  nav-cybernetics hidden-sm hidden-xs">
     <div class="container-fluid">
@@ -25,7 +56,9 @@
                         </div>
                         <div class="logo-header">
                             <h2 class="header-title">Факультет кібернетики</h2>
-                            <h3 class="header-title-text">Київського національного університету імені Тараса Шевченка</h3>
+
+                            <h3 class="header-title-text">Київського національного університету імені Тараса
+                                Шевченка</h3>
                         </div>
                     </div>
                     <div class="right-nav-block">
@@ -33,11 +66,14 @@
                             <a href="#" class="sll-text" data-toggle="modal" data-target="#loginModal">Login</a>
                             <a href="#" class="sll-text">En</a>
                             <a href="#" class="sll-text">Ukr</a>
+
                             <form class="navbar-form search-form" role="search">
                                 <div class="input-group">
                                     <input type="text" class="form-control input-search" placeholder="Search for...">
                                     <span class="input-group-btn">
-                                        <button id="search" class="btn btn-default btn-search" type="button"><i class="fa fa-search icon-search"></i></button>
+                                        <button id="search" class="btn btn-default btn-search" type="button">
+                                            <i class="fa fa-search icon-search"></i>
+                                        </button>
                                     </span>
                                 </div>
                             </form>
@@ -45,57 +81,19 @@
                         <div class="link-to-other-page">
                             <ul class="dropdown">
                                 <li class="dropdown-top">
-                                    <!--<a class="dropdown-top" href="/">Contacts</a>-->
-                                    <a class="dropdown-top" href="/">Контакти</a>
+                                    <a class="dropdown-top" href="/">Про факультет</a>
                                 </li>
                                 <li class="dropdown-top">
-                                    <a class="dropdown-top" href="/">Наука</a>
-                                    <!--<a class="dropdown-top" href="/">Research</a>-->
-                                    <ul class="dropdown-inside">
-                                        <li><a href="#">Research Groups</a></li>
-                                        <li><a href="#">Рада молодих вчених</a></li>
-                                        <li><a href="#">RD of University</a></li>
-                                        <li><a href="#">Scientific Conferences</a></li>
-                                        <li><a href="#">Scientific Seminars</a></li>
-                                        <li><a href="#">Scientific Journals</a></li>
-                                        <li><a href="#">Computing Cluster</a></li>
-                                        <li><a href="#">Library</a></li>
-                                        <li><a href="#">Olympiads</a></li>
-                                    </ul>
+                                    <a class="dropdown-top" href="/">Абітурієнтам</a>
                                 </li>
                                 <li class="dropdown-top">
                                     <a class="dropdown-top" href="/">Навчання</a>
-                                    <!--<a class="dropdown-top" href="/">Study</a>-->
-                                    <ul class="dropdown-inside">
-                                        <li><a href="#">Courses</a></li>
-                                        <li><a href="#">Free-elective courses</a></li>
-                                    </ul>
                                 </li>
                                 <li class="dropdown-top">
-                                    <a class="dropdown-top" href="/">Абітуріенту</a>
-                                    <!--<a class="dropdown-top" href="/">Entrants</a>-->
-                                    <ul class="dropdown-inside">
-                                        <li><a href="#">Page Entrant</a></li>
-                                        <li><a href="#">Bachelor Degree</a></li>
-                                        <li><a href="#">Master Degree</a></li>
-                                        <li><a href="#">Postgraduate Studies</a></li>
-                                        <li><a href="#">Doctoral Studies</a></li>
-                                    </ul>
+                                    <a class="dropdown-top" href="/">Наука</a>
                                 </li>
                                 <li class="dropdown-top">
-                                    <a class="dropdown-top" href="/">Про факультет</a>
-                                    <!--<a class="dropdown-top" href="/">About</a>-->
-                                    <ul class="dropdown-inside">
-                                        <li><a href="#">Deans Welcome</a></li>
-                                        <li><a href="#">History</a></li>
-                                        <li><a href="#">Administrative Staff</a></li>
-                                        <li><a href="#">Departments</a></li>
-                                        <li><a href="#">Student Organizations</a></li>
-                                        <li><a href="#">Cooperation</a></li>
-                                        <li><a href="#">Employment</a></li>
-                                        <li><a href="#">Hostel</a></li>
-                                        <li><a href="#">Photo Gallery</a></li>
-                                    </ul>
+                                    <a class="dropdown-top" href="/">Контакти</a>
                                 </li>
                             </ul>
                         </div>
@@ -127,33 +125,237 @@
 </nav>
 
 <nav class="pushy pushy-left visible-xs-block visible-sm-block">
+
     <div class="close-block">
         <button class="menu-btn close-btn"><img src="img/close-btn.png" alt=""></button>
+        <a href="#" class="sll-text-mobile" data-toggle="modal" data-target="#loginModal">Вхід</a>
         <a href="#" class="sll-text-mobile">En</a>
         <a href="#" class="sll-text-mobile">Ukr</a>
     </div>
+
     <div class="search-block">
         <form class="navbar-form search-form" role="search">
-            <div class="input-group">
+            <div class="input-group input-group-search">
                 <input type="text" class="form-control input-search" placeholder="Search for...">
                 <span class="input-group-btn">
-                    <button id="search-mobile" class="btn btn-default btn-search btn-src-mobile" type="button"><i class="fa fa-search icon-search"></i></button>
+                    <button id="search-mobile" class="btn btn-default btn-search btn-src-mobile" type="button"><i
+                            class="fa fa-search icon-search"></i></button>
                 </span>
             </div>
         </form>
     </div>
-    <div class="menu-block">
-        <a href=""><button class="btn btn-menu-mobile">Про факультет</button></a>
-        <a href=""><button class="btn btn-menu-mobile">Абітуріенту</button></a>
-        <a href=""><button class="btn btn-menu-mobile">Навчання</button></a>
-        <a href=""><button class="btn btn-menu-mobile">Наука</button></a>
-        <a href=""><button class="btn btn-menu-mobile">Контакти</button></a>
+
+    <div class="accordion-menu">
+        <ul class="cd-accordion-menu mobile-accordion animated">
+
+            <li class="has-children">
+                <input type="checkbox" name="group-10" id="group-10">
+                <label for="group-10">Про факультет</label>
+
+                <ul>
+                    <li><a href="#">Привітання Декана</a></li>
+
+                    <li class="has-children">
+                        <input type="checkbox" name="sub-group-11" id="sub-group-11">
+                        <label for="sub-group-11">Історія факультету</label>
+
+                        <ul>
+                            <li><a href="#">Факти і цифри</a></li>
+                            <li><a href="#">Особистості</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-children">
+                        <input type="checkbox" name="sub-group-12" id="sub-group-12">
+                        <label for="sub-group-12">Кафедри</label>
+
+                        <ul>
+                            <li><a href="#">Кафедра Обчислювальної математики</a></li>
+                            <li><a href="#">Кафедра Моделювання складних систем</a></li>
+                            <li><a href="#">Кафедра Дослідження операцій</a></li>
+                            <li><a href="#">Кафедра Системного аналізу та теорії прийняття рішень</a></li>
+                            <li><a href="#">Кафедра Прикладної статистики</a></li>
+                            <li><a href="#">Кафедра Математичної інформатики</a></li>
+                            <li><a href="#">Кафедра Теоретичної кібернетики</a></li>
+                            <li><a href="#">Кафедра Теорії та технології програмування</a></li>
+                            <li><a href="#">Кафедра Інформаційних систем</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-children">
+                        <input type="checkbox" name="sub-group-13" id="sub-group-13">
+                        <label for="sub-group-13">Студентські організації</label>
+
+                        <ul>
+                            <li><a href="#">Студентський парламент</a></li>
+                            <li><a href="#">Наукове товариство</a></li>
+                            <li><a href="#">Профбюро студентів</a></li>
+                            <li><a href="#">Студентська рада</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Адміністрація</a></li>
+
+                    <li><a href="#">Співробітництво</a></li>
+
+                    <li><a href="#">Працевлаштування</a></li>
+
+                    <li><a href="#">Гуртожиток</a></li>
+                </ul>
+            </li>
+
+            <li class="has-children">
+                <input type="checkbox" name="group-13" id="group-13">
+                <label for="group-13">Абітурієнтам</label>
+
+                <ul>
+                    <li><a href="#">Сторінка абітурієнта</a></li>
+                    <li><a href="#">ОКР "Бакалавр"</a></li>
+                    <li><a href="#">ОКР "Магістр"</a></li>
+                    <li><a href="#">Аспірантура</a></li>
+                    <li><a href="#">Докторантура</a></li>
+                </ul>
+            </li>
+
+            <li class="has-children">
+                <input type="checkbox" name="group-14" id="group-14">
+                <label for="group-14">Навчання</label>
+
+                <ul>
+                    <li class="has-children">
+                        <input type="checkbox" name="sub-group-15" id="sub-group-15">
+                        <label for="sub-group-15">Рівні освіти</label>
+
+                        <ul>
+                            <li class="has-children">
+                                <input type="checkbox" name="sub-group-level-3" id="sub-group-level-3">
+                                <label for="sub-group-level-3">Бакалаврат</label>
+
+                                <ul>
+                                    <li><a href="#">Дисципліни по вибору</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has-children">
+                                <input type="checkbox" name="sub-group-level-3-1-1" id="sub-group-level-3-1-1">
+                                <label for="sub-group-level-3-1-1">Магістратура</label>
+
+                                <ul>
+                                    <li><a href="#">Дисципліни по вибору</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has-children">
+                                <input type="checkbox" name="sub-group-level-3-1-1-1" id="sub-group-level-3-1-1-1">
+                                <label for="sub-group-level-3-1-1-1">Аспірантура</label>
+
+                                <ul>
+                                    <li><a href="#">Дисципліни по вибору</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has-children">
+                                <input type="checkbox" name="sub-group-level-3-1-1-1-1" id="sub-group-level-3-1-1-1-1">
+                                <label for="sub-group-level-3-1-1-1-1">Докторантура</label>
+
+                                <ul>
+                                    <li><a href="#">Дисципліни по вибору</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li class="has-children">
+                        <input type="checkbox" name="sub-group-16" id="sub-group-16">
+                        <label for="sub-group-16">Бібліотека</label>
+                        <ul>
+                            <li><a href="#">Підручники</a></li>
+                            <li><a href="#">Монографії</a></li>
+                            <li><a href="#">Навчальні посібники</a></li>
+                            <li><a href="#">Методичні рекомендації</a></li>
+                            <li><a href="#">Дисертації</a></li>
+                            <li><a href="#">Енциклопедія університету</a></li>
+                            <li><a href="#">Бібліотека університету</a></li>
+                            <li><a href="#">Науково-пошукові системи</a></li>
+                            <li><a href="#">Наукові бібліотеки</a></li>
+                            <li><a href="#">Наукові організації</a></li>
+                            <li><a href="#">Самоосвіта</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li class="has-children">
+                        <input type="checkbox" name="sub-group-17" id="sub-group-17">
+                        <label for="sub-group-17">Оліммпіади</label>
+                        <ul>
+                            <li><a href="#">Всеукраїнські олімпіади</a></li>
+                            <li><a href="#">Півфінал чемпіонату світу</a></li>
+                            <li><a href="#">Фінал чемпіонату світу</a></li>
+                            <li><a href="#">Інші змагання</a></li>
+                            <li><a href="#">E-olimp</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="has-children">
+                <input type="checkbox" name="group-15" id="group-15">
+                <label for="group-15">Наука</label>
+
+                <ul>
+                    <li class="has-children">
+                        <input type="checkbox" name="sub-group-18" id="sub-group-18">
+                        <label for="sub-group-18">Дослідницькі групи</label>
+                        <ul>
+                            <li><a href="#">НДС "Проблем системного аналізу"</a></li>
+                            <li><a href="#">НДС "Проблем програмування"</a></li>
+                            <li><a href="#">НДС "Теоретичної кібернетики"</a></li>
+                            <li><a href="#">НДЛ "Ймовірнісно-статистичних методів"</a></li>
+                            <li><a href="#">НДЛ "Обчислювальних методів в механіці суцільних середовищ"</a></li>
+                            <li><a href="#">НДЛ "Моделювання та оптимізації"</a></li>
+                            <li><a href="#">НДЛ "Високопродуктивних систем обробки інформації"</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-children">
+                        <input type="checkbox" name="sub-group-19" id="sub-group-19">
+                        <label for="sub-group-19">Спеціалізовані вчені ради</label>
+
+                        <ul>
+                            <li><a href="#">Спецрада: Д 26.001.09</a></li>
+                            <li><a href="#">Спецрада: Д 26.001.35</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Рада молодих вчених</a></li>
+
+                    <li><a href="#">Наукові конференції</a></li>
+
+                    <li><a href="#">Наукові семінари</a></li>
+
+                    <li><a href="#">Наукові журнали</a></li>
+
+                </ul>
+
+            </li>
+
+            <li><a href="#">Контакти</a></li>
+
+        </ul>
     </div>
 </nav>
 
 <div class="site-overlay visible-xs-block visible-sm-block"></div>
 
-<div id="container" class="visible-xs-block visible-sm-block">
+<div id="container" class="mobile-menu visible-xs-block visible-sm-block">
+    <div class="logo-mob">
+        <img src="img/logo.png" class="logo-m-img" alt="">
+
+        <h2 class="logo-m-text">Факультет кібернетики</h2>
+    </div>
     <div class="menu-btn"><img src="img/menu-icon.png" alt="">
         <span class="menu-text">menu</span></div>
 </div>
@@ -163,91 +365,120 @@
         <div class="row">
             <div class="col-xs-12 no-padding">
                 <div class="top-block-grey other-page"></div>
-                    <div class="dop-block">
-                        <div class="line-grey">
-                            <button id="close-left-navbar" class="btn btn-side-bar">
-                                <i class="fa fa-caret-square-o-left caret-my" aria-hidden="true"></i>
-                                ЗАКРИТИ МЕНЮ
-                            </button>
-                        </div>
-                        <div class="open-btn-block">
-                            <button id="open-left-navbar" class="btn btn-side-bar open-block">
-                                <i class="fa fa-caret-square-o-right caret-my" aria-hidden="true"></i>
-                                ВІДКРИТИ МЕНЮ
-                            </button>
-                        </div>
-                        <div class="dop-menu-block">
-                            <ul class="cd-accordion-menu animated">
-
-                                <li><a href="#0">Привітання Декана</a></li>
-
-
-                                <li class="has-children">
-                                        <input type="checkbox" name ="group-2" id="group-2">
-                                        <label for="group-2"><a href="" class="no-style">Iсторія факультету</a></label>
-
-                                    <ul>
-                                        <li><a href="#0">Факти і цифри</a></li>
-                                        <li><a href="#0">Особистості</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="has-children">
-                                    <input type="checkbox" name ="group-3" id="group-3">
-                                    <label for="group-3"><a href="" class="no-style">Кафедри</a></label>
-
-                                    <ul>
-                                        <li><a href="#0">Кафедра Обчислювальної математики</a></li>
-                                        <li><a href="#0">Кафедра Моделювання складних систем</a></li>
-                                        <li><a href="#0">Кафедра Дослідження операцій</a></li>
-                                        <li><a href="#0">Кафедра Системного аналізу та теорії прийняття рішень</a></li>
-                                        <li><a href="#0">Кафедра Прикладної статистики</a></li>
-                                        <li><a href="#0">Кафедра Математичної інформатики</a></li>
-                                        <li><a href="#0">Кафедра Теоретичної кібернетики</a></li>
-                                        <li><a href="#0">Кафедра Теорії та технології програмування</a></li>
-                                        <li><a href="#0">Кафедра Інформаційних систем</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="has-children">
-                                    <input type="checkbox" name ="group-4" id="group-4">
-                                    <label for="group-4"><a href="" class="no-style">Студентські організації</a></label>
-
-                                    <ul>
-                                        <li><a href="#0">Студентський парламент</a></li>
-                                        <li><a href="#0">Наукове товариство</a></li>
-                                        <li><a href="#0">Профбюро студентів</a></li>
-                                        <li><a href="#0">Студентська рада</a></li>
-                                    </ul>
-                                </li>
-
-                                <li><a href="#0">Адміністрація</a></li>
-
-                                <li><a href="#0">Співробітництво</a></li>
-
-                                <li><a href="#0">Працевлаштування</a></li>
-
-                                <li><a href="#0">Гуртожиток</a></li>
-                            </ul>
-                        </div>
-                        <div class="line-grey"></div>
+                <div id="left-navbar" class="dop-block hidden-xs">
+                    <div class="line-grey">
+                        <button id="close-left-navbar" class="btn btn-side-bar">
+                            <i class="fa fa-align-left caret-my" aria-hidden="true"></i>
+                            ЗАКРИТИ МЕНЮ
+                        </button>
                     </div>
-                    <div class="main-content-block">
-                        <div class="information">
-                            <h2 class="header-text center-block">Привітання декана</h2>
-                            <p class="text-with-information">
-                                <img src="img/dean.jpg" class="image-information">
-                                Ласкаво просимо вас на веб-сайт факультету кібернетики Київського національного університету імені Тараса Шевченка.
-                                Кібернетика сформувалась як наука фізико-математичного профілю наприкінці 60-х років під могутнім впливом ЕОМ та їх застосувань. Науковий базис кібернетики склали теорія цифрових автоматiв, основи програмування, теорiя штучного інтелекту, теорія проектування ЕОМ, комп’ютерні технологiї для рiзноманiтних iнформацiйних процесiв. Це забезпечило становлення нової науки, яка отримала назву “Computer Science”, (комп’ютерна наука) у США та “інформатика” у Європі. Термін “інформатика” стосується науки про отримання, передачу, збереження й опрацювання iнформацiї.
-                                Стрімкий розвиток обчислювальної техніки в Україні, досягнення вчених-кібернетиків, зростаючі потреби у застосуванні ЕОМ для розв‘язування широкого кола різних проблем промисловості, науки, оборони країни призвели до створення у Києві розвиненої комп’ютерної інфраструктури. Успішне функціонування цієї структури не могло бути забезпеченим без належної системи підготовки фахівців даної галузі. Київська школа кібернетики на цьому шляху стала базовою у справі створення та підготовки нових високоосвічених кадрів для підприємств і науково-дослідних інститутів країни з подальшим їх використанням у розв'язанні глобальних задач комп’ютеризації суспільства.
-                                Саме такі передумови зумовили відкриття у травні 1969 року в Київському університеті факультету кібернетики, який об’єднав вже існуючі кафедри відповідного профілю механіко-математичного, економічного та філологічного факультетів. Ініціаторами створення факультету кібернетики був академік В.М. Глушков та професор І.І. Ляшко, який став першим його деканом, а згодом був обраний академіком НАН України.
-                                Сьогодні факультет кібернетики є одним з найбільших факультетів Київського національно університету імені Тараса Шевченка і являється центром підготовки фахівців за освітньо-кваліфікаційними рівнями "бакалавра" та "магістра".
-                                Декан факультету кібернетики
-                                член-кореспондент НАН України
-                                Анісімов А.В.
-                            </p>
-                        </div>
+                    <div class="open-btn-block">
+                        <button id="open-left-navbar" class="btn btn-side-bar open-block">
+                            <i class="fa fa-align-justify caret-my" aria-hidden="true"></i>
+                            <span>MENU</span>
+                        </button>
                     </div>
+                    <div id="menu" class="dop-menu-block">
+                        <ul class="cd-accordion-menu animated">
+
+                            <li><a href="#">Привітання Декана</a></li>
+
+
+                            <li class="has-children">
+                                <input type="checkbox" name="group-2" id="group-2">
+                                <label for="group-2"><a href="" class="no-style">Iсторія факультету</a></label>
+
+                                <ul>
+                                    <li><a href="#">Факти і цифри</a></li>
+                                    <li><a href="#">Особистості</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has-children">
+                                <input type="checkbox" name="group-3" id="group-3">
+                                <label for="group-3"><a href="" class="no-style">Кафедри</a></label>
+
+                                <ul>
+                                    <li><a href="#">Кафедра Обчислювальної математики</a></li>
+                                    <li><a href="#">Кафедра Моделювання складних систем</a></li>
+                                    <li><a href="#">Кафедра Дослідження операцій</a></li>
+                                    <li><a href="#">Кафедра Системного аналізу та теорії прийняття рішень</a></li>
+                                    <li><a href="#">Кафедра Прикладної статистики</a></li>
+                                    <li><a href="#">Кафедра Математичної інформатики</a></li>
+                                    <li><a href="#">Кафедра Теоретичної кібернетики</a></li>
+                                    <li><a href="#">Кафедра Теорії та технології програмування</a></li>
+                                    <li><a href="#">Кафедра Інформаційних систем</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has-children">
+                                <input type="checkbox" name="group-4" id="group-4">
+                                <label for="group-4"><a href="" class="no-style">Студентські організації</a></label>
+
+                                <ul>
+                                    <li><a href="#">Студентський парламент</a></li>
+                                    <li><a href="#">Наукове товариство</a></li>
+                                    <li><a href="#">Профбюро студентів</a></li>
+                                    <li><a href="#">Студентська рада</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Адміністрація</a></li>
+
+                            <li><a href="#">Співробітництво</a></li>
+
+                            <li><a href="#">Працевлаштування</a></li>
+
+                            <li><a href="#">Гуртожиток</a></li>
+                        </ul>
+                    </div>
+                    <div class="line-grey"></div>
+                </div>
+                <div class="main-content-block">
+                    <div class="information">
+                        <h2 class="header-text center-block">Привітання декана</h2>
+
+                        <div class="block-photo">
+                            <img src="img/dean.jpg" class="image-information">
+
+                            <div class="info-photo">
+                                <p>Декан факультету кібернетики
+                                    член-кореспондент НАНУ
+                                    Анісімов А.В.</p>
+                            </div>
+                        </div>
+                        <p class="text-with-information">
+                            Ласкаво просимо вас на веб-сайт факультету кібернетики Київського національного університету
+                            імені Тараса Шевченка.
+                            Кібернетика сформувалась як наука фізико-математичного профілю наприкінці 60-х років під
+                            могутнім впливом ЕОМ та їх застосувань. Науковий базис кібернетики склали теорія цифрових
+                            автоматiв, основи програмування, теорiя штучного інтелекту, теорія проектування ЕОМ,
+                            комп’ютерні технологiї для рiзноманiтних iнформацiйних процесiв. Це забезпечило становлення
+                            нової науки, яка отримала назву “Computer Science”, (комп’ютерна наука) у США та
+                            “інформатика” у Європі. Термін “інформатика” стосується науки про отримання, передачу,
+                            збереження й опрацювання iнформацiї.
+                            Стрімкий розвиток обчислювальної техніки в Україні, досягнення вчених-кібернетиків,
+                            зростаючі потреби у застосуванні ЕОМ для розв‘язування широкого кола різних проблем
+                            промисловості, науки, оборони країни призвели до створення у Києві розвиненої комп’ютерної
+                            інфраструктури. Успішне функціонування цієї структури не могло бути забезпеченим без
+                            належної системи підготовки фахівців даної галузі. Київська школа кібернетики на цьому шляху
+                            стала базовою у справі створення та підготовки нових високоосвічених кадрів для підприємств
+                            і науково-дослідних інститутів країни з подальшим їх використанням у розв'язанні глобальних
+                            задач комп’ютеризації суспільства.
+                            Саме такі передумови зумовили відкриття у травні 1969 року в Київському університеті
+                            факультету кібернетики, який об’єднав вже існуючі кафедри відповідного профілю
+                            механіко-математичного, економічного та філологічного факультетів. Ініціаторами створення
+                            факультету кібернетики був академік В.М. Глушков та професор І.І. Ляшко, який став першим
+                            його деканом, а згодом був обраний академіком НАН України.
+                            Сьогодні факультет кібернетики є одним з найбільших факультетів Київського національно
+                            університету імені Тараса Шевченка і являється центром підготовки фахівців за
+                            освітньо-кваліфікаційними рівнями "бакалавра" та "магістра".
+                            Декан факультету кібернетики
+                            член-кореспондент НАН України
+                            Анісімов А.В.
+                        </p>
+                    </div>
+                </div>
                 <div class="bot-lane"></div>
             </div>
         </div>
@@ -279,7 +510,7 @@
                     </div>
                 </div>
                 <div class="col-sm-2">
-                    <div class="btn-footer center-block">
+                    <div class="btn-footer second-block-links center-block">
                         <div class="footer-text-block">
                             <div class="link-block no-image">
                                 <a href="#" class="footer-link-text animate-hr">Документи</a>
@@ -297,7 +528,8 @@
                         <div class="footer-no-link-center">
                             <p class="footer-link-text no-link">Адреса</p>
                         </div>
-                        <p class="footer-text">Cybernetics Faculty, 03680, Ukraine, Kyiv, 4d Glushkov Avenue</p>
+                        <p class="footer-text center-block">Cybernetics Faculty, 03680, Ukraine, Kyiv, 4d Glushkov
+                            Avenue</p>
                     </div>
                 </div>
                 <div class="col-sm-3">
@@ -305,9 +537,11 @@
                         <div class="footer-no-link-center">
                             <p class="footer-link-text no-link">Наші телефони</p>
                         </div>
-                        <p class="footer-text">+380 (044) 259-01-39</p>
-                        <p class="footer-text">+380 (044) 521-35-54</p>
-                        <p class="footer-text">+380 (044) 259-01-19</p>
+                        <p class="footer-text center-block">+380 (044) 259-01-39</p>
+
+                        <p class="footer-text center-block">+380 (044) 521-35-54</p>
+
+                        <p class="footer-text center-block">+380 (044) 259-01-19</p>
                     </div>
                 </div>
             </div>
@@ -322,7 +556,7 @@
                         <p class="copyright">© 2001-2016 Taras Shevchenko National University of Kyiv</p>
                         <hr class="copyright-hr">
                         <a href="http://vk.com/CyberneticsFaculty" class="link-icon">
-                            <img src="img/vk-b.png"  class="cp-icon" alt="">
+                            <img src="img/vk-b.png" class="cp-icon" alt="">
                         </a>
 
                         <a href="http://facebook.com/CyberneticsFaculty" class="link-icon">
@@ -342,14 +576,14 @@
 
 </footer>
 
-<script src="js/jquery-2.0.0.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/mobile-detect.min.js"></script>
-<script src="js/jquery.fadethis.js"></script>
-<script src="js/pushy.min.js"></script>
+<script src="js/settings/jquery-2.0.0.min.js"></script>
+<script src="js/settings/bootstrap.min.js"></script>
+<script src="js/settings/mobile-detect.min.js"></script>
+<script src="js/settings/jquery.fade-this.js"></script>
+<script src="js/settings/pushy.min.js"></script>
+<script src="js/settings/head-menu-dd.min.js"></script>
+<script src="js/settings/slick.js"></script>
 <script src="js/jq-desktop-tablet.js"></script>
-<script src="js/headhesive.min.js"></script>
-<script src="js/slick.js"></script>
 <script src="js/main.js"></script>
 
 </body>
