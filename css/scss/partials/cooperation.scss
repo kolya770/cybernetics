@@ -1,0 +1,15 @@
+.company {
+  margin-top: 15px;
+  margin-left: 30px;
+  margin-bottom: 15px;
+  .text-company {
+    list-style-type: circle;
+    .bold-text {
+      font-weight: 600;
+    }
+  }
+}
+
+.company-info {
+  color: blue;
+}

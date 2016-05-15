@@ -6,42 +6,12 @@
     <title>Cybernetics Faculty</title>
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Francois+One&subset=latin,latin-ext' rel='stylesheet'
+    <link href='https://fonts.googleapis.com/css?family=Exo+2:400&subset=latin,cyrillic' rel='stylesheet'
           type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/main.css">
-
+    <script src="js/settings/modernizr.js"></script>
 </head>
-<body class="landing">
-
-<div class="modal fade loginModal" id="loginModal" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close close-button" data-dismiss="modal"><img src="img/close-modal.png"
-                                                                                           alt=""></button>
-            </div>
-            <div class="modal-body">
-                <div class="block-input">
-                    <label for="login-name" class="log-in">Логін:</label>
-                    <input id="login-name" type="text" class="login">
-                </div>
-                <div class="block-input">
-                    <label for="password">Пароль:</label>
-                    <input id="password" type="text" class="password">
-                </div>
-                <p class="error-message">Введен не верный логин или пароль</p>
-            </div>
-            <div class="modal-footer">
-                <button id="login" class="btn btn-enter">Увійти</button>
-
-                <div class="check-btn">
-                    <input id="box2" type="checkbox" class="with-font"/>
-                    <label for="box2" class="check-text">Запам’ятати мене</label>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<body class="information-link">
 
 <nav class="navbar navbar-default  nav-cybernetics hidden-sm hidden-xs">
     <div class="container-fluid">
@@ -50,7 +20,7 @@
                 <div class="col-sm-12 no-padding">
                     <div class="logo-block">
                         <div class="logo-img">
-                            <a href="/cybernetics/index.html">
+                            <a href="/">
                                 <img src="img/logo.png" class="logo" alt="">
                             </a>
                         </div>
@@ -63,7 +33,6 @@
                     </div>
                     <div class="right-nav-block">
                         <div class="search-language-login">
-                            <a href="#" class="sll-text" data-toggle="modal" data-target="#loginModal">Login</a>
                             <a href="#" class="sll-text">En</a>
                             <a href="#" class="sll-text">Ukr</a>
 
@@ -71,8 +40,9 @@
                                 <div class="input-group">
                                     <input type="text" class="form-control input-search" placeholder="Search for...">
                                     <span class="input-group-btn">
-                                        <button id="search" class="btn btn-default btn-search" type="button"><i
-                                                class="fa fa-search icon-search"></i></button>
+                                        <button id="search" class="btn btn-default btn-search" type="button">
+                                            <i class="fa fa-search icon-search"></i>
+                                        </button>
                                     </span>
                                 </div>
                             </form>
@@ -127,7 +97,6 @@
 
     <div class="close-block">
         <button class="menu-btn close-btn"><img src="img/close-btn.png" alt=""></button>
-        <a href="#" class="sll-text-mobile" data-toggle="modal" data-target="#loginModal">Вхід</a>
         <a href="#" class="sll-text-mobile">En</a>
         <a href="#" class="sll-text-mobile">Ukr</a>
     </div>
@@ -357,261 +326,102 @@
         <span class="menu-text">menu</span></div>
 </div>
 
-<header id="carousel" class="carousel slide hidden-xs">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel" data-slide-to="1" class=""></li>
-        <li data-target="#carousel" data-slide-to="2" class=""></li>
-        <li data-target="#carousel" data-slide-to="3" class=""></li>
-        <li data-target="#carousel" data-slide-to="4" class=""></li>
-        <li data-target="#carousel" data-slide-to="5" class=""></li>
-    </ol>
-
-    <!-- Wrapper for Slides -->
-    <div class="carousel-inner">
-        <div class="item next left">
-            <!-- Set the first background image using inline CSS below. -->
-            <div class="fill" style="background-image:url('img/abiturient.jpg');"></div>
-            <div class="carousel-caption">
-                <h2 class="slider-header-1">Для абітурієнтів</h2>
-
-                <h3 class="slider-header-2">Багато корисної інформації для вас.</h3>
-            </div>
-        </div>
-        <div class="item">
-            <!-- Set the second background image using inline CSS below. -->
-            <div class="fill" style="background-image:url('img/facultet.jpg');"></div>
-            <div class="carousel-caption">
-                <h2 class="slider-header-1">Про факультет</h2>
-
-                <h3 class="slider-header-2">Історія.Адміністрація.Студентське життя.</h3>
-            </div>
-        </div>
-        <div class="item">
-            <!-- Set the second background image using inline CSS below. -->
-            <div class="fill" style="background-image:url('img/cafedru.jpg');"></div>
-            <div class="carousel-caption">
-                <h2 class="slider-header-1">Кафедри</h2>
-
-                <h3 class="slider-header-2">9 кафедр - 132 викладача (49 професорів, 60 доцентів, 23 асистенти).</h3>
-            </div>
-        </div>
-        <div class="item">
-            <!-- Set the second background image using inline CSS below. -->
-            <div class="fill" style="background-image:url('img/chitalkd.png');"></div>
-            <div class="carousel-caption">
-                <h2 class="slider-header-1">Читалка</h2>
-
-                <h3 class="slider-header-2">Тепло.Тихо.Wi-Fi.</h3>
-            </div>
-        </div>
-        <div class="item">
-            <!-- Set the second background image using inline CSS below. -->
-            <div class="fill" style="background-image:url('img/bookshelf.jpg');"></div>
-            <div class="carousel-caption">
-                <h2 class="slider-header-1">Електронна бібліотека</h2>
-
-                <h3 class="slider-header-2">Підручники, монографії, методички.</h3>
-            </div>
-        </div>
-        <div class="item active left">
-            <!-- Set the third background image using inline CSS below. -->
-            <div class="fill" style="background-image:url('img/conference.jpg');"></div>
-            <div class="carousel-caption">
-                <h2 class="slider-header-1">Наукові конференції</h2>
-
-                <h3 class="slider-header-2">Зручно.Цікаво.Корисно.</h3>
-            </div>
-        </div>
-    </div>
-
-    <!-- Controls -->
-    <a class="left carousel-control stop-carousel" href="#carousel" data-slide="prev">
-        <img class="icon-prev icon-left" src="img/Shape-left.png" alt="">
-    </a>
-    <a class="right carousel-control stop-carousel" href="#carousel" data-slide="next">
-        <img class="icon-prev icon-right" src="img/Shape-right.png" alt="">
-    </a>
-
-</header>
-
-<header class="mobile-first-screen visible-xs">
-
-</header>
-
-<div class="main">
+<div class="wrap">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-12">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="information-block center-block fade-bottom">
-                            <h2 class="header-title slide-bottom">Вступ</h2>
-                            <a href="" class="header-text">
-                                <div class="image-entrants"></div>
-                                Інформація для абітурієнту</a>
-                        </div>
+            <div class="col-xs-12 no-padding">
+                <div class="top-block-grey other-page"></div>
+                <div id="left-navbar" class="dop-block hidden-xs hidden-sm">
+                    <div class="line-grey">
+                        <button id="close-left-navbar" class="btn btn-side-bar">
+                            <i class="fa fa-align-left caret-my" aria-hidden="true"></i>
+                            ЗАКРИТИ МЕНЮ
+                        </button>
                     </div>
-                    <div class="col-sm-4">
-                        <div class="information-block center-block fade-bottom">
-                            <h2 class="header-title slide-bottom">Розклад</h2>
-                            <a href="" class="header-text">
-                                <div class="image-schedule"></div>
-                                Переглянути</a>
-                        </div>
+                    <div class="open-btn-block">
+                        <button id="open-left-navbar" class="btn btn-side-bar open-block">
+                            <i class="fa fa-align-justify caret-my" aria-hidden="true"></i>
+                            <span>MENU</span>
+                        </button>
                     </div>
-                    <div class="col-sm-4">
-                        <div class="information-block center-block fade-bottom">
-                            <h2 class="header-title slide-bottom">Веб-камера</h2>
-                            <a href="" class="header-text">
-                                <div class="image-webcam"></div>
-                                Онлайн трансляція</a>
-                        </div>
+                    <div id="menu" class="dop-menu-block">
+                        <ul class="cd-accordion-menu animated">
+
+                            <li><a href="/cybernetics/deans-welcome.html">Привітання Декана</a></li>
+
+
+                            <li class="has-children">
+                                <input type="checkbox" name="group-2" id="group-2">
+                                <label for="group-2"><a href="/cybernetics/history.html" class="no-style">Історія факультету</a></label>
+
+                                <ul>
+                                    <li><a href="/cybernetics/personality.html">Особистості</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has-children">
+                                <input type="checkbox" name="group-3" id="group-3">
+                                <label for="group-3"><a href="" class="no-style">Кафедри</a></label>
+
+                                <ul>
+                                    <li><a href="#">Кафедра Обчислювальної математики</a></li>
+                                    <li><a href="#">Кафедра Моделювання складних систем</a></li>
+                                    <li><a href="#">Кафедра Дослідження операцій</a></li>
+                                    <li><a href="#">Кафедра Системного аналізу та теорії прийняття рішень</a></li>
+                                    <li><a href="#">Кафедра Прикладної статистики</a></li>
+                                    <li><a href="#">Кафедра Математичної інформатики</a></li>
+                                    <li><a href="#">Кафедра Теоретичної кібернетики</a></li>
+                                    <li><a href="#">Кафедра Теорії та технології програмування</a></li>
+                                    <li><a href="#">Кафедра Інформаційних систем</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has-children">
+                                <input type="checkbox" name="group-4" id="group-4">
+                                <label for="group-4"><a href="/cybernetics/student-organizations.html" class="no-style">Студентські організації</a></label>
+
+                                <ul>
+                                    <li><a href="#">Студентський парламент</a></li>
+                                    <li><a href="#">Наукове товариство</a></li>
+                                    <li><a href="#">Профбюро студентів</a></li>
+                                    <li><a href="#">Студентська рада</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="/cybernetics/administration-faculty.html">Адміністрація</a></li>
+
+                            <li><a href="/cybernetics/cooperation.html">Співробітництво</a></li>
+
+                            <li><a href="/cybernetics/employment.html">Працевлаштування</a></li>
+
+                            <li><a href="/cybernetics/hostel.html">Гуртожиток</a></li>
+                        </ul>
+                    </div>
+                    <div class="line-grey"></div>
+                </div>
+                <div class="main-content-block">
+                    <div class="information">
+                        <h2 class="header-text center-block">Працевлаштування</h2>
+                        <p class="text-with-information">Випускники факультету кібернетики Київського національного
+                            університету імені Тарса Шевченка після закінчення навчання здобувають наступні кваліфікації:
+                        </p>
+                        <ol class="company">
+                            <li class="text-company">Програміст</li>
+                            <li class="text-company">Математик</li>
+                            <li class="text-company">Системний аналітик</li>
+                        </ol>
+                        <p class="text-with-information next-level">Випускники, що здобули кфаліфікацію програміста успішно
+                            працюють у провідних IT-компаніях таких як: Google, Microsoft, Samsung Electonics, Luxoft,
+                            EPAM Systems, Ciklum, Globallogic, Materialise, Cargowise, Grammarly, 1C Україна, ABBYY,
+                            Railsware, d-Studio, SMK та багатьох інших.
+                        </p>
+                        <p class="text-with-information next-level">Випускники, що здобули кфаліфікацію системного
+                            аналітика успішно працюють у фінансових та банківських установах, ІТ-компаніях,
+                            державних установах, комерційних компаніях в Україні та за кордоном.
+                        </p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="content">
-
-    <div class="news">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="header-news center-block fade-bottom">
-                        <h2 class="header-title slide-bottom">Новини</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="news-block center-block">
-                        <a href="">
-                            <div class="image-block">
-                                <img src="img/news.png" class="news-image" alt="">
-                            </div>
-                            <h3 class="header-title">Талановиті студенти-кібернетики отримали сертифікати компанії
-                                IBM</h3>
-                        </a>
-
-                        <p class="date">додано 20.02.2016</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="news-block center-block">
-                        <a href="">
-                            <div class="image-block">
-                                <img src="img/news.png" class="news-image" alt="">
-                            </div>
-                            <h3 class="header-title">Талановиті студенти-кібернетики отримали сертифікати компанії IBM
-                                asdjkljkldas asd ad asd asd asd</h3>
-
-                            <p class="date">додано 20.02.2016</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="news-block center-block">
-                        <a href="">
-                            <div class="image-block">
-                                <img src="img/news.png" class="news-image" alt="">
-                            </div>
-                            <h3 class="header-title">Талановиті студенти-кібернетики отримали сертифікати компанії
-                                IBM</h3>
-                        </a>
-
-                        <p class="date">додано 20.02.2016</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="news-block center-block">
-                        <a href="">
-                            <div class="image-block">
-                                <img src="img/news.png" class="news-image" alt="">
-                            </div>
-                            <h3 class="header-title">Талановиті студенти-кібернетики отримали сертифікати компанії
-                                IBM</h3>
-                        </a>
-
-                        <p class="date">додано 20.02.2016</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="news-block center-block">
-                        <a href="">
-                            <div class="image-block">
-                                <img src="img/news.png" class="news-image" alt="">
-                            </div>
-                            <h3 class="header-title">Талановиті студенти-кібернетики отримали сертифікати компанії
-                                IBM</h3>
-                        </a>
-
-                        <p class="date">додано 20.02.2016</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="news-block center-block">
-                        <a href="">
-                            <div class="image-block">
-                                <img src="img/news.png" class="news-image" alt="">
-                            </div>
-                            <h3 class="header-title">Талановиті студенти-кібернетики отримали сертифікати компанії
-                                IBM</h3>
-                        </a>
-
-                        <p class="date">додано 20.02.2016</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-<div class="mini-carousel">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="slider-mini center-block">
-                    <a href="http://indexator.16mb.com/" class="link-slider">
-                        <div>
-                            <img src="img/index.png" class="carousel-image" alt="">
-
-                            <h3 class="carousel-text">Online програма перевірки практичних знань</h3>
-                        </div>
-                    </a>
-                    <a href="http://rmn.univ.kiev.ua/" class="link-slider">
-                        <div>
-                            <img src="img/logoukr.png" class="carousel-image" alt="">
-
-                            <h3 class="carousel-text size-rada">Рада Молодих Вчених</h3>
-                        </div>
-                    </a>
-                    <a href="http://www.e-olimp.com.ua/" class="link-slider">
-                        <div>
-                            <img src="img/66.jpg" class="carousel-image" alt="">
-
-                            <h3 class="carousel-text">Портал підготовки до олімпіад з програмування</h3>
-                        </div>
-                    </a>
-                    <a href="http://scsp.org.ua" class="link-slider">
-                        <div>
-                            <img src="img/ntsa2.png" class="carousel-image" alt="">
-
-                            <h3 class="carousel-text">Наукове товариство студентів та аспірантів</h3>
-                        </div>
-                    </a>
-                    <a href="http://hostel16.univ.kiev.ua" class="link-slider">
-                        <div>
-                            <img src="img/44.jpg" class="carousel-image" alt="">
-
-                            <h3 class="carousel-text">Веб-сайт гуртожитку факультету кібернетики</h3>
-                        </div>
-                    </a>
-                </div>
+                <div class="bot-lane"></div>
             </div>
         </div>
     </div>

@@ -122,9 +122,4 @@ $(document).ready(function () {
 
 });
 
-$(window).load(function () {
-    //Width content block
-    var height = $('.information').height();
-    $('#menu').css('min-height', height);
-});
 

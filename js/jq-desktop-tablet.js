@@ -60,6 +60,21 @@ $(document).ready(function () {
             $('.open-btn-block').fadeOut(2000);
         });
 
+        //Administration card
+        $(window).load(function () {
+            //Card
+            var admin_card_max_height = Math.max.apply(null, $("div.card").map(function () {
+                return $(this).height();
+            }).get());
+
+            $('.card').css('height', admin_card_max_height);
+
+            //Width content block
+
+            var height = $('.main-content-block').height();
+            $('#menu').css('min-height', height);
+        });
+
     }
 
     if (md.tablet()) {
@@ -87,40 +102,19 @@ $(document).ready(function () {
             speed: 1000
         });
 
-        //Animated slide bar left
-        var take_width_tablet = $('.main-content-block').width();
-        var left_block_tablet = $('#left-navbar');
+        //Administration card
+        $(window).load(function () {
+            //Card
+            var admin_card_max_height = Math.max.apply(null, $("div.card").map(function () {
+                return $(this).height();
+            }).get());
 
-        $('#open-left-navbar').on('click', function () {
+            $('.card').css('height', admin_card_max_height);
 
-            left_block_tablet.animate({
-
-                left: "-=-285px"
-            }, 1200);
-
-            $('.main-content-block').animate({
-                "margin-left": "-=-285px",
-                width: take_width_tablet - 285
-            }, 3000);
-
-            $('.open-btn-block').fadeOut(2000);
+            //Width content block
+            var height = $('.main-content-block').height();
+            $('#menu').css('min-height', height);
         });
-
-        $('#close-left-navbar').on('click', function () {
-
-            $('.open-btn-block').fadeIn(2000);
-
-            left_block_tablet.animate({
-                left: "-=+285px"
-            }, 1200);
-
-            $('.main-content-block').animate({
-                "margin-left": "-=+285px",
-                width: take_width_tablet
-            }, 3000);
-
-        });
-
     }
 
 });

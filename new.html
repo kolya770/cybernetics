@@ -10,36 +10,6 @@
 </head>
 <body class="landing">
 
-<div class="modal fade loginModal" id="loginModal" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close close-button" data-dismiss="modal"><img src="img/close-modal.png"
-                                                                                           alt=""></button>
-            </div>
-            <div class="modal-body">
-                <div class="block-input">
-                    <label for="login-name" class="log-in">Логін:</label>
-                    <input id="login-name" type="text" class="login">
-                </div>
-                <div class="block-input">
-                    <label for="password">Пароль:</label>
-                    <input id="password" type="text" class="password">
-                </div>
-                <p class="error-message">Введен не верный логин или пароль</p>
-            </div>
-            <div class="modal-footer">
-                <button id="login" class="btn btn-enter">Увійти</button>
-
-                <div class="check-btn">
-                    <input id="box2" type="checkbox" class="with-font"/>
-                    <label for="box2" class="check-text">Запам’ятати мене</label>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 <nav class="navbar navbar-default  nav-cybernetics hidden-sm hidden-xs">
     <div class="container-fluid">
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -47,7 +17,7 @@
                 <div class="col-sm-12 no-padding">
                     <div class="logo-block">
                         <div class="logo-img">
-                            <a href="/">
+                            <a href="/cybernetics/index.html">
                                 <img src="img/logo.png" class="logo" alt="">
                             </a>
                         </div>
@@ -77,7 +47,7 @@
                         <div class="link-to-other-page">
                             <ul class="dropdown">
                                 <li class="dropdown-top">
-                                    <a class="dropdown-top" href="/">Про факультет</a>
+                                    <a class="dropdown-top" href="/cybernetics/about-faculty.html">Про факультет</a>
                                 </li>
                                 <li class="dropdown-top">
                                     <a class="dropdown-top" href="/">Абітурієнтам</a>
@@ -89,7 +59,7 @@
                                     <a class="dropdown-top" href="/">Наука</a>
                                 </li>
                                 <li class="dropdown-top">
-                                    <a class="dropdown-top" href="/">Контакти</a>
+                                    <a class="dropdown-top" href="/cybernetics/contacts.html">Контакти</a>
                                 </li>
                             </ul>
                         </div>
@@ -124,7 +94,6 @@
 
     <div class="close-block">
         <button class="menu-btn close-btn"><img src="img/close-btn.png" alt=""></button>
-        <a href="#" class="sll-text-mobile" data-toggle="modal" data-target="#loginModal">Вхід</a>
         <a href="#" class="sll-text-mobile">En</a>
         <a href="#" class="sll-text-mobile">Ukr</a>
     </div>
@@ -146,18 +115,17 @@
 
             <li class="has-children">
                 <input type="checkbox" name="group-10" id="group-10">
-                <label for="group-10">Про факультет</label>
+                <label for="group-10"><a href="/cybernetics/about-faculty.html" class="dop-links">Про факультет</a></label>
 
                 <ul>
-                    <li><a href="#">Привітання Декана</a></li>
+                    <li><a href="/cybernetics/deans-welcome.html">Привітання Декана</a></li>
 
                     <li class="has-children">
                         <input type="checkbox" name="sub-group-11" id="sub-group-11">
-                        <label for="sub-group-11">Історія факультету</label>
+                        <label for="sub-group-11"><a href="/cybernetics/history.html" class="dop-links">Історія факультету</a></label>
 
                         <ul>
-                            <li><a href="#">Факти і цифри</a></li>
-                            <li><a href="#">Особистості</a></li>
+                            <li><a href="/cybernetics/personality.html">Особистості</a></li>
                         </ul>
                     </li>
 
@@ -180,7 +148,7 @@
 
                     <li class="has-children">
                         <input type="checkbox" name="sub-group-13" id="sub-group-13">
-                        <label for="sub-group-13">Студентські організації</label>
+                        <label for="sub-group-13"><a href="/cybernetics/student-organizations.html" class="dop-links">Студентські організації</a></label>
 
                         <ul>
                             <li><a href="#">Студентський парламент</a></li>
@@ -190,13 +158,13 @@
                         </ul>
                     </li>
 
-                    <li><a href="#">Адміністрація</a></li>
+                    <li><a href="/cybernetics/administration-faculty.html">Адміністрація</a></li>
 
-                    <li><a href="#">Співробітництво</a></li>
+                    <li><a href="/cybernetics/cooperation.html">Співробітництво</a></li>
 
-                    <li><a href="#">Працевлаштування</a></li>
+                    <li><a href="/cybernetics/employment.html">Працевлаштування</a></li>
 
-                    <li><a href="#">Гуртожиток</a></li>
+                    <li><a href="/cybernetics/hostel.html">Гуртожиток</a></li>
                 </ul>
             </li>
 
@@ -338,7 +306,7 @@
 
             </li>
 
-            <li><a href="#">Контакти</a></li>
+            <li><a href="/cybernetics/contacts.html">Контакти</a></li>
 
         </ul>
     </div>
@@ -347,11 +315,10 @@
 <div class="site-overlay visible-xs-block visible-sm-block"></div>
 
 <div id="container" class="mobile-menu visible-xs-block visible-sm-block">
-    <div class="logo-mob">
+    <a href="/cybernetics/index.html" class="logo-mob">
         <img src="img/logo.png" class="logo-m-img" alt="">
-
         <h2 class="logo-m-text">Факультет кібернетики</h2>
-    </div>
+    </a>
     <div class="menu-btn"><img src="img/menu-icon.png" alt="">
         <span class="menu-text">menu</span></div>
 </div>

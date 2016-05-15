@@ -1,26 +1,3 @@
-.top-block-grey {
-  background-color: #adaeaf;
-  @media #{$bootstrap-xs} {
-    height: 100px;
-  }
-  @media #{$bootstrap-sm} {
-    height: 100px;
-  }
-  @media #{$bootstrap-md} {
-    height: 235px;
-  }
-}
-
-.left-block-grey {
-  height: 20px;
-  width: 200px;
-  float: left;
-  background-color: #adaeaf;
-  @media #{$bootstrap-xs} {
-    width: 20%;
-  }
-}
-
 .new {
   @media #{$bootstrap-xs} {
     margin-left: 20px;

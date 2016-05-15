@@ -1,4 +1,4 @@
-@import "mixins";
+@import "settings/mixins";
 
 html,
 body {
@@ -140,14 +140,18 @@ body.modal-open-noscroll {
 
 @import "settings/slick";
 @import "settings/slick-theme";
+@import "settings/global";
 @import "news/new";
 @import "partials/navbar";
 @import "partials/footer";
 @import "partials/navbar-mobile";
 @import "partials/animation-images";
+@import "partials/administration";
+@import "partials/cooperation";
 @import "landing/carusel";
 @import "landing/main-information";
 @import "landing/main-first-screen-mobile";
 @import "landing/popup";
 @import "content/content-page";
 @import "content/side-nav";
+@import "content/map";
