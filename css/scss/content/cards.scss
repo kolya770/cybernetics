@@ -1,4 +1,4 @@
-.card-admin-block {
+.card-block {
   float: left;
   .card {
     width: 50%;
@@ -8,7 +8,7 @@
     @media #{$bootstrap-xs} {
       width: 100%;
     }
-    .card-block {
+    .card-center {
       width: 100%;
       height: 100%;
       @media #{$bootstrap-sm} {
@@ -53,6 +53,7 @@
           }
           p {
             margin-bottom: 5px;
+            font-family: $text-font-3;
           }
           .info-name {
             margin-bottom: 10px;

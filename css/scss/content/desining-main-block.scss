@@ -1,13 +1,20 @@
-.company {
+.list {
   margin-top: 15px;
   margin-left: 30px;
   margin-bottom: 15px;
-  .text-company {
+  font-family: $text-font-2;
+  .text-list {
     list-style-type: circle;
     .bold-text {
       font-weight: 600;
     }
   }
+  .numeric-list {
+    list-style-type: decimal;
+  }
+}
+.double-list {
+  margin-top: 0;
 }
 
 .company-info {

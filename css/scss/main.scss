@@ -112,8 +112,21 @@ ol, ul, label {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "UBUNTU-REGULAR";
+  src: url("../fonts/UBUNTU-REGULAR.eot");
+  src: url("../fonts/UBUNTU-REGULAR.eot#iefix") format("embedded-opentype"),
+  url("../fonts/UBUNTU-REGULAR.woff") format("woff"),
+  url("../fonts/UBUNTU-REGULAR.otf") format("opentype"),
+  url("../fonts/UBUNTU-REGULAR.ttf") format("truetype"),
+  url("../fonts/UBUNTU-REGULAR.svg#UBUNTU-REGULAR") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 $test1: 'Exo 2', sans-serif;
 // global fonts
+$text-font-3: 'UBUNTU-REGULAR', sans-serif;
 $text-font-2: 'UBUNTU-LIGHT', sans-serif;
 $text-font: 'UBUNTU-MEDIUM', sans-serif;
 $header-font: 'UBUNTU-BOLD', sans-serif;
@@ -146,12 +159,10 @@ body.modal-open-noscroll {
 @import "partials/footer";
 @import "partials/navbar-mobile";
 @import "partials/animation-images";
-@import "partials/administration";
-@import "partials/cooperation";
+@import "partials/left-navbar";
 @import "landing/carusel";
 @import "landing/main-information";
 @import "landing/main-first-screen-mobile";
 @import "landing/popup";
 @import "content/content-page";
-@import "content/side-nav";
 @import "content/map";

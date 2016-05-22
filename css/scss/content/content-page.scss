@@ -59,7 +59,7 @@
         border-radius: 0;
         padding: 0 10px 0 0;
         outline: none !important;
-        border: 2px solid $global-color-white;
+        border: 3px solid $global-color-white;
         background: transparent;
         font-family: $open-sans-reg;
         font-size: 1em;
@@ -69,10 +69,11 @@
         margin-top: 7.5px;
         margin-left: 30px;
         width: 240px;
+        font-weight: 700;
         box-shadow: 2px 3px 10px #555;
         transition: all 0.3s ease;
         &:hover {
-          border: 2px solid $global-color-blue;
+          border: 3px solid $global-color-blue;
           background: $global-color-blue;
           color: #282828;
         }
@@ -109,6 +110,12 @@
     }
   }
   .main-content-block {
+
+    @import "cards";
+    @import "desining-main-block";
+    @import "table-styling";
+
+
     margin-top: 50px;
     display: inline-block;
     float: left;
@@ -125,6 +132,14 @@
       width: calc(100% - 300px);
       margin-left: 0;
     }
+
+    .margin-strong-1 {
+      margin-right: 16px;
+    }
+    .margin-strong-2 {
+      margin-right: 10px;
+    }
+
     .information {
       margin: 0 13%;
       @media #{$bootstrap-xs} {
@@ -142,7 +157,6 @@
         font-weight: 400;
         text-align: center;
         border-bottom: 2px solid black;
-        max-width: 700px;
         margin-bottom: 40px;
         margin-top: 15px;
         @media #{$bootstrap-xs} {
@@ -218,7 +232,7 @@
         }
       }
       .text-with-information {
-        font-family: $open-sans-reg;
+        font-family: $text-font-2;
         color: rgba(0, 0, 0, 0.82);
         font-size: 1em;
         font-weight: 400;
@@ -227,9 +241,8 @@
         .NDL-group {
           margin-left: 50px;
         }
-
       }
-      .cooperation {
+      .bold-header {
         margin-top: 20px;
         font-weight: 700;
       }
