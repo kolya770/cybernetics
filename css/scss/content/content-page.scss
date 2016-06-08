@@ -1,0 +1,310 @@
+.wrap {
+  .no-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .dop-block {
+    width: 300px;
+    left: 0;
+    float: left;
+    display: inline-block;
+    position: relative;
+    .open-btn-block {
+      display: none;
+      width: 50px;
+      height: 50px;
+      .open-block {
+        position: absolute;
+        border-radius: 0;
+        padding: 0;
+        outline: none;
+        border: 2px solid $global-color-white;
+        background: transparent;
+        font-size: 1em;
+        line-height: 50px;
+        height: 50px;
+        float: right;
+        box-shadow: 2px 3px 10px #555;
+        margin-left: 30px;
+        width: 50px;
+        margin-top: 7.5px;
+        &:hover {
+          border: 2px solid $global-color-blue;
+          background: $global-color-blue;
+          color: #282828;
+        }
+        .caret-my {
+          font-size: 20px;
+          margin-left: 10px;
+          margin-right: 10px;
+          margin-top: 3px;
+          display: block;
+        }
+        span {
+          font-size: 0.7em;
+          line-height: 10px;
+          display: block;
+        }
+      }
+    }
+    .line-grey {
+      width: 300px;
+      height: 65px;
+      float: left;
+      background-color: $global-color-grey;
+      @media #{$bootstrap-xs} {
+        display: none;
+      }
+      .btn-side-bar {
+        border-radius: 0;
+        padding: 0 10px 0 0;
+        outline: none !important;
+        border: 3px solid $global-color-white;
+        background: transparent;
+        font-family: $open-sans-reg;
+        font-size: 1em;
+        line-height: 50px;
+        height: 50px;
+        float: left;
+        margin-top: 7.5px;
+        margin-left: 30px;
+        width: 240px;
+        font-weight: 700;
+        box-shadow: 2px 3px 10px #555;
+        transition: all 0.3s ease;
+        &:hover {
+          border: 3px solid $global-color-blue;
+          background: $global-color-blue;
+          color: #282828;
+        }
+        .caret-my {
+          font-size: 20px;
+          margin-left: 10px;
+          margin-right: 10px;
+          margin-top: 6px;
+        }
+      }
+    }
+    .dop-menu-block {
+      background-color: $global-color-grey;
+      width: 270px;
+      margin: 15px 0;
+      float: left;
+      position: relative;
+      top: 0;
+      @media #{$bootstrap-xs} {
+        width: 100%;
+      }
+      @media #{$bootstrap-sm} {
+        &:after {
+          display: block;
+          content: "";
+          width: 15px;
+          height: 100%;
+          background: $global-color-grey;
+          position: absolute;
+          left: 285px;
+          top: 0;
+        }
+      }
+    }
+  }
+  .main-content-block {
+
+    @import "cards";
+    @import "desining-main-block";
+    @import "table-styling";
+
+
+    margin-top: 50px;
+    display: inline-block;
+    float: left;
+    position: absolute;
+    @media #{$bootstrap-xs} {
+      width: 100%;
+      position: relative;
+    }
+    @media #{$bootstrap-sm} {
+      width: 100%;
+      position: relative;
+    }
+    @media #{$bootstrap-md} {
+      width: calc(100% - 300px);
+      margin-left: 0;
+    }
+
+    .margin-strong-1 {
+      margin-right: 16px;
+    }
+    .margin-strong-2 {
+      margin-right: 10px;
+    }
+
+    .information {
+      margin: 0 13%;
+      @media #{$bootstrap-xs} {
+        margin-bottom: 50px;
+      }
+      @media #{$bootstrap-sm} {
+        margin-bottom: 50px;
+      }
+      @media #{$bootstrap-md} {
+        margin-bottom: 0;
+      }
+      .header-text {
+        font-family: $header-font;
+        color: rgba(0, 0, 0, 0.82);
+        font-weight: 400;
+        text-align: center;
+        border-bottom: 2px solid black;
+        margin-bottom: 40px;
+        margin-top: 15px;
+        @media #{$bootstrap-xs} {
+          font-size: 1.5em;
+        }
+        @media #{$bootstrap-sm} {
+          font-size: 2.3em;
+        }
+        @media #{$bootstrap-md} {
+          font-size: 3em;
+          line-height: 75px;
+        }
+      }
+      .header-text-small {
+        margin-top: 50px;
+        @media #{$bootstrap-xs} {
+          font-size: 1.3em;
+        }
+        @media #{$bootstrap-sm} {
+          font-size: 1.8em;
+        }
+        @media #{$bootstrap-md} {
+          font-size: 2.5em;
+          line-height: 50px;
+        }
+      }
+      .left-content {
+        width: 100%;
+        display: block;
+        position: relative;
+        float: left;
+        .contacts-block {
+          width: 100%;
+          display: block;
+          float: left;
+          .info-contacts {
+            a {
+              margin-bottom: 10px;
+              display: block;
+            }
+          }
+          .header-text {
+            font-size: 1.7em;
+            border-bottom: 0;
+            margin: 0;
+            text-align: left;
+            @media #{$bootstrap-xs} {
+              line-height: 75px;
+            }
+            @media #{$bootstrap-sm} {
+              line-height: 75px;
+            }
+
+          }
+        }
+      }
+      .right-map {
+        width: 100%;
+        display: block;
+        position: relative;
+        float: left;
+        margin-top: 50px;
+        border: 6px solid $global-color-white;
+        box-shadow: 0 0 10px #353434;
+        @media #{$bootstrap-xs} {
+          margin-bottom: 50px;
+        }
+        @media #{$bootstrap-sm} {
+          margin-bottom: 50px;
+        }
+        @media #{$bootstrap-md} {
+          margin-bottom: 0;
+        }
+      }
+      .text-with-information {
+        font-family: $text-font-2;
+        color: rgba(0, 0, 0, 0.82);
+        font-size: 1em;
+        font-weight: 400;
+        text-align: left;
+        margin-bottom: 0;
+        .NDL-group {
+          margin-left: 50px;
+        }
+      }
+      .bold-header {
+        margin-top: 20px;
+        font-weight: 700;
+      }
+      .next-level {
+        margin-bottom: 20px;
+      }
+      .image-information {
+        border: 6px solid $global-color-white;
+        box-shadow: 0 0 10px #353434;
+        float: left;
+        @media #{$bootstrap-xs} {
+          float: none;
+          width: 100%;
+          max-width: 300px;
+        }
+      }
+      .info-photo {
+        display: none;
+        width: 100%;
+        height: auto;
+        bottom: 0;
+        z-index: 2;
+        background: $global-color-white;
+        position: absolute;
+        @media #{$bootstrap-xs} {
+          display: block;
+          margin-bottom: 20px;
+          position: relative;
+          margin-top: 20px;
+        }
+        p {
+          padding: 10px;
+          text-align: center;
+          width: 100%;
+          font-family: $test1;
+          color: #282828;
+          font-size: 0.8em;
+          margin-bottom: 0;
+        }
+      }
+      .block-photo:hover .info-photo {
+        display: block;
+
+      }
+      .block-photo {
+        margin-right: 20px;
+        float: left;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        @media #{$bootstrap-xs} {
+          display: block;
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .bot-lane {
+    width: 100%;
+    height: 30px;
+    background-color: $global-color-grey;
+    float: left;
+  }
+}

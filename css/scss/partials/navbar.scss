@@ -1,5 +1,5 @@
 .nav-cybernetics {
-  background-color:  rgba(0, 0, 0, 0.82);
+  background-color: rgba(0, 0, 0, 0.82);
   height: 185px;
   border-radius: 0;
   border: none;
@@ -35,7 +35,7 @@
       margin-left: 10px;
       .header-title {
         font-family: $open-sans-bold;
-        color:  $global-color-blue;
+        color: $global-color-blue;
         font-weight: 700;
         text-align: left;
         margin-bottom: 5px;
@@ -52,8 +52,8 @@
       .header-title-text {
         transition: 0.5s;
         font-family: $open-sans-reg;
-        color:  $global-color-blue;
-        font-size:  0.750em;
+        color: $global-color-blue;
+        font-size: 0.750em;
         font-weight: 400;
         text-align: left;
         margin-top: 0;
@@ -69,6 +69,7 @@
   .right-nav-block {
     float: right;
     height: 185px;
+    margin-top: 13px;
     .search-language-login {
       margin-top: 10px;
       height: 45px;
@@ -89,7 +90,7 @@
           border-right: 0;
           border-left: 0;
           font-family: $open-sans-reg;
-          color:  #ffffff;
+          color: #ffffff;
           font-size: 1.125em;
           @media #{$bootstrap-md} {
             width: 220px;
@@ -142,7 +143,7 @@
         float: right;
         margin-top: 10px;
         font-family: $open-sans-reg;
-        color:  #ffffff;
+        color: #ffffff;
         font-size: 1.125em;
         font-weight: 400;
         margin-left: 10px;
@@ -170,7 +171,7 @@
       }
       ul.dropdown li.dropdown-top {
         display: inline;
-        float: right;
+        float: left;
       }
       ul.dropdown li.dropdown-top a {
         display: block;
@@ -179,7 +180,7 @@
         background-color: transparent;
         text-decoration: none;
         font-family: $open-sans-semi-bold;
-        color:  #ffffff;
+        color: #ffffff;
         font-weight: 600;
         line-height: 44px;
         text-align: center;
@@ -220,7 +221,7 @@
       }
       ul.dropdown .dropdown-inside a {
         font-family: $open-sans-reg;
-        color:  #282828;
+        color: #282828;
         font-size: 1.125em;
         font-weight: 400;
         line-height: 40px;
@@ -243,6 +244,7 @@
     }
   }
 }
+
 .search-form {
   float: right;
   margin: 0;
@@ -260,7 +262,7 @@
     border-right: 0;
     border-left: 0;
     font-family: $open-sans-reg;
-    color:  #ffffff;
+    color: #ffffff;
     font-size: 1.125em;
     @media #{$bootstrap-md} {
       width: 220px;
@@ -309,11 +311,12 @@
     }
   }
 }
+
 .sll-text {
   float: right;
   margin-top: 10px;
   font-family: $open-sans-reg;
-  color:  #ffffff;
+  color: #ffffff;
   font-size: 1.125em;
   font-weight: 400;
   margin-left: 10px;

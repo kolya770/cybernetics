@@ -1,0 +1,10 @@
+.information-table {
+  border: 3px solid $global-color-blue;
+  font-family: $text-font-2;
+  tbody tr:nth-of-type(odd) {
+    background: rgba(5, 220, 185, 0.15);
+  }
+  tbody tr:first-child {
+    background: $global-color-blue;
+  }
+}

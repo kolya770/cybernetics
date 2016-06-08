@@ -1,4 +1,4 @@
-.loginModal{
+.loginModal {
   z-index: 99999;
   .modal-dialog {
     position: absolute;
@@ -68,7 +68,7 @@
             box-sizing: border-box;
             background-color: #f9f9f9;
             height: 50px;
-            padding:10px 10px 10px 20px;
+            padding: 10px 10px 10px 20px;
             outline: none;
             font-family: $open-sans-reg;
 
@@ -128,13 +128,13 @@
         border: none;
         text-align: center;
         .btn-enter {
-          background-color:  #05dcb9;
+          background-color: #05dcb9;
           width: 420px;
           height: 76px;
           margin-bottom: 20px;
           font-family: $open-sans-reg;
           font-weight: 400;
-          color:  #282828;
+          color: #282828;
           font-size: 36px;
           text-align: center;
           outline: none;
@@ -147,7 +147,7 @@
             font-style: italic;
             font-weight: 100;
             line-height: 34px;
-            color:  #727272;
+            color: #727272;
             font-size: 1.875em;
             text-align: center;
           }

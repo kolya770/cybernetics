@@ -6,9 +6,12 @@
     <title>Cybernetics Faculty</title>
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Exo+2:400&subset=latin,cyrillic' rel='stylesheet'
+          type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/settings/modernizr.js"></script>
 </head>
-<body class="landing">
+<body class="information-link">
 
 <nav class="navbar navbar-default  nav-cybernetics hidden-sm hidden-xs">
     <div class="container-fluid">
@@ -17,7 +20,7 @@
                 <div class="col-sm-12 no-padding">
                     <div class="logo-block">
                         <div class="logo-img">
-                            <a href="/cybernetics/index.html">
+                            <a href="/">
                                 <img src="img/logo.png" class="logo" alt="">
                             </a>
                         </div>
@@ -30,7 +33,6 @@
                     </div>
                     <div class="right-nav-block">
                         <div class="search-language-login">
-                            <a href="#" class="sll-text" data-toggle="modal" data-target="#loginModal">Login</a>
                             <a href="#" class="sll-text">En</a>
                             <a href="#" class="sll-text">Ukr</a>
 
@@ -38,8 +40,9 @@
                                 <div class="input-group">
                                     <input type="text" class="form-control input-search" placeholder="Search for...">
                                     <span class="input-group-btn">
-                                        <button id="search" class="btn btn-default btn-search" type="button"><i
-                                                class="fa fa-search icon-search"></i></button>
+                                        <button id="search" class="btn btn-default btn-search" type="button">
+                                            <i class="fa fa-search icon-search"></i>
+                                        </button>
                                     </span>
                                 </div>
                             </form>
@@ -154,7 +157,6 @@
                             <li><a href="/cybernetics/sp.html">Студентський парламент</a></li>
                             <li><a href="/cybernetics/scsp.html">Наукове товариство</a></li>
                             <li><a href="/cybernetics/su.html">Профбюро студентів</a></li>
-                            <li><a href="#">Студентська рада</a></li>
                         </ul>
                     </li>
 
@@ -323,91 +325,134 @@
         <span class="menu-text">menu</span></div>
 </div>
 
-<div class="new">
-    <div class="top-block-grey"></div>
-    <div class="left-block-grey"></div>
-    <div class="right-block-grey"></div>
-    <div class="new-block">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="active-new center-block fade-bottom">
-                        <h2 class="header-text slide-bottom" data-plugin-options='{"reverse":false}'>Талановиті
-                            студенти-кібернетики отримали сертифікати компанії IBM</h2>
+<div class="wrap">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 no-padding">
+                <div class="top-block-grey other-page"></div>
+                <div id="left-navbar" class="dop-block hidden-xs hidden-sm">
+                    <div class="line-grey">
+                        <button id="close-left-navbar" class="btn btn-side-bar">
+                            <i class="fa fa-align-left caret-my" aria-hidden="true"></i>
+                            ЗАКРИТИ МЕНЮ
+                        </button>
+                    </div>
+                    <div class="open-btn-block">
+                        <button id="open-left-navbar" class="btn btn-side-bar open-block">
+                            <i class="fa fa-align-justify caret-my" aria-hidden="true"></i>
+                            <span>MENU</span>
+                        </button>
+                    </div>
+                    <div id="menu" class="dop-menu-block">
+                        <ul class="cd-accordion-menu animated">
 
-                        <p class="date slide-bottom" data-plugin-options='{"reverse":false}'>додано 20.02.2016</p>
+                            <li><a href="/cybernetics/deans-welcome.html">Привітання Декана</a></li>
 
-                        <div class="image-block">
-                            <img src="img/news.png" class="news-image" alt="">
+
+                            <li class="has-children">
+                                <input type="checkbox" name="group-2" id="group-2">
+                                <label for="group-2"><a href="/cybernetics/history.html" class="no-style">Історія факультету</a></label>
+
+                                <ul>
+                                    <li><a href="/cybernetics/personality.html">Особистості</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has-children">
+                                <input type="checkbox" name="group-3" id="group-3">
+                                <label for="group-3"><a href="/cybernetics/departments.html" class="no-style">Кафедри</a></label>
+
+                                <ul>
+                                    <li><a href="#">Кафедра Обчислювальної математики</a></li>
+                                    <li><a href="#">Кафедра Моделювання складних систем</a></li>
+                                    <li><a href="#">Кафедра Дослідження операцій</a></li>
+                                    <li><a href="#">Кафедра Системного аналізу та теорії прийняття рішень</a></li>
+                                    <li><a href="#">Кафедра Прикладної статистики</a></li>
+                                    <li><a href="#">Кафедра Математичної інформатики</a></li>
+                                    <li><a href="#">Кафедра Теоретичної кібернетики</a></li>
+                                    <li><a href="/cybernetics/departments.ttp.html">Кафедра Теорії та технології програмування</a></li>
+                                    <li><a href="#">Кафедра Інформаційних систем</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has-children">
+                                <input type="checkbox" name="group-4" id="group-4">
+                                <label for="group-4"><a href="/cybernetics/student-organizations.html" class="no-style">Студентські організації</a></label>
+
+                                <ul>
+                                    <li><a href="/cybernetics/sp.html">Студентський парламент</a></li>
+                                    <li><a href="/cybernetics/scsp.html">Наукове товариство</a></li>
+                                    <li><a href="/cybernetics/su.html">Профбюро студентів</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="/cybernetics/administration-faculty.html">Адміністрація</a></li>
+
+                            <li><a href="/cybernetics/cooperation.html">Співробітництво</a></li>
+
+                            <li><a href="/cybernetics/employment.html">Працевлаштування</a></li>
+
+                            <li><a href="/cybernetics/hostel.html">Гуртожиток</a></li>
+                        </ul>
+                    </div>
+                    <div class="line-grey"></div>
+                </div>
+                <div class="main-content-block">
+                    <div class="information">
+                        <div class="left-content">
+                            <div class="contacts-block">
+                                <h2 class="header-text">Контакти</h2>
+                                <div class="info-contacts">
+                                    <p class="text-with-information">
+                                        Київський національний університет
+                                        імені Тараса Шевченка,
+                                        Факультет кібернетики,
+                                        03680, Україна, м. Київ,
+                                        пр. Академіка Глушкова, 4д. (раніше 2 к6)
+                                        станція метро "Виставковий центр"
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="contacts-block">
+                                <h2 class="header-text">Телефони</h2>
+                                <div class="info-contacts">
+                                    <p class="text-with-information">
+                                        приймальня декана: <br />
+                                        +38(044) 521-35-54<br /><br />
+                                        заступник декана з навчально-методичної роботи:<br />
+                                        +38(044) 259-01-19<br /><br />
+                                        заступник декана з соціально-побутових
+                                        та організаційних питань: <br />
+                                        +38(044) 259-01-19<br /><br />
+                                        деканат факультету:<br />
+                                        +38(044) 259-01-39
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="contacts-block">
+                                <h2 class="header-text">Web</h2>
+                                <div class="info-contacts">
+                                    <a href="/cybernetics/index.html" class="text-with-information">Офіційна сторінка факультету</a>
+                                    <a href="http://facebook.com/CyberneticsFaculty" class="text-with-information">Сторінка факультету в <i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                    <a href="http://facebook.com/CyberneticsFaculty" class="text-with-information">Сторінка факультету в <i class="fa fa-vk" aria-hidden="true"></i></a>
+                                    <a href="http://facebook.com/CyberneticsFaculty" class="text-with-information">Сторінка факультету в <i class="fa fa-youtube" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="new-text-block">
-                            <p class="text-new">Популярність цих змагань, які визначають престиж країни у галузі
-                                інформаційних технологій, дуже велика. Наприклад, у 2002/2003 навчальному році тільки у
-                                регіональних олімпіадах першості світу взяли участь 3850 команд з 1329 університетів з
-                                68 країн світу, а загальна кількість учасників першості світу, враховуючи
-                                команд-учасників
-                                національних першостей, приблизно оцінювалась у 24 – 25 тисяч. Але вже у 2008 році у
-                                відборах до чемпіонату світу стартувало 6700 команд із 1821 університету з 83 країн
-                                світу. Європейські країни розпочали участь у цих змаганнях з 1991 року, а східно -
-                                європейські з 1995 р. З тих пір американським командам рідко щастило стати чемпіоном
-                                світу. Зате частіше за інших перемогу святкували команди зі східної Європи: 1998 –
-                            </p>
+                        <div class="right-map">
+                            <div id="map" class="map"></div>
+                            <div id="save-widget">
+                                <strong>КНУ ім. Тараса Шевчена</strong>
+                                <strong>Факультет кібернетики</strong>
+                                <a href="https://www.google.com/maps/dir//50.383071,30.470296/@50.3856054,30.4665489,16z?hl=uk">
+                                    <div class="bg-icon"></div>
+                                    <div class="text-save">Маршрут</div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="news news-other">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="header-news center-block fade-bottom">
-                        <h2 class="header-title slide-bottom" data-plugin-options='{"reverse":false}'>Інші новини</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="news-block center-block">
-                        <a href="">
-                            <div class="image-block">
-                                <img src="img/news.png" class="news-image" alt="">
-                            </div>
-                            <h3 class="header-title">Талановиті студенти-кібернетики отримали сертифікати компанії
-                                IBM</h3>
-                        </a>
-
-                        <p class="date">додано 20.02.2016</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="news-block center-block">
-                        <a href="">
-                            <div class="image-block">
-                                <img src="img/news.png" class="news-image" alt="">
-                            </div>
-                            <h3 class="header-title">Талановиті студенти-кібернетики отримали сертифікати компанії
-                                IBM</h3>
-                        </a>
-
-                        <p class="date">додано 20.02.2016</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="news-block center-block">
-                        <a href="">
-                            <div class="image-block">
-                                <img src="img/news.png" class="news-image" alt="">
-                            </div>
-                            <h3 class="header-title">Талановиті студенти-кібернетики отримали сертифікати компанії
-                                IBM</h3>
-                        </a>
-
-                        <p class="date">додано 20.02.2016</p>
-                    </div>
-                </div>
+                <div class="bot-lane"></div>
             </div>
         </div>
     </div>
@@ -503,6 +548,81 @@
     </div>
 
 </footer>
+
+<script>
+    function initMap() {
+        var myLatlng = new google.maps.LatLng(50.383540, 30.471088);
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: myLatlng,
+            scrollwheel: false,
+            zoom: 17,
+            mapTypeControlOptions: {
+                mapTypeIds: [
+                    google.maps.MapTypeId.ROADMAP,
+                    google.maps.MapTypeId.SATELLITE
+                ],
+                position: google.maps.ControlPosition.BOTTOM_LEFT
+            }
+        });
+
+        var widgetDiv = document.getElementById('save-widget');
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(widgetDiv);
+
+        // Append a Save Control to the existing save-widget div.
+        var saveWidget = new google.maps.SaveWidget(widgetDiv, {
+            place: {
+                // ChIJN1t_tDeuEmsRUsoyG83frY4 is the place Id for Google Sydney.
+                placeId: 'ChIJN1t_tDeuEmsRUsoyG83frY4',
+                location: {lat: -33.866647, lng: 151.195886}
+            },
+            attribution: {
+                source: 'Google Maps JavaScript API',
+                webUrl: 'https://developers.google.com/maps/'
+            }
+        });
+
+        var image = {
+            url: 'img/logo.png',
+            scaledSize: new google.maps.Size(33, 50),
+            origin: new google.maps.Point(0,0),
+            anchor: new google.maps.Point(0,0)
+        };
+
+        var marker = new google.maps.Marker({
+            map: map,
+            icon: image,
+            draggable: true,
+            animation: google.maps.Animation.DROP,
+            title:"Факультет кібернетики , Глушкова 4Д",
+            position: myLatlng
+        });
+        var contentString = '<div id="content">'+
+                '<div id="siteNotice">'+
+                '</div>'+
+                '<div id="bodyContent">'+
+                '<a href="https://www.google.com/maps/dir//50.383071,30.470296/@50.3856054,30.4665489,16z?hl=uk">Украина, Киев, КНУ им. Тараса Шевченка, Факультет кібернетики , Глушкова 4Д</a>'+
+                '</div>'+
+                '</div>';
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+        marker.addListener('click', function() {
+            infowindow.open(map, marker, toggleBounce);
+        });
+
+    }
+
+    function toggleBounce() {
+        if (marker.getAnimation() !== null) {
+            marker.setAnimation(null);
+        } else {
+            marker.setAnimation(google.maps.Animation.BOUNCE);
+        }
+    }
+</script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQmLO0DR2dwVhqFzP6WgEMh4_-XV87LcA&callback&signed_in=true&callback=initMap"></script>
 
 <script src="js/settings/jquery-2.0.0.min.js"></script>
 <script src="js/settings/bootstrap.min.js"></script>

@@ -1,5 +1,5 @@
 .mobile-first-screen {
-  height: 100vh;
+  height: 50vh;
   background: url("../img/m-first-p.jpg") center center no-repeat;
   background-size: cover;
   .mobile-logo {
@@ -15,7 +15,7 @@
     margin-top: 35vh;
     position: absolute;
     width: 100%;
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(0, 0, 0, .6);
     text-align: center;
     .m-image-logo {
       margin-top: 10px;
@@ -23,7 +23,7 @@
     }
     .header-title {
       font-family: $open-sans-bold;
-      color:  $global-color-blue;
+      color: $global-color-blue;
       font-weight: 700;
       text-align: center;
       font-size: 1.4em;

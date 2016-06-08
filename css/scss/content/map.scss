@@ -1,0 +1,43 @@
+.map {
+  @media #{$bootstrap-xs} {
+    height: 350px;
+  }
+  @media #{$bootstrap-sm} {
+    height: 600px;
+  }
+
+}
+#save-widget {
+  box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
+  background-color: white;
+  padding: 10px;
+  font-size: 13px;
+  margin: 15px;
+  @media #{$bootstrap-sm} {
+    width: 300px;
+  }
+  .bg-icon {
+    background-image: url(https://maps.gstatic.com/mapfiles/embed/images/entity11.png);
+    background-size: 70px 210px;
+    width: 22px;
+    height: 22px;
+    overflow: hidden;
+    display: inline-block;
+    float: left;
+    margin-bottom: 20px;
+  }
+  .text-save {
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+  }
+  strong {
+    float: left;
+    display: block;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}

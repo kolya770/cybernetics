@@ -44,7 +44,7 @@
     left: 0;
     right: 0;
     bottom: 50%;
-    background-color:  rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 0;
     @media #{$bootstrap-sm} {
       height: 130px;
@@ -64,7 +64,7 @@
     }
     .slider-header-1 {
       font-family: $open-sans-semi-bold;
-      color:  #05dcb8;
+      color: #05dcb8;
       font-weight: 600;
       @media #{$bootstrap-sm} {
         font-size: 3em
@@ -81,7 +81,7 @@
     }
     .slider-header-2 {
       font-family: $open-sans-reg;
-      color:  #05dcb8;
+      color: #05dcb8;
       font-size: 2.250em;
       font-weight: 400;
       @media #{$bootstrap-sm} {
@@ -110,6 +110,11 @@
     margin-top: -33px;
     left: 70%;
   }
+}
+
+.mini-carousel {
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 
 .slider-mini {
@@ -151,7 +156,7 @@
   }
   .carousel-text {
     font-family: $open-sans-light;
-    color:  #282828;
+    color: #282828;
     font-weight: 300;
     text-align: left;
     display: inline-block;
@@ -196,11 +201,6 @@
       width: 50%;
       margin-top: 13px;
     }
-    //@media #{$bootstrap-xxl} {
-    //  width: 70%;
-    //  margin-top: 10px;
-    //  font-size: 1.500em;
-    //}
   }
   .size-rada {
     @media #{$bootstrap-xs} {
