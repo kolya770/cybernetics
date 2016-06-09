@@ -69,7 +69,6 @@
   .right-nav-block {
     float: right;
     height: 185px;
-    margin-top: 13px;
     .search-language-login {
       margin-top: 10px;
       height: 45px;
@@ -157,6 +156,7 @@
     }
     .link-to-other-page {
       height: 45px;
+      margin-top: 10px;
       ul.dropdown li {
         position: relative;
       }
