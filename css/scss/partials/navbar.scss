@@ -213,6 +213,10 @@
             right: 0;
           }
         }
+        .active {
+          background-color: $global-color-blue;
+          color: #282828;
+        }
       }
 
       ul.dropdown .dropdown-inside {
