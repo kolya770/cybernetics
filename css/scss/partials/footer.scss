@@ -1,9 +1,11 @@
 .footer {
   min-height: 200px;
+  background: url('../img/ft-1.jpg');
+  background-size: cover;
   .main-footer-block {
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: rgb(46, 46, 46);
+    background-color: rgba(0,0,0,.82);
     @media #{$bootstrap-xs} {
       padding-top: 20px;
     }
@@ -111,7 +113,8 @@
   }
   .copyright-block {
     min-height: 67px;
-    background-color: #adaeaf;
+    background-color: rgba(0,0,0,.95);
+
     .copyright-container {
       text-align: center;
       margin-bottom: 20px;
@@ -125,7 +128,7 @@
       }
       .copyright {
         font-family: $open-sans-reg;
-        color: #010000;
+        color: $global-color-white;
         font-size: 1.313em;
         font-weight: 400;
         text-align: center;
@@ -137,7 +140,7 @@
       }
       .copyright-hr {
         width: 70%;
-        border-top: 3px solid #272828;
+        border-top: 2px solid $global-color-white;
         margin-top: 7px;
         @media #{$bootstrap-xs} {
           width: 90%;

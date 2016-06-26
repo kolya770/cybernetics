@@ -1,5 +1,5 @@
 .top-block-grey {
-  background-color: #adaeaf;
+  background-color: $global-color-grey;
   @media #{$bootstrap-xs} {
     height: 100px;
   }
@@ -32,3 +32,13 @@
     height: 200px;
   }
 }
+
+//social-icon
+.cp-icon {
+  font-size: 1.5em;
+  color:$global-color-white;
+  &:hover {
+    color: $global-color-blue;
+  }
+}
+

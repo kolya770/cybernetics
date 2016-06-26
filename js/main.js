@@ -100,11 +100,6 @@ $(document).ready(function () {
         $('body').removeClass("modal-open-noscroll");
     });
 
-    //Error modal authorize
-    $('#login').on('click', function () {
-        $('.error-message').fadeIn('slow');
-    });
-
     //Accordion
     var accordionsMenu = $('.cd-accordion-menu');
 

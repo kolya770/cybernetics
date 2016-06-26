@@ -139,7 +139,7 @@ $open-sans-reg: "OpenSans-Regular", "sans-serif";
 // global colors
 $global-color-blue: #05dcb9;
 $global-color-white: #ffffff;
-$global-color-grey: #adaeaf;
+$global-color-grey: #bcbdbe;
 
 //fix popup
 body.modal-open-noscroll {
@@ -163,6 +163,5 @@ body.modal-open-noscroll {
 @import "landing/carusel";
 @import "landing/main-information";
 @import "landing/main-first-screen-mobile";
-@import "landing/popup";
 @import "content/content-page";
 @import "content/map";
