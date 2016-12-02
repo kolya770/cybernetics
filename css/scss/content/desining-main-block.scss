@@ -20,3 +20,44 @@
 .company-info {
   color: blue;
 }
+
+.selectpicker {
+  display: block;
+  margin-top: 30px;
+  outline: none;
+  border: 2px solid #05dcb9;
+  width: 100px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 0;
+}
+
+.schedule-table {
+  float: left;
+  margin-top: 20px;
+  border: 2px solid #05dcb9;
+  margin-bottom: 20px;
+  .weekday {
+    width: 20%;
+    display: inline-block;
+    float: left;
+    border-right: 2px solid #05dcb9;
+    @media #{$bootstrap-xs} {
+      width: 100%;
+    }
+    &:last-child {
+      border-right: none;
+    }
+    .name-weekday {
+      text-align: center;
+      padding: 5px;
+      background-color: #05dcb9;
+    }
+    .para {
+      text-align: center;
+      padding: 5px;
+      border-bottom: 2px solid #05dcb9;
+
+    }
+  }
+}
