@@ -72,6 +72,9 @@ label,ol,ul{list-style:none;padding:0;margin:0}
 }
 .cp-icon{font-size:1.5em;color:#fff}
 .cp-icon:hover{color:#05dcb9}
+#lightgallery{text-align:center;padding:20px}
+#lightgallery a{width:30%;display:inline-block;text-align:center;margin-top:5px}
+#lightgallery a img{width:100%}
 @media (min-width:768px){.new{margin-left:30px;margin-right:30px}
 }
 @media (min-width:992px){.other-page{height:200px}
@@ -181,7 +184,7 @@ label,ol,ul{list-style:none;padding:0;margin:0}
 .search-form .active-btn{background-color:#05dcb9;outline:0}
 .sll-text{float:right;margin-top:10px;font-family:OpenSans-Regular,sans-serif;font-size:1.125em;font-weight:400;margin-left:10px;letter-spacing:1px;outline:0;text-decoration:none}
 .sll-text:hover{color:#05dcb9}
-.headhesive{position:fixed;opacity:1;transition:.5s;z-index:1500;width:100%}
+.headhesive{position:fixed;opacity:1;transition:.5s;z-index:1000;width:100%}
 .headhesive--stick{height:70px;transition:.5s}
 .headhesive--stick .search-language-login,.headhesive--stick .social-link{display:none}
 .headhesive--stick .logo-block,.headhesive--stick .right-nav-block{height:50px}
@@ -560,13 +563,11 @@ label,ol,ul{list-style:none;padding:0;margin:0}
 .wrap .main-content-block .card-block .card .card-center .information-card .info-text-block{width:calc(100% - 120px);float:left}
 @media (max-width:767px){.wrap .main-content-block .card-block .card .card-center .information-card .photo-block .card-image{margin-right:0}
 .wrap .main-content-block .card-block .card .card-center .information-card .info-text-block{width:100%;text-align:center}
-.wrap .main-content-block{width:100%;position:relative}
 }
 .wrap .main-content-block .card-block .card .card-center .information-card .info-text-block .name{font-size:1em;line-height:20px;text-align:left;border:none;margin:0}
 .wrap .main-content-block .card-block .card .card-center .information-card .info-text-block p{margin-bottom:5px;font-family:UBUNTU-REGULAR,sans-serif}
 .wrap .main-content-block .card-block .card .card-center .information-card .info-text-block .info-name{margin-bottom:10px}
 @media (min-width:768px){.wrap .main-content-block .card-block .card .card-center .information-card .info-text-block span{display:block;margin-left:0}
-.wrap .main-content-block{width:100%;position:relative}
 }
 @media (min-width:1200px){.wrap .main-content-block .card-block .card .card-center .information-card .info-text-block span{display:inline-block;margin-left:5px}
 }
@@ -576,10 +577,21 @@ label,ol,ul{list-style:none;padding:0;margin:0}
 .wrap .main-content-block .list .numeric-list{list-style-type:decimal}
 .wrap .main-content-block .double-list{margin-top:0}
 .wrap .main-content-block .company-info{color:#00f}
+.wrap .main-content-block .selectpicker{display:block;margin-top:30px;outline:0;border:2px solid #05dcb9;width:100px;height:40px;padding:5px;border-radius:0}
+.wrap .main-content-block .schedule-table{float:left;margin-top:20px;border:2px solid #05dcb9;margin-bottom:20px}
+.wrap .main-content-block .schedule-table .weekday{width:20%;display:inline-block;float:left;border-right:2px solid #05dcb9}
+.wrap .main-content-block .schedule-table .weekday:last-child{border-right:none}
+.wrap .main-content-block .schedule-table .weekday .name-weekday{text-align:center;padding:5px;background-color:#05dcb9}
+.wrap .main-content-block .schedule-table .weekday .para{text-align:center;padding:5px;border-bottom:2px solid #05dcb9}
 .wrap .main-content-block .information-table{border:3px solid #05dcb9;font-family:UBUNTU-LIGHT,sans-serif}
 .wrap .main-content-block .information-table .big-table-block{text-align:left;vertical-align:middle}
 .wrap .main-content-block .information-table tbody tr:nth-of-type(odd){background:rgba(5,220,185,.15)}
 .wrap .main-content-block .information-table tbody tr:first-child{background:#05dcb9}
+@media (max-width:767px){.wrap .main-content-block .schedule-table .weekday{width:100%}
+.wrap .main-content-block{width:100%;position:relative}
+}
+@media (min-width:768px){.wrap .main-content-block{width:100%;position:relative}
+}
 @media (min-width:992px){.wrap .main-content-block{width:calc(100% - 300px);margin-left:0}
 }
 .wrap .main-content-block .margin-strong-1{margin-right:16px}

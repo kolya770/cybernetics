@@ -115,6 +115,26 @@ $(document).ready(function () {
         });
     }
 
+    //table
+
+    $('.selectpicker').on('click', function () {
+        $('.schedule-table').removeClass('hidden');
+
+
+
+
+            //Width content block
+            var height = $('.main-content-block').height();
+        console.log(height);
+            $('#menu').css('min-height', height);
+
+    })
+
+
+        $("#lightgallery").lightGallery();
+
+
+
 });
 
 

@@ -42,3 +42,17 @@
   }
 }
 
+#lightgallery {
+  text-align: center;
+  padding: 20px;
+  a {
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 5px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
