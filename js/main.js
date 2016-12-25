@@ -128,13 +128,61 @@ $(document).ready(function () {
         console.log(height);
             $('#menu').css('min-height', height);
 
-    })
+    });
 
 
-        $("#lightgallery").lightGallery();
+    // $("#lightgallery").lightGallery();
 
+    addEventListener('DOMContentLoaded', function () {
+        pickmeup.defaults.locales['ua'] = {
+            days: ['Неділя', 'Понеділок', 'Вівторок', 'Середа', 'Четвер', 'П' + "'" + 'ятница', 'Субота'],
+            daysShort: ['Нд', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+            daysMin: ['Нд', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+            months: ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень'],
+            monthsShort: ['Січ', 'Лют', 'Бер', 'Кві', 'Тра', 'Чер', 'Лип', 'Сер', 'Вер', 'Жов', 'Лис', 'Гру']
+        };
+        pickmeup('.calendar', {
+            flat : true,
+            select_day : true,
+            select_month : false,
+            select_year : false,
+            locale : 'ua'
 
+        });
 
+    });
+    //Activate logo
+    setInterval(activeLogo, 5000);
+
+    var logo_header = $('.logo-header');
+    var logo_image  = $('.logo-img');
+
+    function activeLogo() {
+
+        if(logo_header.hasClass('active-logo')) {
+
+            logo_header.removeClass('active-logo');
+            logo_header.fadeOut();
+            setTimeout(activeImageLogo, 500);
+        }
+        else  {
+
+            logo_image.fadeOut();
+            logo_image.removeClass('active-logo');
+            setTimeout(activeHeaderLogo, 500);
+        }
+    }
+
+    function activeHeaderLogo() {
+        logo_header.addClass('active-logo');
+        logo_header.fadeIn();
+    }
+    function activeImageLogo() {
+        logo_image.addClass('active-logo');
+        logo_image.fadeIn();
+    }
 });
+
+
 
 

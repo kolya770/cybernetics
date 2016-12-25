@@ -1,28 +1,8 @@
 .new {
-  @media #{$bootstrap-xs} {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  @media #{$bootstrap-sm} {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-  @media #{$bootstrap-md} {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-
-  .right-block-grey {
-    height: 20px;
-    width: 200px;
-    float: right;
-    background-color: #adaeaf;
-    @media #{$bootstrap-xs} {
-      width: 20%;
-    }
-  }
   .new-block {
-    background: url("../img/bg-image.png");
+    background: url("../img/bg-light.png");
+    padding-top: 185px;
+    border-bottom: 1px solid $global-color-grey;
     .active-new {
       text-align: center;
       width: 70%;
@@ -36,7 +16,7 @@
         font-style: italic;
       }
       .header-text {
-        font-family: $header-font;
+        font-family: $open-sans-bold;
         color: rgba(0, 0, 0, 0.82);
         font-weight: 400;
         text-align: center;
@@ -56,14 +36,14 @@
         text-align: center;
         margin-top: 60px;
         .news-image {
-          box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.35);
+          box-shadow: 0 0 10px #353434;
           @media #{$bootstrap-xs} {
             width: 100%;
-            border: 7px solid #adaeaf;
+            border: 7px solid #ffffff;
           }
           @media #{$bootstrap-sm} {
             width: 100%;
-            border: 20px solid #adaeaf;
+            border: 10px solid #ffffff;
           }
           @media #{$bootstrap-md} {
             width: 60%;
@@ -74,7 +54,7 @@
         .text-new {
           margin-top: 60px;
           margin-bottom: 70px;
-          font-family: $text-font-2;
+          font-family: $open-sans-reg;
           color: rgba(0, 0, 0, 0.82);
           font-size: 1.563em;
           font-weight: 100;
@@ -89,12 +69,10 @@
     }
   }
   .news-other {
-    margin-left: -20px;
-    margin-right: -20px;
     .header-news {
       width: 80%;
       .header-title {
-        font-family: $header-font;
+        font-family: $open-sans-bold;
         color: #282828;
         font-size: 1.875em;
         font-weight: 600;
@@ -109,7 +87,7 @@
       margin-top: 25px;
       margin-bottom: 25px;
       .header-title {
-        font-family: $text-font-2;
+        font-family: $open-sans-reg;
         color: #181818;
         font-size: 1.375em;
         font-weight: 400;
@@ -118,8 +96,8 @@
         margin-top: 30px;
       }
       .image-block {
-        box-shadow: 2px 4px 5px 0 rgba(0, 0, 0, 0.35);
-        border: 5px solid white;
+        box-shadow: 0 0 10px #353434;
+        border: 5px solid $global-color-blue;
         .news-image {
           width: 100%;
         }

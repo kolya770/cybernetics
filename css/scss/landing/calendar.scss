@@ -1,0 +1,65 @@
+.calendar {
+  text-align: center;
+  margin-bottom: 70px;
+  @media #{$bootstrap-sm} {
+    margin-top: 0;
+  }
+  @media #{$bootstrap-lg} {
+    margin-top: 70px;
+  }
+  .pickmeup {
+    background: transparent;
+    width: 75%;
+    @media #{$bootstrap-xs} {
+      width: 95%;
+    }
+    .pmu-month {
+      font-family: $open-sans-bold;
+      color: #282828;
+      font-size: 1.8em;
+      font-style: normal;
+      font-weight: 800;
+      transform: scaleX(1.0016);
+      margin-bottom: 30px;
+      text-align: center;
+      width: 100% !important;
+      &:hover {
+        color: #282828;
+      }
+    }
+    .pmu-instance {
+      width: 100%;
+      .pmu-day-of-week * {
+        width: 14.28%;
+        color: #181818;
+        font-size: 20px;
+        font-family: $open-sans-bold;
+        font-weight: 800;
+      }
+      .pmu-days * {
+        width: 14.28%;
+        color: #181818;
+        font-size: 20px;
+        font-family: $open-sans-reg;
+        font-weight: 100;
+        border: 2px solid transparent;
+        @media #{$bootstrap-lg} {
+          height: 40px;
+          line-height: 36px;
+        }
+        @media #{$bootstrap-xl} {
+          height: 50px;
+          line-height: 46px;
+        }
+      }
+      .pmu-today {
+        background-color: $global-color-blue !important;
+        color: #ffffff !important;
+      }
+      .pmu-selected {
+        background-color: transparent;
+        border: 2px solid $global-color-blue;
+      }
+    }
+  }
+}

@@ -19,56 +19,81 @@
     height: 185px;
     float: left;
     display: inline-block;
-    .logo-img {
-      margin-top: 20px;
-      width: 93px;
+    .logo-left-block {
+      width: 180px;
       float: left;
+      height: 185px;
+    }
+    .logo-img {
+      margin-top: 44px;
+      width: 100%;
+      float: left;
+      text-align: center;
+      display: none;
       .logo {
-        width: 93px;
+        width: 115px;
         transition: 0.5s;
         //height: 145px;
       }
     }
     .logo-header {
       float: left;
-      max-width: 376px;
-      margin-left: 10px;
+      width: 100%;
+      padding-right: 20px;
+      padding-top: 54px;
       .header-title {
         font-family: $open-sans-bold;
         color: $global-color-blue;
-        font-weight: 700;
-        text-align: left;
-        margin-bottom: 5px;
+        font-weight: 600;
+        text-align: right;
         transition: 0.5s;
-        @media #{$bootstrap-md} {
-          font-size: 1.6em;
-          margin-top: 57px;
-        }
-        @media #{$bootstrap-lg} {
-          font-size: 1.875em;
-          margin-top: 62px;
-        }
+        font-size: 1.125em;
+        letter-spacing: 1px;
+        margin: 0;
+        //@media #{$bootstrap-md} {
+        //  font-size: 1.6em;
+        //  margin-top: 57px;
+        //}
+        //@media #{$bootstrap-lg} {
+        //  font-size: 1.875em;
+        //  margin-top: 62px;
+        //}
       }
+    }
+    .logo-right-header {
+      float: left;
+      width: 210px;
+      margin-top: 50px;
       .header-title-text {
         transition: 0.5s;
         font-family: $open-sans-reg;
         color: $global-color-blue;
-        font-size: 0.750em;
+        font-size: 1em;
         font-weight: 400;
         text-align: left;
         margin-top: 0;
-        @media #{$bootstrap-md} {
-          max-width: 255px;
-        }
-        @media #{$bootstrap-lg} {
-          max-width: 376px;
-        }
+        letter-spacing: 0.5px;
+        line-height: 20px;
+        border-left: 1.5px solid white;
+        padding: 10px 0 10px 20px;
+        //@media #{$bootstrap-md} {
+        //  max-width: 255px;
+        //}
+        //@media #{$bootstrap-lg} {
+        //  max-width: 376px;
+        //}
       }
     }
   }
   .right-nav-block {
     float: right;
     height: 185px;
+    @media #{$bootstrap-md} {
+      width: 400px;
+    }
+    @media #{$bootstrap-lg} {
+      width: auto;
+    }
     .search-language-login {
       margin-top: 10px;
       height: 45px;
@@ -186,14 +211,14 @@
         text-align: center;
         height: 44px;
         @media #{$bootstrap-md} {
-          padding: 0 5px;
+          padding: 0 9px;
           font-size: 1.1em;
         }
-        @media #{$bootstrap-lg} {
-          padding: 0 10px;
-          font-size: 1.250em;
-        }
-        @media #{$bootstrap-xl} {
+        //@media (min-width: 1200px) {
+        //  padding: 0 9px;
+        //  font-size: 1.1em;
+        //}
+        @media (min-width: 1600px) {
           padding: 0 32px;
         }
         &:hover {
@@ -352,21 +377,32 @@
 
   .right-nav-block {
     height: 50px;
+    width: auto;
   }
   .logo-block {
     height: 50px;
+    .logo-left-block {
+      width: 280px;
+      height: auto;
+    }
     .logo-img {
-      width: 30px;
-      margin-top: 10px;
+      width: 52px;
+      margin-bottom: 13px;
+      margin-top: 13px;
       .logo {
-        width: 30px;
+        width: 52px;
       }
     }
     .logo-header {
+      padding-top: 0;
       .header-title {
         margin-top: 15px;
         font-size: 1em;
+        text-align: left;
       }
+    }
+    .logo-right-header {
+      display: none;
     }
   }
 }

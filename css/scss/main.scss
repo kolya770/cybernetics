@@ -13,12 +13,11 @@ ol, ul, label {
 }
 
 .landing {
-  background-color: #adaeaf;
+  background-color: #f7f7f7;
 }
 
 .information-link {
-  background: url("../img/bg-image.png");
-  background-color: #adaeaf;
+  background: #f7f7f7 url("../img/bg-image.png");
 }
 
 @font-face {
@@ -163,5 +162,6 @@ body.modal-open-noscroll {
 @import "landing/carusel";
 @import "landing/main-information";
 @import "landing/main-first-screen-mobile";
+@import "landing/calendar";
 @import "content/content-page";
 @import "content/map";

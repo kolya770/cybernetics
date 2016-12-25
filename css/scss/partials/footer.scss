@@ -75,6 +75,7 @@
       width: 50px;
       height: 50px;
       display: inline-block;
+      text-align: center;
       @media #{$bootstrap-sm} {
         margin-right: 15px;
         margin-left: 10px;
@@ -104,16 +105,18 @@
     }
     .footer-icon {
       height: 40px;
-      margin-left: 10px;
     }
     .mail {
-      margin-left: 0;
+      height: 25px;
+      margin-top: 5px;
+    }
+    .web {
       height: 30px;
     }
   }
   .copyright-block {
     min-height: 67px;
-    background-color: rgba(0,0,0,.95);
+    background-color: rgba(0,0,0,.87);
 
     .copyright-container {
       text-align: center;
@@ -133,7 +136,7 @@
         font-weight: 400;
         text-align: center;
         margin-bottom: 0;
-        margin-top: 20px;
+        margin-top: 30px;
         @media #{$bootstrap-xs} {
           font-size: 1em;
         }
