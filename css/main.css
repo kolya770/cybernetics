@@ -451,7 +451,7 @@ label,ol,ul{list-style:none;padding:0;margin:0}
 .main .information-block .header-title{font-family:OpenSans-Bold,sans-serif;color:#282828;font-size:2.3em;font-style:normal;font-weight:900;text-align:left;transform:scaleX(1.0016);margin-bottom:30px}
 @media (min-width:768px){.main .information-block .header-title{font-size:1.8em}
 }
-.main .information-block .header-text{font-family:UBUNTU-MEDIUM,sans-serif;color:#181818;font-size:1.375em;font-weight:400;text-align:left;line-height:30px;text-decoration:none;position:relative}
+.main .information-block .header-text{font-family:OpenSans-Regular,sans-serif;color:#181818;font-size:1.375em;font-weight:400;text-align:left;line-height:30px;text-decoration:none;position:relative}
 .main .information-block .header-text:after{content:'';position:absolute;bottom:0;left:0;width:100%;border-bottom:2px solid #181818;transition:1s}
 .main .information-block .header-text:hover:after{width:0}
 .main .information-block .image-entrants{background:url(../img/vstyp2.png) 50% 50% no-repeat;background-size:cover;margin-bottom:30px;border:5px solid #05dcb9;box-shadow:0 0 10px #353434;transition:all .3s ease}
