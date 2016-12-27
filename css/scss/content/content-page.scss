@@ -1,137 +1,39 @@
 .wrap {
+  padding-bottom: 70px;
+  @media #{$bootstrap-xs} {
+    padding-top: 80px;
+  }
+  @media #{$bootstrap-sm} {
+    padding-top: 80px;
+  }
+  @media #{$bootstrap-md} {
+    padding-top: 185px;
+  }
   .no-padding {
     padding-left: 0;
     padding-right: 0;
-  }
-  .dop-block {
-    width: 300px;
-    left: 0;
-    float: left;
-    display: inline-block;
-    position: relative;
-    .open-btn-block {
-      display: none;
-      width: 50px;
-      height: 50px;
-      .open-block {
-        position: absolute;
-        border-radius: 0;
-        padding: 0;
-        outline: none;
-        border: 2px solid $global-color-white;
-        background: transparent;
-        font-size: 1em;
-        line-height: 50px;
-        height: 50px;
-        float: right;
-        box-shadow: 2px 3px 10px #555;
-        margin-left: 30px;
-        width: 50px;
-        margin-top: 7.5px;
-        &:hover {
-          border: 2px solid $global-color-blue;
-          background: $global-color-blue;
-          color: #282828;
-        }
-        .caret-my {
-          font-size: 20px;
-          margin-left: 10px;
-          margin-right: 10px;
-          margin-top: 3px;
-          display: block;
-        }
-        span {
-          font-size: 0.7em;
-          line-height: 10px;
-          display: block;
-        }
-      }
-    }
-    .line-grey {
-      width: 300px;
-      height: 65px;
-      float: left;
-      background-color: $global-color-grey;
-      @media #{$bootstrap-xs} {
-        display: none;
-      }
-      .btn-side-bar {
-        border-radius: 0;
-        padding: 0 10px 0 0;
-        outline: none !important;
-        border: 3px solid $global-color-white;
-        background: transparent;
-        font-family: $open-sans-reg;
-        font-size: 1em;
-        line-height: 50px;
-        height: 50px;
-        float: left;
-        margin-top: 7.5px;
-        margin-left: 30px;
-        width: 240px;
-        font-weight: 700;
-        box-shadow: 2px 3px 10px #555;
-        transition: all 0.3s ease;
-        &:hover {
-          border: 3px solid $global-color-blue;
-          background: $global-color-blue;
-          color: #282828;
-        }
-        .caret-my {
-          font-size: 20px;
-          margin-left: 10px;
-          margin-right: 10px;
-          margin-top: 6px;
-        }
-      }
-    }
-    .dop-menu-block {
-      background-color: $global-color-grey;
-      width: 270px;
-      margin: 15px 0;
-      float: left;
-      position: relative;
-      top: 0;
-      @media #{$bootstrap-xs} {
-        width: 100%;
-      }
-      @media #{$bootstrap-sm} {
-        &:after {
-          display: block;
-          content: "";
-          width: 15px;
-          height: 100%;
-          background: $global-color-grey;
-          position: absolute;
-          left: 285px;
-          top: 0;
-        }
-      }
-    }
   }
   .main-content-block {
 
     @import "cards";
     @import "desining-main-block";
     @import "table-styling";
-
-
     margin-top: 50px;
-    display: inline-block;
     float: left;
-    position: absolute;
-    @media #{$bootstrap-xs} {
-      width: 100%;
-      position: relative;
-    }
-    @media #{$bootstrap-sm} {
-      width: 100%;
-      position: relative;
-    }
-    @media #{$bootstrap-md} {
-      width: calc(100% - 300px);
-      margin-left: 0;
-    }
+    width: 100%;
+    //position: absolute;
+    //@media #{$bootstrap-xs} {
+    //  width: 100%;
+    //  position: relative;
+    //}
+    //@media #{$bootstrap-sm} {
+    //  width: 100%;
+    //  position: relative;
+    //}
+    //@media #{$bootstrap-md} {
+    //  width: calc(100% - 300px);
+    //  margin-left: 0;
+    //}
 
     .margin-strong-1 {
       margin-right: 16px;
@@ -141,7 +43,6 @@
     }
 
     .information {
-      margin: 0 13%;
       @media #{$bootstrap-xs} {
         margin-bottom: 50px;
       }
@@ -152,9 +53,9 @@
         margin-bottom: 0;
       }
       .header-text {
-        font-family: $header-font;
+        font-family: $open-sans-bold;
         color: rgba(0, 0, 0, 0.82);
-        font-weight: 400;
+        font-weight: 800;
         text-align: center;
         border-bottom: 2px solid black;
         margin-bottom: 40px;
@@ -239,7 +140,7 @@
         }
       }
       .text-with-information {
-        font-family: $text-font-2;
+        font-family: $open-sans-reg;
         color: rgba(0, 0, 0, 0.82);
         font-size: 1em;
         font-weight: 400;
@@ -315,3 +216,153 @@
     float: left;
   }
 }
+
+.left-menu-block {
+  width: 300px;
+  left: -300px;
+  float: left;
+  display: inline-block;
+  position: fixed;
+  top: 185px;
+  z-index: 100;
+  bottom: 0;
+  background-color: rgba(0,0,0,.82);
+  transition: .5s;
+  overflow-y: scroll;
+  &::-webkit-scrollbar-button {
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:0px;
+    height:0px
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color:transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 2.5px;
+    border-radius: 2.5px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb:hover{
+    background-color: transparent;
+  }
+
+  &::-webkit-resizer{
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:0px;
+    height:0px
+  }
+  &::-webkit-scrollbar{
+    width: 0px;
+  }
+  .left-menu-close-block {
+    width: 100%;
+    float: left;
+    @media #{$bootstrap-xs} {
+      display: none;
+    }
+    .btn-side-bar {
+      border-radius: 0;
+      padding: 0 10px 0 0;
+      outline: none !important;
+      border: 3px solid $global-color-white;
+      background: transparent;
+      font-family: $open-sans-reg;
+      font-size: 1em;
+      line-height: 48px;
+      height: 50px;
+      float: left;
+      margin-top: 7.5px;
+      margin-left: 30px;
+      width: 240px;
+      font-weight: 700;
+      transition: all 0.3s ease;
+      color: #ffffff;
+      &:hover {
+        border: 3px solid $global-color-blue;
+        background: $global-color-blue;
+        color: #282828;
+      }
+      .caret-my {
+        font-size: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+  }
+  .dop-menu-block {
+    background-color: $global-color-grey;
+    width: 100%;
+    margin: 15px 0;
+    float: left;
+    position: relative;
+    top: 0;
+    @media #{$bootstrap-xs} {
+      width: 100%;
+    }
+
+  }
+}
+.headhesive--stick {
+  .left-menu-block {
+    top: 70px;
+    transition: .5s;
+  }
+  .open-btn-block {
+    top: 85px;
+    transition: .5s;
+  }
+}
+
+.open-btn-block {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 200px;
+  left: 20px;
+  transition: .5s;
+  .open-block {
+    border-radius: 0;
+    padding: 0;
+    outline: none;
+    border: 3px solid $global-color-blue;
+    background: $global-color-blue;
+    font-size: 1em;
+    line-height: 50px;
+    height: 50px;
+    float: right;
+    width: 50px;
+    transition: all 0.3s ease;
+    &:hover {
+      border: 3px solid $global-color-blue;
+      background: transparent;
+      color: #282828;
+      outline: none;
+      box-shadow: none;
+    }
+    &:active:focus {
+      border: 3px solid $global-color-blue;
+      background: transparent;
+      color: #282828;
+      outline: none;
+      box-shadow: none;
+    }
+    .caret-my {
+      font-size: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 3px;
+      display: block;
+    }
+    span {
+      font-size: 0.7em;
+      line-height: 10px;
+      display: block;
+    }
+  }
+}
+
