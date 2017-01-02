@@ -19,14 +19,23 @@
   }
 }
 
-#lightgallery {
+.light-gallery {
   text-align: center;
-  padding: 20px;
+  padding: 20px 0;
   a {
-    width: 30%;
+    width: 33%;
     display: inline-block;
     text-align: center;
     margin-top: 5px;
+    @media #{$bootstrap-xs} {
+      width: 100%;
+    }
+    @media #{$bootstrap-sm} {
+      width: 32%;
+    }
+    @media #{$bootstrap-md} {
+      width: 33%;
+    }
     img {
       width: 100%;
     }
