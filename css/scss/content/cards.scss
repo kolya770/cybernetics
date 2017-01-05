@@ -1,76 +1,58 @@
 .card-block {
   float: left;
-  .card {
-    width: 50%;
+  .information-card {
     float: left;
     margin-bottom: 50px;
-    position: relative;
-    @media #{$bootstrap-xs} {
-      width: 100%;
-    }
-    .card-center {
-      width: 100%;
-      height: 100%;
-      @media #{$bootstrap-sm} {
-        max-width: 500px;
+    .photo-block {
+      width: 120px;
+      float: left;
+      @media #{$bootstrap-xs} {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
       }
-      .information-card {
-        float: left;
+      .card-image {
+        border: 4px solid $global-color-white;
+        box-shadow: 0 0 10px #353434;
+        width: 100px;
+        margin-right: 20px;
         @media #{$bootstrap-xs} {
-          width: 100%;
+          margin-right: 0;
         }
-        .photo-block {
-          width: 120px;
-          float: left;
-          @media #{$bootstrap-xs} {
-            width: 100%;
-            text-align: center;
-            margin-bottom: 20px;
-          }
-          .card-image {
-            border: 4px solid $global-color-white;
-            box-shadow: 0 0 10px #353434;
-            width: 100px;
-            margin-right: 20px;
-            @media #{$bootstrap-xs} {
-              margin-right: 0;
-            }
-          }
-        }
-        .info-text-block {
-          width: calc( 100% - 120px);
-          float: left;
-          @media #{$bootstrap-xs} {
-            width: 100%;
-            text-align: center;
-          }
-          .name {
-            font-size: 1em;
-            line-height: 20px;
-            text-align: left;
-            border: none;
-            margin: 0;
-          }
-          p {
-            margin-bottom: 5px;
-            font-family: $text-font-3;
-          }
-          .info-name {
-            margin-bottom: 10px;
-          }
-          span {
-            @media #{$bootstrap-xs} {
+      }
+    }
+    .info-text-block {
+      width: calc( 100% - 120px);
+      float: left;
+      @media #{$bootstrap-xs} {
+        width: 100%;
+        text-align: center;
+      }
+      .name {
+        font-size: 1em;
+        line-height: 20px;
+        text-align: left;
+        border: none;
+        margin: 0;
+      }
+      p {
+        margin-bottom: 5px;
+        font-family: $text-font-3;
+      }
+      .info-name {
+        margin-bottom: 10px;
+      }
+      span {
+        @media #{$bootstrap-xs} {
 
-            }
-            @media #{$bootstrap-sm} {
-              display: block;
-              margin-left: 0;
-            }
-            @media #{$bootstrap-lg} {
-              display: inline-block;
-              margin-left: 5px;
-            }
-          }
+        }
+        @media #{$bootstrap-sm} {
+          display: block;
+          margin-left: 0;
+        }
+        @media #{$bootstrap-lg} {
+          display: inline-block;
+          margin-left: 5px;
         }
       }
     }

@@ -3,7 +3,6 @@
   max-width: 600px;
   background: url("../img/bg-image.png");
   margin: 0;
-  box-shadow: 0 4px 40px #adaeaf;
 }
 
 .cd-accordion-menu ul {
@@ -28,9 +27,9 @@
   position: relative;
   display: block;
   padding: 18px 18px 18px 64px;
-  background: $global-color-grey;
+  background: #f7f7f7;
   box-shadow: inset 0 -1px #555960;
-  color: #ffffff;
+  color: black;
   font-size: 1.05em;
   font-weight: 700;
   font-family: $open-sans-reg;
@@ -41,6 +40,9 @@
   &:hover {
     background: $global-color-blue;
     color: #282828;
+    a {
+      background: $global-color-blue;
+    }
   }
 }
 
@@ -59,6 +61,7 @@
 
 .no-touch .cd-accordion-menu label:hover {
   background: $global-color-blue;
+
 }
 
 .cd-accordion-menu label::before {
@@ -81,7 +84,7 @@
 }
 
 .cd-accordion-menu label::before {
-  background-image: url(../img/cd-icons.svg);
+  background-image: url(../img/cd-icons1.png);
   background-repeat: no-repeat;
 }
 
@@ -114,14 +117,14 @@
 
 .cd-accordion-menu ul label,
 .cd-accordion-menu ul a {
-  background: #8c8d8e;
+  background: #e8e8e8;
   box-shadow: inset 0 -1px #41444a;
   padding-left: 82px;
 }
 
 .no-touch .cd-accordion-menu ul label:hover, .no-touch
 .cd-accordion-menu ul a:hover {
-  background: #717273;
+  background: #c0c0c0;
 }
 
 .cd-accordion-menu > li:last-of-type > label,
@@ -231,6 +234,7 @@
   }
   ul ul a {
     padding-left: 15px;
+    background-color: #dddbdb;
   }
   ul ul ul a {
     padding-left: 70px;

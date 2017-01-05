@@ -37,13 +37,18 @@
   }
   .logo-m-text {
     float: left;
-    margin: 0;
     font-size: 1em;
     font-family: $open-sans-bold;
     color: $global-color-blue;
     font-weight: 700;
-    line-height: 55px;
     margin-left: 5px;
+    width: 200px;
+    line-height: 20px;
+    margin-top: 7px;
+    @media (min-width: 300px) and (max-width: 340px) {
+      font-size: 0.9em;
+      width: 180px;
+    }
   }
 }
 
