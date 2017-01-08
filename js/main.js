@@ -119,8 +119,9 @@ $(document).ready(function () {
 
     //schedule
 
-    $('.selectpicker').on('click', function () {
+    $('#open-schedule li').on('click', function () {
         $('.schedule-table').removeClass('hidden');
+        $('.weekday-text').removeClass('hidden');
     });
 });
 

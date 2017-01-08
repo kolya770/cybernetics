@@ -21,22 +21,16 @@
   color: blue;
 }
 
-.selectpicker {
-  display: block;
-  margin-top: 30px;
-  outline: none;
-  border: 2px solid #05dcb9;
-  width: 100px;
-  height: 40px;
-  padding: 5px;
-  border-radius: 0;
-}
-
 .schedule-table {
   float: left;
-  margin-top: 20px;
+  margin-top: 10px;
   border: 2px solid #05dcb9;
+  border-right: none;
+  border-bottom: none;
   margin-bottom: 20px;
+  width: 100%;
+  font-size: 1em;
+  font-family: $open-sans-reg;
   .weekday {
     width: 20%;
     display: inline-block;
@@ -46,7 +40,7 @@
       width: 100%;
     }
     &:last-child {
-      border-right: none;
+
     }
     .name-weekday {
       text-align: center;
@@ -60,4 +54,13 @@
 
     }
   }
+}
+.documents-link {
+  font-family: $open-sans-reg;
+  font-size: 1em;
+}
+.weekday-text {
+  font-family: $open-sans-semi-bold;
+  font-size: 1.2em;
+  color: red;
 }
