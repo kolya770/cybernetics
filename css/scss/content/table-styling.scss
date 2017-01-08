@@ -1,12 +1,20 @@
 .information-table {
   border: 3px solid $global-color-blue;
   font-family: $open-sans-reg;
+  border-collapse: collapse;
+  td{
+    border: 2px solid $global-color-blue;
+  }
+  th {
+    text-align: center;
+    vertical-align: middle;
+  }
   .big-table-block {
     text-align: left;
     vertical-align: middle;
   }
   tbody tr:nth-of-type(odd) {
-    background: rgba(5, 220, 185, 0.15);
+    background: transparent;
   }
   tbody tr:first-child {
     background: $global-color-blue;

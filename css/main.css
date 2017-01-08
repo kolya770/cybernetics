@@ -589,9 +589,11 @@ label,ol,ul{list-style:none;padding:0;margin:0}
 .wrap .main-content-block .schedule-table .weekday .para{text-align:center;padding:5px;border-bottom:2px solid #05dcb9}
 .wrap .main-content-block .documents-link{font-size:1em}
 .wrap .main-content-block .weekday-text{font-family:OpenSans-Semibold,sans-serif;font-size:1.2em;color:red}
-.wrap .main-content-block .information-table{border:3px solid #05dcb9;font-family:OpenSans-Regular,sans-serif}
+.wrap .main-content-block .information-table{border:3px solid #05dcb9;font-family:OpenSans-Regular,sans-serif;border-collapse:collapse}
+.wrap .main-content-block .information-table td{border:2px solid #05dcb9}
+.wrap .main-content-block .information-table th{text-align:center;vertical-align:middle}
 .wrap .main-content-block .information-table .big-table-block{text-align:left;vertical-align:middle}
-.wrap .main-content-block .information-table tbody tr:nth-of-type(odd){background:rgba(5,220,185,.15)}
+.wrap .main-content-block .information-table tbody tr:nth-of-type(odd){background:0 0}
 .wrap .main-content-block .information-table tbody tr:first-child{background:#05dcb9}
 .wrap .main-content-block .select-block{margin-top:20px}
 .wrap .main-content-block .btn-select{position:relative;padding:0;min-width:236px;width:200px;border-radius:0;margin-bottom:20px;border:2px solid #05dcb9;background-color:#05dcb9;box-shadow:none;font-family:OpenSans-Regular,sans-serif}
