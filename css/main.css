@@ -589,6 +589,7 @@ label,ol,ul{list-style:none;padding:0;margin:0}
 .wrap .main-content-block .schedule-table .weekday .para{text-align:center;padding:5px;border-bottom:2px solid #05dcb9}
 .wrap .main-content-block .documents-link{font-size:1em}
 .wrap .main-content-block .weekday-text{font-family:OpenSans-Semibold,sans-serif;font-size:1.2em;color:red}
+.wrap .main-content-block .library{padding:10px;margin-bottom:10px;border-bottom:2px solid #05dcb9}
 .wrap .main-content-block .information-table{border:3px solid #05dcb9;font-family:OpenSans-Regular,sans-serif;border-collapse:collapse}
 .wrap .main-content-block .information-table td{border:2px solid #05dcb9}
 .wrap .main-content-block .information-table th{text-align:center;vertical-align:middle}
