@@ -631,17 +631,15 @@ label,ol,ul{list-style:none;padding:0;margin:0}
 @media (min-width:992px){.wrap .main-content-block .information .header-text-small{font-size:2.5em;line-height:50px}
 }
 .wrap .main-content-block .information .header-text-3{font-family:UBUNTU-BOLD,sans-serif;color:rgba(0,0,0,.82);font-weight:400;font-size:1.5em}
-.wrap .main-content-block .information .left-content{width:100%;display:block;position:relative;float:left}
-.wrap .main-content-block .information .left-content .contacts-block{width:100%;display:block;float:left}
-.wrap .main-content-block .information .left-content .contacts-block .info-contacts a{margin-bottom:10px;display:block}
-.wrap .main-content-block .information .left-content .contacts-block .header-text{font-size:1.7em;border-bottom:0;margin:0;text-align:left}
+.wrap .main-content-block .information .contact-block .info-contacts a{margin-bottom:10px;display:block}
+.wrap .main-content-block .information .contact-block .header-text{font-size:1.7em;border-bottom:0;margin:0;text-align:left}
 .wrap .main-content-block .information .image-information,.wrap .main-content-block .information .right-map{border:6px solid #fff;box-shadow:0 0 10px #353434;float:left}
 .wrap .main-content-block .information .right-map{width:100%;display:block;position:relative;margin-top:50px}
-@media (max-width:767px){.wrap .main-content-block .information .left-content .contacts-block .header-text{line-height:75px}
+@media (max-width:767px){.wrap .main-content-block .information .contact-block .header-text{line-height:75px}
 .wrap .main-content-block .information .right-map{margin-bottom:50px}
 .wrap .main-content-block .information .image-information{float:none;width:100%;max-width:300px}
 }
-@media (min-width:768px){.wrap .main-content-block .information .left-content .contacts-block .header-text{line-height:75px}
+@media (min-width:768px){.wrap .main-content-block .information .contact-block .header-text{line-height:75px}
 .wrap .main-content-block .information .right-map{margin-bottom:50px}
 }
 @media (min-width:992px){.wrap .main-content-block .information .right-map{margin-bottom:0}

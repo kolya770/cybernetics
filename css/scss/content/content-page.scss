@@ -91,36 +91,30 @@
         font-size: 1.5em;
 
       }
-      .left-content {
-        width: 100%;
-        display: block;
-        position: relative;
-        float: left;
-        .contacts-block {
-          width: 100%;
-          display: block;
-          float: left;
-          .info-contacts {
-            a {
-              margin-bottom: 10px;
-              display: block;
-            }
-          }
-          .header-text {
-            font-size: 1.7em;
-            border-bottom: 0;
-            margin: 0;
-            text-align: left;
-            @media #{$bootstrap-xs} {
-              line-height: 75px;
-            }
-            @media #{$bootstrap-sm} {
-              line-height: 75px;
-            }
 
+      .contact-block {
+        .info-contacts {
+          a {
+            margin-bottom: 10px;
+            display: block;
           }
         }
+        .header-text {
+          font-size: 1.7em;
+          border-bottom: 0;
+          margin: 0;
+          text-align: left;
+          @media #{$bootstrap-xs} {
+            line-height: 75px;
+          }
+          @media #{$bootstrap-sm} {
+            line-height: 75px;
+          }
+
+        }
       }
+
+
       .right-map {
         width: 100%;
         display: block;
