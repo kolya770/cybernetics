@@ -1,12 +1,20 @@
 .information-table {
   border: 3px solid $global-color-blue;
-  font-family: $text-font-2;
+  font-family: $open-sans-reg;
+  border-collapse: collapse;
+  td{
+    border: 2px solid $global-color-blue;
+  }
+  th {
+    text-align: center;
+    vertical-align: middle;
+  }
   .big-table-block {
     text-align: left;
     vertical-align: middle;
   }
   tbody tr:nth-of-type(odd) {
-    background: rgba(5, 220, 185, 0.15);
+    background: transparent;
   }
   tbody tr:first-child {
     background: $global-color-blue;
@@ -24,8 +32,10 @@
   width: 200px;
   border-radius: 0;
   margin-bottom: 20px;
-  border: 1px solid $global-color-blue;
+  border: 2px solid $global-color-blue;
   background-color: $global-color-blue;
+  box-shadow: none;
+  font-family: $open-sans-reg;
 }
 
 .btn-select .btn-select-value {
@@ -59,37 +69,41 @@
   margin: 0;
   border-top: none !important;
   position: absolute;
-  left: -1px;
-  right: -1px;
-  top: 33px;
+  left: -2px;
+  right: -2px;
+  top: 34px;
   z-index: 999;
 }
 
 .btn-select ul li {
-  padding: 3px 6px;
+  padding: 3px 13px;
   text-align: left;
 }
 
 .btn-select ul li:hover {
-  background-color: #f4f4f4;
+  background-color: $global-color-blue;
 }
 
 .btn-select ul li.selected {
-  color: white;
+  color: black;
+  background-color: $global-color-blue;
+  &:hover {
+    color: black;
+  }
 }
 
 /* Default Start */
 .btn-select.btn-default:hover, .btn-select.btn-default:active, .btn-select.btn-default.active {
-  border-color: #ccc;
+  border-color: #f7f7f7;
 }
 
 .btn-select.btn-default ul li.selected {
-  background-color: #ccc;
+  background-color: #f7f7f7;
 }
 
 .btn-select.btn-default ul, .btn-select.btn-default .btn-select-value {
   background-color: white;
-  border: #ccc 1px solid;
+  border: #f7f7f7 1px solid;
 }
 
 .btn-select.btn-default:hover, .btn-select.btn-default.active {
