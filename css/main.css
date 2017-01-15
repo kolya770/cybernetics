@@ -671,7 +671,7 @@ label,ol,ul{padding:0;margin:0}
 .left-menu-block .left-menu-close-block .btn-side-bar{border-radius:0;padding:0 10px 0 0;outline:0!important;border:3px solid #fff;background:0 0;font-family:OpenSans-Regular,sans-serif;font-size:1em;line-height:48px;height:50px;float:left;margin-top:7.5px;margin-left:30px;width:240px;font-weight:700;transition:all .3s ease;color:#fff}
 .left-menu-block .left-menu-close-block .btn-side-bar:hover{border:3px solid #05dcb9;background:#05dcb9;color:#282828}
 .left-menu-block .left-menu-close-block .btn-side-bar .caret-my{font-size:20px;margin-left:10px;margin-right:10px}
-.left-menu-block .dop-menu-block{background-color:#bcbdbe;width:100%;margin:15px 0;float:left;position:relative;top:0}
+.left-menu-block .dop-menu-block{width:100%;margin:15px 0;float:left;position:relative;top:0}
 @media (max-width:767px){.left-menu-block .left-menu-close-block{display:none}
 .left-menu-block .dop-menu-block{width:100%}
 }
