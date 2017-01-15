@@ -25,7 +25,7 @@
       height: 185px;
     }
     .logo-img {
-      margin-top: 44px;
+      margin-top: 31px;
       width: 100%;
       float: left;
       text-align: center;
@@ -41,6 +41,9 @@
       width: 100%;
       padding-right: 20px;
       padding-top: 54px;
+      a {
+        text-decoration: none;
+      }
       .header-title {
         font-family: $open-sans-bold;
         color: $global-color-blue;
@@ -387,8 +390,8 @@
     }
     .logo-img {
       width: 52px;
-      margin-bottom: 13px;
-      margin-top: 13px;
+      margin-bottom: 10px;
+      margin-top: 10px;
       .logo {
         width: 52px;
       }
